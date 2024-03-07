@@ -381,7 +381,41 @@ public static void main(String[]args)
 }
 }
 
+perfect number : 
+6 
+1 2 3 
+1 + 2 + 3 => 6 
 
+8 
+2 2 2 =>6 not perfect number 
+
+import java.util.*;
+public class Main{
+    public static void main(String [] args)
+    {
+             Scanner input=new Scanner (System.in);
+             System.out.println("Enter the number :");
+             int num=input.nextInt();
+             int sum=0;
+             int tem=num;
+             for(int i=1;i<=10;i++)
+             {
+                if(num%i==0)
+                {
+                    if(num!=i)
+                    {
+                        sum=sum+i;
+                    }
+                }
+             }
+             if(tem==sum){
+                System.out.println("this number is perfect number :"+num);
+             }
+             else {
+                System.out.println("This number is not perfect number :");
+             }
+    }
+}
 
 
 neon number : 
