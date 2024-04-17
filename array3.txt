@@ -1,0 +1,244 @@
+1)
+12,67,89,34,125 sort 
+
+public class All{
+
+    void swap(int a[],int i,int j)
+    {
+        int temp=a[i];
+        a[i]=a[j];
+        a[j]=temp;
+
+    }
+
+    void show(int a[])
+    {
+        for(int i=0;i<a.length;i++)
+        {
+            for(int j=i+1;j<a.length;j++)
+            {
+                if(a[i]>a[j])
+                {
+                  swap(a, i, j);
+                }
+            }
+        }
+
+        for(int i=0;i<a.length;i++)
+        {
+            System.out.print(a[i]+" ");
+        }
+    }
+
+
+    public static void main(String [] args)
+    {
+        int a[]={12,67,89,34,125};
+        All sc=new All();
+        sc.show(a);
+
+    }
+}
+
+
+2)
+-8,9,5,-3,2,-1 
+
+square 
+sort 
+
+public class All
+{
+    static void swap(int a[],int i,int j)
+    {
+        int temp=a[i];
+        a[i]=a[j];
+        a[j]=temp;
+    }
+    static void show(int a[])
+    {
+        int squar[]=new int[a.length];
+        for(int i=0;i<a.length;i++)
+        {
+            squar[i]=a[i]*a[i];
+            
+        }
+        for(int k=0;k<squar.length;k++)
+            {
+                for(int s=k+1;s<squar.length;s++)
+                {
+                    if(squar[k]>squar[s]){
+                        swap(squar, k, s);
+                    }
+                }
+                System.out.print(squar[k]+" ");
+            }
+
+    }
+    
+    public static void main(String [] args)
+    {
+        int a[]={1,2,3,4,4,1};
+        show(a);
+    }
+}
+
+
+3)
+12,67,89,34,125 sort 
+first even and last even swap 
+
+
+public class Main {
+    static void printArray(int a[]) {
+        for (int i = 0; i < a.length; i++) {
+            System.out.print(a[i] + " ");
+        }
+        System.out.println();
+    }
+
+    static void swap(int a[], int i, int j) {
+        int temp = a[i];
+        a[i] = a[j];
+        a[j] = temp;
+    }
+
+    public static void main(String[] args) {
+        int a[] = { 23,1,2,3,4,12,32 };
+        int first = -1;
+        int last = -1;
+        for (int i = 0; i < a.length; i++) {
+            if (a[i] % 2 == 0) {
+                if (first == -1) {
+                    first = i;
+                }
+                last = i;
+            }
+        }
+        if (first != -1 && last != -1) {
+            swap(a, first, last);
+        }
+        printArray(a);
+    }
+}
+
+4)
+-8,9,5,-3,2,-1 
+square 
+sort 
+
+first odd last odd se swap 
+
+public class Main {
+    static void printArray(int a[]) {
+        for (int i = 0; i < a.length; i++) {
+            System.out.print(a[i] + " ");
+        }
+        System.out.println();
+    }
+
+    static void swap(int a[], int i, int j) {
+        int temp = a[i];
+        a[i] = a[j];
+        a[j] = temp;
+    }
+
+    public static void main(String[] args) {
+        int a[] = { 23,1,2,3,4,12,32 };
+        int first = -1;
+        int last = -1;
+        for (int i = 0; i < a.length; i++) {
+            if (a[i] % 2 != 0) {
+                if (first == -1) {
+                    first = i;
+                }
+                last = i;
+            }
+        }
+        if (first != -1 && last != -1) {
+            swap(a, first, last);
+        }
+        printArray(a);
+    }
+}
+
+
+5)
+1,2,3,4,5,6,7,8,9,10
+prefix sum problem 
+
+
+public class Main{
+    public static void Main(String [] args)
+    {
+                int a[]={13},5,323,23,3453,21,
+                
+                for(int i=0;i<a.a.length;i++)
+                {
+                    sum=sum+i;
+                    System.out.printf(sum);
+                }
+                
+                
+                
+                }
+                
+    }
+
+5)
+1,2,3,4,5,6,7,8,9,10
+prefix sum problem 
+
+public class Main{
+    public static void main(String [] args)
+    {
+                int a[]={13,5,323,23,3453,21};
+                int sum=0;
+                for(int i=0;i<a.length;i++)
+                {
+                    sum=sum+a[i];
+                }
+                
+                    System.out.print(sum+" ");
+               
+                
+                
+                }
+                
+    }
+
+6)
+1,2,3,4,5,6,7,8,9,10
+
+2--->8 prefix sum 
+user input 
+start :2
+ending :8
+
+
+public class Main{
+    public static void main(String [] args)
+    {
+                int a[]={1,2,3,4,5,6,7,8,9,10};
+                int sum=0;
+                for(int i=1;i<a.length-2;i++)
+                {
+                    sum=sum+a[i];
+                    System.out.printf(a[i]+" ");
+                }
+                
+                    System.out.print("="+sum+" ");
+               
+                
+                
+                }
+                
+    }
+
+7)
+10,7,5,3,2,8,9,4,1 
+prefix sum 
+first even last even 
+first odd last odd swap 
+prefix sum :sort
+

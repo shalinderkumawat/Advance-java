@@ -1,0 +1,663 @@
+1)addition all elements 
+
+public class All{
+    public static void main(String [] args)
+    {
+        int a[][]={{1,2,4,3},{4,5,1,6},{7,8,1,9}};
+        int sum=0;
+
+        for(int i=0;i<a.length;i++)
+        {
+            for(int j=0;j<a.length;j++)
+            {
+                sum=sum+a[i][j];
+            }
+        }
+        System.out.println(sum);
+    }
+}
+
+public class All{
+    public static void main(String [] args)
+    {
+        int a[][]={{1,2,3},{4,5,6},{7,8,9}};
+        int b[][]={{1,2,3},{4,5,6},{7,8,9}};
+
+        // int c[][]=new int[3][3];
+
+        for(int i=0;i<a.length;i++)
+        {
+           for(int j=0;j<a[i].length;j++)
+           {
+             System.out.print((a[i][j]+b[i][j])+" ");
+           }
+           
+           System.out.println();
+           
+        }
+    }
+}
+
+first way;
+
+public class All{
+    public static void main(String [] args)
+    {
+        int a[][]={{1,2,3},{4,5,6},{7,8,9}};
+        int b[][]={{1,2,3},{4,5,6},{7,8,9}};
+
+        int c[][]=new int[3][3];
+
+        System.out.println("a array :");
+
+        for(int i=0;i<a.length;i++)
+        {
+           for(int j=0;j<a[i].length;j++)
+           {
+              System.out.print(a[i][j]+" ");
+           }
+           
+           System.out.println();
+           
+        }
+        System.out.println("b array");
+
+        for(int i=0;i<b.length;i++)
+        {
+           for(int j=0;j<b[i].length;j++)
+           {
+              System.out.print(b[i][j]+" ");
+           }
+           
+           System.out.println();
+           
+        }
+
+        System.out.println("sum is =");
+        for(int i=0;i<a.length;i++)
+        {
+           for(int j=0;j<a[i].length;j++)
+           {
+             c[i][j]= a[i][j]+b[i][j];
+             System.out.print(c[i][j]+" ");
+           }
+           
+           System.out.println();
+           
+        }
+    }
+}
+
+2)3,3 
+row1 :addition 
+row2 :addition
+row3 :addition
+
+import java.util.Scanner;
+
+public class All{
+    static void user(int a[][])
+    {
+        Scanner input=new Scanner (System.in);
+        for(int i=0;i<a.length;i++)
+        {
+            for(int j=0;j<a.length;j++)
+            {
+                System.out.println("Enter the value of array :");
+                a[i][j]=input.nextInt();
+            }
+            System.out.println();
+        }
+    }
+    static void print(int a[][])
+    {
+        int sum=0;
+        for(int i=0;i<a.length;i++)
+        {
+            for(int j=0;j<a[i].length;j++)
+            {
+               System.out.print(a[i][j]+" ");
+            }
+           
+            System.out.println();
+        }
+        System.out.println();
+        for(int i=0;i<a.length;i++)
+        {
+            for(int j=i;j<a[i].length;j++)
+            {
+                sum=sum+a[i][j];
+            }
+            System.out.println(sum+"<: sum row number :>"+i);
+            System.out.println();
+        }
+    }
+    public static void main(String [] args)
+    {
+        Scanner input=new Scanner (System.in);
+        System.out.println("Enter array  row size :");
+        int row=input.nextInt();
+        System.out.println("Enter he colum size :");
+        int colum=input.nextInt();
+        int a[][]=new int[row][colum];
+        user(a);
+        print(a);
+    }
+}3)3,3
+col1 :addition 
+col2 :addition
+col3 :addition
+
+import java.util.Scanner;
+
+public class All{
+    static void user(int a[][])
+    {
+        Scanner input=new Scanner (System.in);
+        for(int i=0;i<a.length;i++)
+        {
+            for(int j=0;j<a.length;j++)
+            {
+                System.out.println("Enter the value of array :");
+                a[i][j]=input.nextInt();
+            }
+            System.out.println();
+        }
+    }
+    static void print(int a[][])
+    {
+        int sum=0;
+        for(int i=0;i<a.length;i++)
+        {
+            for(int j=0;j<a[i].length;j++)
+            {
+               System.out.print(a[i][j]+" ");
+            }
+           
+            System.out.println();
+        }
+        System.out.println();
+        for(int i=0;i<a.length;i++)
+        {
+            for(int j=0;j<a.length;j++)
+            {
+                sum=sum+a[j][i];
+                System.out.println(sum+"<: sum colum number :>"+j);
+            }
+          
+            System.out.println();  
+            break;
+        }
+    }
+    public static void main(String [] args)
+    {
+        Scanner input=new Scanner (System.in);
+        System.out.println("Enter array  row size :");
+        int row=input.nextInt();
+        System.out.println("Enter he colum size :");
+        int colum=input.nextInt();
+        int a[][]=new int[row][colum];
+        user(a);
+        print(a);
+    }
+}
+
+
+	
+4)
+row1 :maximum
+row2 :maximum
+row3 :maximum 
+
+import java.util.*;
+public class All{
+    static void user(int a[][])
+    {
+        Scanner input=new Scanner (System.in);
+
+        for(int i=0;i<a.length;i++)
+        {
+            for(int j=0;j<a.length;j++)
+            {
+                System.out.println("Enter the value of array :");
+                a[i][j]=input.nextInt();
+            }
+            System.out.println();
+
+        }
+    }
+    static void print(int a[][]){
+        int temp=0;
+        for(int i=0;i<a.length;i++)
+        {
+            for(int j=0;j<a[i].length;j++)
+            {
+                if(temp<a[i][j])
+                {
+               
+                temp=a[i][j];
+                }
+                
+            }
+            System.out.println();
+            System.out.print(temp+" max");
+        }
+        
+    }
+            public static void main(String [] args)
+    {
+        int a[][]=new int[2][2];
+        user(a);
+        print(a);
+       
+        
+    }
+}
+
+
+5)
+row1 :minimum
+row2 :minimum
+row3 :minimum
+
+
+
+public class All{
+    public static void main(String [] args)
+    {
+        int a[][]={{1,2,4,3},{4,5,1,6},{7,8,1,9}};
+        int temp=0;
+        for(int i=0;i<a.length;i++)
+        {
+            for(int j=0;j<a[i].length;j++)
+            {
+                if(temp>a[i][j])
+                {
+               
+                temp=a[i][j];
+                }
+                
+            }
+            System.out.println();
+            System.out.print(temp);
+        }
+        
+    }
+}6) 
+row1 :minimum
+row2 :minimum
+row3 :minimum
+
+minimum element 
+
+public class All{
+    public static void main(String [] args)
+    {
+        int a[][]={{1,	2,4,3},{4,5,1,6},{7,8,1,9}};
+        int temp=0;
+        for(int i=0;i<a.length;i++)
+        {
+            for(int j=0;j<a[i].length;j++)
+            {
+                if(temp<a[i][j])
+                {
+               
+                temp=a[i][j];
+                }
+                
+            }
+            System.out.println();
+            System.out.print(temp);
+        }
+        
+    }
+}
+7)
+row1 :maximum
+row2 :maximum
+row3 :maximum 
+
+which element is maximum ? 
+
+
+public class All{
+    public static void main(String [] args)
+    {
+        int a[][]={{1,2,4,3},{4,5,1,6},{7,8,1,9}};
+        int b[][]={{1,2,4,3},{4,5,1,6},{7,8,1,9}};
+
+        int c[][]=new int[a.length][a.length];
+
+        int temp=0;
+
+        for(int i=0;i<a.length;i++)
+        {
+            for(int j=0;j<a.length;j++)
+            {
+                c[i][j]=a[i][j]+b[i][j];
+                temp=c[i][j];
+                System.out.print(c[i][j]+"  ");
+         
+            }
+            System.out.println();
+
+        }
+        
+        for(int i=0;i<a.length;i++)
+        {
+            for(int j=0;j<c.length;j++)
+            {
+                if(temp<c[i][j]){
+                temp=c[i][j];
+            }
+        }	
+            System.out.println();
+        }
+        System.out.println(temp);
+
+    }
+}
+
+
+7)
+row1 :maximum
+row2 :maximum
+row3 :maximum 
+
+which element is maximum ? 
+
+public class All{
+    public static void main(String [] args)
+    {
+        int a[][]={{1,2,4,3},{4,5,1,6},{7,8,1,9}};
+        int temp=0;
+        for(int i=0;i<a.length;i++)
+        {
+            for(int j=0;j<a[i].length;j++)
+            {
+                if(temp<a[i][j])
+                {
+                    temp=a[i][j];
+                }
+            }
+            System.out.println();
+            System.out.print(temp+" ");
+        }
+        for(int i=0;i<a.length;i++)
+        {
+            for(int j=0;j<a.length;j++)
+            {
+                if(temp<a[i][j])
+                {
+                    temp=a[i][j];
+                }
+            }
+            System.out.println();
+
+        }  
+                  System.out.print(temp+"All element  ");
+
+    }
+}
+
+
+9)
+row1 :addition 
+row2 :addition
+row3 :addition
+
+maximum 
+
+
+public class All{
+    public static void main(String [] args)
+    {
+        int a[][]={{1,2,4,3},{4,5,1,6},{7,8,1,9}};
+        int temp=0;
+       
+        for(int i=0;i<a.length;i++)
+        {
+            for(int j=0;j<a[i].length;j++)
+            {
+                
+                    temp=temp+a[i][j];
+                
+            }
+            System.out.println();
+            System.out.println(temp+" "+"row : "+i);
+
+        }  
+                  System.out.print(temp+"All element  ");
+
+    }
+}
+
+
+
+10)
+col1 :addition 
+col2 :addition
+col3 :addition
+
+
+
+import java.util.Scanner;
+
+public class All{
+    static void input(int a[][])
+    {
+        Scanner input=new Scanner (System.in);
+        for(int i=0;i<a.length;i++)
+        {
+            for(int j=0;j<a.length;j++)
+            {
+                System.out.println("Enter the value of array ");
+                a[i][j]=input.nextInt();
+            }
+            System.out.println();
+        }
+    }
+    static void print(int a[][])
+    {
+        
+        for(int i=0;i<a.length;i++)
+        {
+            for(int j=0;j<a.length;j++)
+            {
+System.out.print(a[i][j]+" ");            }
+            System.out.println(); 
+
+        }
+        int sum=0;
+        System.out.println();
+        for(int i=0;i<a.length;i++)
+        {
+            for(int j=0;j<a.length;j++)
+            {
+                sum=sum+a[j][i];
+                
+            }
+            System.out.println(); 
+            System.out.println(i+" : colum sum ");
+                           System.out.print(sum+" ");
+
+        }
+    }
+    public static void main(String [] args)
+    {
+        Scanner input=new Scanner (System.in);
+        System.out.println("Enter the value of array row number ");
+        int row=input.nextInt();
+        System.out.println("Enter the value of array colum :");
+        int colum=input.nextInt();
+
+        int a[][]=new int[row][colum];
+        input(a);
+        print(a);
+
+    }
+}
+
+
+12)
+row1 :odd number  
+row2 :odd number 
+row3 :odd number 
+
+
+count :total kitne hey 
+	kon konse index pr rkhey huye hey 
+maximum 
+add 
+minimum
+
+
+
+import java.util.Scanner;
+
+public class All{
+    void user(int a[][])
+    {
+        Scanner input=new Scanner (System.in);
+        
+        for(int i=0;i<a.length;i++)
+        {
+            for(int j=0;j<a.length;j++)
+            {
+            System.out.print("Enter the value of array row  number is : "+i+" and colum number is : "+j+":");
+            a[i][j]=input.nextInt();
+            }
+            System.out.println();
+        }
+
+    }
+    static void print(int a[][])
+    {
+        // int max=a[0][0];
+        
+        int temp[][]=new int[a.length][a.length];
+        for(int i=0;i<a.length;i++)
+        {
+            for(int j=0;j<a.length;j++)
+            {
+                
+                if(a[i][j]%2==0)
+                {
+                  temp[i][j]= a[i][j];
+                }
+            }
+         System.out.println();
+        }
+
+        System.out.println();
+
+        int max=temp[0][0];
+        int count=0;
+        int last=temp[0][0];
+
+        for(int i=0;i<temp.length;i++)
+        {
+            
+            for(int j=0;j<temp[i].length;j++)
+            {
+                if(max<temp[i][j])
+                {
+                    max=temp[i][j];
+                    count++;
+                }
+                if(last>a[i][i])
+                {
+                    last=temp[i][j];
+                }
+            }
+            System.out.println("The row number is :"+i +":maximum : "+max);
+            System.out.println("The row number is :"+i+": minimum : "+last);
+        }
+        System.out.println(max+" ");
+        System.out.println(" The totle number even number is :"+count);
+    }
+    public static void main(String [] args)
+    {
+        Scanner input=new Scanner (System.in);
+        System.out.println("Enter the array size : ");
+        int size=input.nextInt();
+
+        System.out.println("Enter the value of colum :");
+        int colum=input.nextInt();
+
+        int a[][]=new int[size][colum];
+        All sc=new All();
+        sc.user(a);
+
+        print(a);
+    }
+}13)
+multiplication of 2 D array 
+
+ import java.util.Scanner;
+
+public class All{
+
+    public static void user(int a[][])
+    {
+        Scanner input=new Scanner (System.in);
+        for(int i=0;i<a.length;i++)
+        {
+            for(int j=0;j<a.length;j++)
+            {
+
+                System.out.print("Enter the value of array row number is :"+i+" colum number is :"+ j +":" );
+                a[i][j]=input.nextInt();
+            }
+            System.out.println();
+        }
+    }
+    static void print(int a[][])
+    {
+       
+        for(int i=0;i<a.length;i++)
+        {
+            for(int j=0;j<a.length;j++)
+            {
+                
+                System.out.print(a[i][j]+" ");
+            }
+            System.out.println( );
+        }
+       
+    }
+    
+
+    static void mul(int b[][],int a[][])
+    {
+         System.out.println ("b value :");
+       int c[][]=new int[b.length][b.length];
+
+        for(int i=0;i<b.length;i++)
+        {
+            for(int j=0;j<b.length;j++)
+            {
+                c[i][j]=a[i][j]*b[i][j];
+                System.out.print(c[i][j]+" ");
+            }
+            System.out.println();
+        }
+       
+    }
+    public static void main(String [] args)
+    {
+        Scanner input=new Scanner (System.in);
+        System.out.println("Enter the array row size :");
+        int row=input.nextInt();
+        System.out.println("Enter the array colum size :");
+        int colum=input.nextInt();
+        int a[][]=new int[row][colum];
+        int b[][]=a;
+        user(a);
+        print(a);
+        mul(b, a);
+    }
+}
+
+		
+

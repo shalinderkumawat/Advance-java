@@ -1,0 +1,104 @@
+1)
+exception all
+
+arith
+null
+number 
+arrayindex
+---------------------------------------------------------------
+a)arrayindex excepion:
+
+public class All{
+    public static void main(String [] args)
+    {
+        try{
+            int a[]={1,2,3,4};
+            System.out.println(a[5]+" ");
+        }
+        catch(ArrayIndexOutOfBoundsException ex){
+            System.out.println("please enter the valid number :");
+
+        }
+    }
+}
+
+b)number 
+
+// NumberFormatExcpetion 
+
+public class All {
+    public static void main(String[] args) {
+        try{
+
+            String a="wef";
+
+            Integer number = Integer.parseInt(a);
+        }
+        catch(NumberFormatException sc)
+        {
+            System.out.println("enter the valid number :");
+        }
+        
+    }
+}
+
+
+
+c)NullpointerExcetioon
+
+// NumberFormatExcpetion 
+
+public class All {
+    public static void main(String[] args) {
+        try{
+
+            String a=null;
+
+            Integer number = Integer.parseInt(a);
+        }
+        catch(NullPointerException sc)
+        {
+            System.out.println("enter the valid input :");
+        }
+        
+    }
+}
+
+
+
+4)
+    NullpointerException
+
+// NumberFormatExcpetion 
+
+public class All {
+    public static void main(String[] args) {
+        try{
+
+            String a=null;
+
+            Integer number = Integer.parseInt(a);
+        }
+        catch(NullPointerException sc)
+        {
+            System.out.println("enter the valid input :");
+        }
+        
+    }
+}
+
+
+
+public class All{
+    public static void main(String [] args)
+    {
+        try{
+            int a=8/0;
+            System.out.println(a);
+        }
+        catch(Exception sc)
+        {System.out.println(sc+"   Enter the valid input :");
+
+        }
+    }
+}

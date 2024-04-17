@@ -1,0 +1,112 @@
+1:
+Create a Java class named Person with private attributes name and age. Provide a constructor to initialize these attributes and methods to get and set them.
+
+------------
+
+import java.util.Scanner;
+
+public  class All{
+    private int age;
+    private String name;
+
+    void set(int age,String name)
+    {
+        this.age=age;
+        this.name=name;
+    }
+    int age()
+    {
+        return age;
+    }
+    String name()
+    {
+        return name;
+    }
+
+    All(int age,String name)
+    {
+       this.age=age;
+       this.name=name;
+    }
+    public static void main(String [] args)
+    {
+        Scanner input=new Scanner (System.in);
+        System.out.println("Enter the value of age");
+        System.out.println("Enter your name :");
+        String s=input.nextLine();
+        System.out.println("Enter your age :");
+        int a=input.nextInt();
+        All sc=new All(a,s);
+    }
+}
+
+----------------------------------------------------------
+
+2:
+Create a subclass Student that extends the Person class. Add a private attribute studentId and provide methods to get and set it.
+
+import java.util.*;
+class Student{
+    private int stidentid;
+    void set(int stidentid)
+    {
+        this.stidentid=stidentid;
+    }
+    int get()
+    {
+        return stidentid;
+    }
+    
+}
+public class All extends Student{
+    public static void main(String [] args)
+    {
+        Scanner input=new Scanner (System.in);
+        int s=input.nextint();
+        Student sc=new Student();
+        sc.set(s);
+
+    }
+}
+
+
+3:
+Create an interface Shape with a method calculateArea(). Implement this interface with classes  and Rectangle.
+--
+
+import java.util.Scanner;
+
+interface Shap{
+    void calclute();
+}
+class Cicrle implements Shap{
+    public void calclute()
+    {
+        System.out.println("This is cicrle area");
+    }
+}
+class Rectangle implements Shap{
+    public void calclute()
+    {
+        System.out.println("This is Rectangle area");
+    }
+}
+
+
+public class All extends Cicrle{
+    public static void main(String [] args)
+    {d
+        Cicrle sc=new Cicrle();
+        sc.calclute();
+        Rectangle s=new Rectangle();
+        s.calclute();
+    }
+}
+
+
+4:
+Create a class BankAccount with attributes accountNumber, balance, and owner. Add methods to deposit and withdraw funds.
+----
+
+
+

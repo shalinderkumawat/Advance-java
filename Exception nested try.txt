@@ -1,0 +1,86 @@
+1)
+try 
+multiple catch 
+
+
+
+public class All{
+    public static void main(String[] args) {
+        try
+        {
+             int a=23/0;
+             System.out.println(a);
+        }
+        catch(ArrayIndexOutOfBoundsException e)
+        {
+            try{
+                String s=null;
+                System.out.println(s.length());
+            }
+            catch(Exception x)
+            {
+                try{
+                    int a[]={1,23,4,32,};
+                    a[6]=6/0;
+                }
+                catch(ArithmeticException a)
+                {
+                    System.out.println("try>catch>try>catch");
+                }
+            }
+        }
+        catch(Exception e)
+        {
+            System.out.println(e);
+        }
+    }
+}
+
+
+other
+
+
+public class All {
+    public static void main(String[] args) {
+       try{
+           try{
+               try{
+                   int a=1/0;
+                   System.out.println(a);
+               }
+               catch(Exception sc)
+               {
+                System.out.println("Enter the value of a");
+               }
+               String name="Shailendra kumawat";
+               Integer p=Integer.parseInt(name);
+           }
+           try {
+            int a[]={1,23,4,5,6,7};
+            a[9]=23342;
+            System.out.println(a[9]+" ");
+           } catch (NumberFormatException r) {
+                System.out.println(r+"This is number  format exception handling ");
+           }
+           catch(NullPointerException s)
+           {
+            System.out.println("inner 2");
+           }
+       }
+      catch(Exception e)
+       {
+        System.out.println(e+"This is a Exception handling ");
+       } 
+        try{
+             String num="sdkjs";
+             System.out.println(num.length());
+       } catch (NumberFormatException e) {
+               System.out.println("this is not valide ");
+       }
+       
+       
+    }
+}
+
+
+

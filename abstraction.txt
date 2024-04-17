@@ -1,0 +1,289 @@
+1)class A
+
+
+class B ex A 
+
+Main :
+make object of class A and access from B class
+
+abstract class A{
+     abstract void print();
+}
+class B extends A{
+    void print()
+    {
+        System.out.println(" A class ");
+    }
+}
+public class Main extends B{
+    public static void main(String [] args)
+    {
+        B sh=new B();
+        sh.print();
+
+    }
+}
+
+2)
+class A :ab
+show1 :no return and no argument 
+show2 :ab: return and no argument 
+show3: return and no argument 
+show4 :ab: return and  argument 
+
+class B ex A
+show5:no return and no argument 
+show6:no return and  argument 
+show7: return and no argument 
+
+class Main 
+two ways access 
+
+
+abstract class A{
+    void show()
+    {
+        System.out.print(" A Class ");
+    }
+    abstract int show1();
+    
+    int show2(int a)
+    {
+        System.out.println("return and argument :");
+        return a;
+    }
+    
+    abstract void show3(int b);
+}
+class B extends A{
+    
+    int show1(){
+        System.out.print("This is A class show1 ");
+        return 0;
+    }
+    void show3(int b)
+    {
+        System.out.println(b+"  "+" A class show4");
+    }
+    
+    
+    
+    
+    void show4()
+    {
+        System.out.print("B class ");
+        
+    }
+    int show5(){
+        System.out.print(" B class 1");
+        return 0;
+    }
+    void show6(int c)
+    {
+        System.out.println("B class 2");
+    }
+    
+}
+
+public class Main extends B{
+    public static void main(String [] args)
+    {
+        A sc=new B();
+       sc.show1();
+       sc.show3(32);
+       sc.show();
+       sc.show2(34);
+       B s=new B();
+       s.show();
+       s.show1();
+       s.show2(43);
+       s.show3(34);
+       s.show4();
+       s.show5();
+       s.show6(33);
+    }
+}
+
+
+
+3)
+class A :ab
+show1 :no return and no argument 
+show2 :ab: return and no argument 
+show3: return and no argument 
+show4 :ab: return and  argument 
+
+class B ex A
+show5:no return and no argument 
+show6:no return and  argument 
+show7: return and no argument 
+
+class Main 
+anonymous inner class 
+
+
+abstract class A {
+    abstract void show1();
+
+    abstract int show2();
+
+    void show3() {
+        // Implementation
+    }
+
+    abstract int show4(int arg);
+}
+
+class B extends A {
+    
+    void show1() {
+       System.out.println("This is a Class show1 B class :");
+    }
+
+    
+    int show2() {
+        System.out.println("This is a class show2  b class ");
+        
+        
+        return 0; 
+    }
+
+    @Override
+    int show4(int arg) {
+        System.out.println("This is B class show4");
+        return arg; 
+    }
+
+    void show5() {
+        System.out.println("This is show6 at a B class :");
+    }
+
+    void show6(int arg) {
+        System.out.println("This is show6 at a B class :");
+        
+    }
+
+    int show7() {
+        System.out.println("This is show7 at a B class");
+        return 0;
+    }
+}
+
+public class Main extends B{
+    public static void main(String[] args) {
+       
+        A a = new A() {
+          
+            void show1() {
+                System.out.print("This is A class ");
+            }
+            int show2() {
+                    System.out.print("This is A class show2");
+                    return 0;
+            }
+
+            int show4(int arg) {
+                System.out.println("This is A Class show4;");
+                return 0;
+            }
+        };
+         a.show4(43);
+         a.show1();
+         
+         B sc=new B();
+           sc.show1();
+           sc.show4(9);
+           sc.show2();
+           sc.show5();
+           sc.show6(43);
+           sc.show7();
+         
+         
+    }
+}
+
+
+
+
+4)
+class A :ab 
+A()
+show1 :ab
+show2 
+
+class B ex A
+B()
+show3
+show4
+
+class C:ab
+C()
+show5:ab
+show6
+
+
+class D ex C
+D()
+show7
+show8
+
+
+class Main 
+a)child k through abstraction ka object bnana hey 
+
+b)anonymous inner class 
+
+
+
+// abstract class A {
+//     A(){
+//         abstract void show1();
+
+//     int show2();
+//     void show()
+//     {
+//         System.out.println("This is a class and concuter ");
+//     }
+
+  
+//     }
+    
+//     public class Main
+//     {
+//         public static void main(String [] args)
+//         {
+//             A sc=new  A();
+//             {
+//                 int show2()
+//                 {
+//                     System.out.println("This is A class ");
+//                     return 0;
+//                 }
+//             };
+//             sc.show2
+            
+//         }
+//     }
+
+abstract class A{
+    A(){
+    
+    abstract void show1();
+}
+}
+public class Main
+{
+    public static void main(String [] args)
+    {
+        A sc=new A(){
+            void show1()
+            {
+                
+                System.out.println("This is a class :");
+            }
+        };
+        sc.show1();
+    }
+}
+
+

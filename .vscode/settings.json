@@ -1,0 +1,4 @@
+{
+    "debug.javascript.breakOnConditionalError": true,
+    "java.help.collectErrorLog": true
+}
