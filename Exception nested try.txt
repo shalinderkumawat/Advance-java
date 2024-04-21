@@ -83,4 +83,37 @@ public class All {
 }
 
 
+2)
+try 
+	try 
+		try 
+			try :array index out of bound 
+
+----------------------------------------------------------
+public class All{
+    public static void main(String [] args)
+    {
+        try{
+            try{
+                try{
+                    int a[]={1,2,3,4,5};
+                    System.out.println(a[8]);
+                   }
+                   catch(NullPointerException sc){
+                    System.out.println("inner 1");
+                   }
+            }
+             catch(ArithmeticException ds){
+             System.out.println("inner 2");
+            }
+        }
+        catch(Exception sd){
+            System.out.println("inner3");
+        }
+    }
+}
+
+
+
+
 

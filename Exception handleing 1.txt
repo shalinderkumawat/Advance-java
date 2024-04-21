@@ -1,0 +1,249 @@
+1)
+NullPointerException Handling:
+
+Write a Java program that intentionally causes a NullPointerException. Implement exception handling to prevent the program from crashing and provide a meaningful error message.
+
+public class Main{
+    public static void main(String [] args)
+    {
+        try{
+            String name=null;
+            System.out.println(name.length());
+        }
+        catch(NullPointerException sc)
+        {
+            System.out.println("Exception  "+sc);
+        }
+    }
+}
+
+
+2)
+ArrayIndexOutOfBoundsException Handling:
+
+
+public class Main{
+    public static void main(String [] args)
+    {
+        try{
+            int a[]={21,12,2,1};
+            a[8]=324;
+            System.out.println(a[8]+" ");
+        }
+        catch(ArrayIndexOutOfBoundsException sc)
+        {
+            System.out.println("Exception  "+sc);
+        }
+    }
+}
+
+3)
+User Input Validation:
+
+Write a program that takes user input for dividing two numbers. Implement exception handling to deal with the possibility of the user entering non-numeric values or attempting to divide by zero.
+
+
+import java.util.*;
+public class Main{
+    public static void main(String [] args)
+    {
+        try{
+          
+            Scanner input=new Scanner (System.in);
+          
+            System.out.print("Enter the first number :");
+          
+            int a=input.nextInt();
+           
+            System.out.print("Enter the last number os divide :");
+          
+            int last=input.nextInt();
+            
+            System.out.print((a/last));
+            
+            // System.out.print(a);
+            
+        }
+        catch(ArithmeticException sc)
+        {
+            System.out.print(sc+" this ");
+        }
+    }
+}
+
+
+4)
+File Handling with IOException:
+
+Develop a program that reads data from a file. Implement exception handling for IOException to handle scenarios where the file is not found or cannot be read.
+
+
+
+
+5)
+
+Custom Exception:
+
+Create a custom exception class called CustomValidationException. Write a program where this exception is thrown when certain validation criteria are not met. Handle this custom exception in your program.
+
+
+
+6)
+Multiple Exception Types:
+
+Design a program that performs multiple operations (e.g., reading from a file and dividing numbers). Handle multiple types of exceptions that may arise during these operations using appropriate catch blocks.
+
+public class Main{
+    public static void main(String [] args)
+    {
+        try{
+            try{
+                int a=2/0;
+                System.out.print(a+" ");
+            }
+           
+            catch(ArithmeticException sc){
+            
+            System.out.println("this exception is handle");
+                
+                
+            }
+            String s=null;
+            System.out.print(s.length());
+            String j="ksdjfk;a";
+            try{
+                 Integer jo=Integer.parseInt(j);
+                 System.out.println(jo+" ");
+            }
+            catch(Exception dsjlk)
+            {
+                System.out.println("This is inner 4 exception is will handle ");
+            }
+        }
+        catch(Exception sd)
+        {
+            System.out.println("This is exception is not valide ");
+            System.out.println(sd);
+        }
+    }
+}
+
+
+9)
+Handling RuntimeExceptions:
+
+Create a program that intentionally causes a RuntimeException (e.g., ArithmeticException or IllegalArgumentException). Handle this exception to gracefully manage the error.
+
+
+public class Main{
+    public static void main(String [] ages)
+    {
+        try{
+                int a=344/0;
+                System.out.print(a);
+        }
+        catch(Exception s)
+        {
+            System.out.print(s);
+        }
+    }
+}
+
+
+
+10)
+Exception Propagation:
+
+Write a program with nested method calls where an exception is thrown in a deeply nested method. Demonstrate how exception propagation works and how it can be handled at various levels.
+
+
+//this is worng ans;
+
+class A{
+    void sh()
+    {
+        int a=32/0;
+        System.out.print(a);
+    }
+}
+
+public class Main{
+    void show()
+    {
+        
+        A sd=new A();
+        sd.sh();
+    }
+    void a()
+    {
+        show();
+    }
+    void sho()
+    {
+        try{
+        a();
+        }
+        catch(Exception s){
+           System.out.print("Handle"); 
+        }
+    }
+    public static void main(String [] args)
+    {
+        Main sc=new Main();
+        sc.sho();
+    }
+}
+
+
+import java.util.*;
+public class Main {
+    static void age(int age) {
+        if (age < 18) {
+            throw new ArithmeticException("input age greater than 18");
+        } else {
+            System.out.println("valid");
+        }
+    }
+
+    public static void main(String[] args) {
+        age(6);
+    }
+}
+
+// class A{
+//     void sh()
+//     {
+//         int a=32/0;
+//         System.out.print(a);
+//     }
+// }
+
+// public class Main{
+//     void show()
+//     {
+        
+//         A sd=new A();
+//         sd.sh();
+//     }
+//     void a()
+//     {
+//         show();
+//     }
+//     void sho()
+//     {
+//         try{
+//         a();
+//         }
+//         catch(Exception s){
+//           System.out.print("Handle"); 
+//         }
+//     }
+//     public static void main(String [] args)
+//     {
+//         Main sc=new Main();
+//         sc.sho();
+//     }
+// }
+	
+
+

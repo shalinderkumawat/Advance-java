@@ -108,5 +108,62 @@ public class All extends Cicrle{
 Create a class BankAccount with attributes accountNumber, balance, and owner. Add methods to deposit and withdraw funds.
 ----
 
+import java.util.*;
+class BankAccount{
+
+   static int accountnumber;
+   static int balence;
+   static String owner;
+
+    void deposit(int balence,int accountnumber,String owner){
+        this.accountnumber=accountnumber;
+        this.owner=owner;
+        this.balence=balence;
+    }
+    
+    void withdraw(){
+        
+        Scanner input=new Scanner (System.in);
+        
+        System.out.println("");
+        
+        System.out.println("OWNRE NAME : "+owner);
+        
+        System.out.println("Enter the withdraw amount :");
+       
+        int withdraw=input.nextInt();
+
+        System.out.println("Totel amount : "+(withdraw-balence));        
+    }
+
+}
+public class Main extends BankAccount{
+    public static void main(String [] args)
+    { 
+       
+        Scanner input=new Scanner (System.in);
+        
+        System.out.println("Enter the Acccount number : ");
+       
+        int Acccount=input.nextInt();
+        
+        System.out.print("Enter the balence");
+        
+        int balence=input.nextInt();
+        
+        System.out.println("Enter the owner numbre ");
+        
+        String owner=input.next();
+        
+                    String sd= input.nextLine();
+        
+        BankAccount sc=new BankAccount();
+        sc.deposit(balence,Acccount,owner);
+        
+        sc.withdraw();
+
+    }
+}
+
 
 
