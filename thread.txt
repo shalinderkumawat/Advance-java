@@ -1,0 +1,405 @@
+1)
+1--->5 number print 
+
+total 5 threads (simultaneously)
+----------------------------------
+
+
+import java.util.*;
+class A extends Thread {
+    public void run()
+    {
+        // Scanner input=new Scanner (System.in);
+        //       final  int a=input.nextInt();
+                
+        for(int i=1;i<=5;i++)
+        {
+            System.out.print(i+" ");
+            try{
+               
+                Thread.sleep(700);
+            }
+            catch(Exception sc)
+            {
+                // System.out.print("This is Exception ");
+            }
+        }
+    }
+}
+public class Main{
+    public static void main(String [] args)
+    {
+        A s=new A();
+        s.start();
+        
+        A sf=new A();
+        sf.start();
+        
+        A d=new A();
+        d.start();
+        
+        A r=new A();
+        r.start();
+        
+        A t=new A();
+        t.start();
+    }
+}
+
+2)
+start run twice 
+-----------------------
+public class All extends Thread {
+
+    public void run()
+    {
+        for(int i=1;i<=5;i++)
+        {
+            System.out.print(i+" ");
+            try{
+
+                Thread.sleep(900);
+            }
+            catch(Exception sc){
+                System.out.print(sc+"THsi is xception");
+            }
+        }
+    }
+    public static void main(String [] args)
+    {
+        All sc=new All();
+        sc.start();
+        All scc=new All();
+        scc.start();
+    }
+}
+
+
+3)
+run twice 
+
+---------------------
+
+import java.util.*;
+public class All{
+    public void run()
+    {
+       
+       for(int i=1;i<=5;i++)
+       {
+        System.out.print(i+" ");
+        try{
+            Thread.sleep(i);
+        }
+        catch(Exception s)
+        {
+            System.out.print("sl;d");
+        }
+       }
+
+    }
+    public static void main(String [] args)
+    {
+        All c=new All();
+        c.run();
+        All cs=new All();
+        cs.run();
+
+    }
+}
+
+
+abstract class A extends Thread{
+    abstract void run();
+}
+class B extends A{
+    void show()
+    {
+        run();
+    }
+}
+class C extends B{
+    void dl()
+    {
+        show();
+    }
+}
+public class All{
+    public static void dl{
+        for(int i=1;i<=5;i++)
+        {
+            System.out.print(i+" "){
+            try{
+                Thread.sleep(34);
+            }
+            catch(Exception scc)
+            {
+                System.out.print("This is new ");
+            }
+
+            
+        }
+    }
+}
+
+5)
+class A
+run 
+
+class B
+run
+
+class C
+run 
+
+Main :
+1--->5 number print 
+
+total 5 threads (diffrent simultaneously)
+-------------------------------------------------------
+
+class A extends Thread{
+    public void run()
+    {
+        for(int i=1;i<=5;i++)
+        {
+            System.out.print(i+"  ");
+            try{
+                Thread.sleep(90);
+            }
+            catch(Exception sc)
+            {
+                // System.out.print();
+            }
+        }
+    }
+}
+class B extends A {
+    public void run()
+    {
+        
+        for(int i=1;i<=5;i++)
+        {
+         
+            System.out.print(i+" ");
+            try{
+                Thread.sleep(90);
+            }
+            catch(Exception scc)
+            {
+                
+            }
+        }
+        
+    }
+}
+class C extends Thread {
+    public void run()
+    {
+        for(int i=1;i<=5;i++)
+        {
+            System.out.print(i+" ");
+            try{
+                Thread.sleep(90);
+            }
+            catch(Exception  d)
+            {
+                
+            }
+        }
+    }
+}
+public class Main{
+    public static void main(String [] args)
+    {
+        A c=new A();
+        c.start();
+        B s=new B();
+       C g=new C();
+       g.start();
+        s.start();
+    }
+}
+
+
+5)
+class A
+run 
+
+class B
+run
+
+class C
+run 
+
+Main :
+1--->5 number print 
+
+total 5 threads (diffrent simultaneously)
+-------------------------------------------------------
+
+// class A extends Thread{
+//     public void run()
+//     {
+//         int a[]={1,2,4,5};
+//         for(int i=0;i<=a.length;i++)
+//         {
+//             System.out.print(a[i]+"  ");
+//             try{
+//                 Thread.sleep(700);
+//             }
+//             catch(Exception sc)
+//             {
+
+//             }
+//         }
+//     }
+// }
+// class B extends Thread {
+//     public void run()
+//     {
+//         int a[]={1,2,4,5};
+//         for(int i=0;i<=a.length;i++)
+//         {
+//             System.out.print(a[i]+" ");
+//             try{
+//                 Thread.sleep(700);
+//             }
+//             catch(Exception s)
+//             {
+
+//             }
+//         }
+//     }
+// }
+// public class Main{
+//     public static void main(String [] args)
+//     {
+//         B c=new B();
+//         c.start();
+//         A b=new A();
+//         b.start();
+//     }
+// }
+import java.util.*;
+class A extends Thread {
+    // public void run()
+    // {
+    //     double a[]={1.2,3,12.2,34.123,12,1.12,2};
+    //     for(int i=0;i<a.length;i++)
+    //     {
+    //         System.out.print(a[i]+" ");
+    //         try{
+    //             Thread.sleep(900);
+    //         }
+    //         catch(Exception s)
+    //         {
+                
+    //         }
+    //     }
+    // }
+     public void run()
+    {
+        Scanner input=new Scanner (System.in);
+        
+        int table =input.nextInt();
+        for(int i=1;i<=10;i++)
+        {
+            System.out.println(table+" * "+i+" = "+(table*i) );
+            try{
+                Thread.sleep(900);
+            }
+            catch(Exception o)
+            {}
+            
+        }
+    }
+}
+class B extends Thread{
+    public void run()
+    {
+        Scanner input=new Scanner (System.in);
+        
+        int table =input.nextInt();
+        for(int i=1;i<=10;i++)
+        {
+            System.out.println(table+" * "+i+" = "+(table*i) );
+            try{
+                Thread.sleep(900);
+                System.out.println();
+            }
+            catch(Exception o)
+            {}
+            
+        }
+    }
+}class C extends Thread{
+    public void run()
+    {
+        Scanner input=new Scanner (System.in);
+        
+        int table =input.nextInt();
+        for(int i=1;i<=10;i++)
+        {
+            System.out.println(table+" * "+i+" = "+(table*i) );
+            try{
+                Thread.sleep(900);
+                System.out.println();
+            }
+            catch(Exception p)
+            {}
+            
+        }
+    }
+}
+public class Main{
+    public static void main(String [] args)
+    {
+        A sc=new A();
+        sc.start();
+        System.out.println();
+        B j=new B();
+        j.start();
+        
+        C l=new C();
+        l.start();
+    }
+}-------------------------------------------------------
+Instance Initializer block is used to initialize the instance data member. It run each time when object of the class is created.
+
+class A {
+    int a;
+
+    A() {
+        System.out.println(a);
+    }
+
+    {
+        a = 100;
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        A p = new A();
+    }
+}
+------------------------------------
+
+class A {
+    int a;
+    {
+        a = 100;
+    }
+    A() {
+        System.out.println(a);
+    }
+
+    
+}
+
+public class Main {
+    public static void main(String[] args) {
+        A p = new A();
+    }
+}

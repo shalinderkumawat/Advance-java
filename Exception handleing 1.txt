@@ -77,7 +77,29 @@ File Handling with IOException:
 
 Develop a program that reads data from a file. Implement exception handling for IOException to handle scenarios where the file is not found or cannot be read.
 
+A) file
+       public class Main extends All{
+    public static void main(String [] args)
+    {
+        try{
+        All sc=new All();
+        show();
+        }
+        catch(Exception scs)
+        {
+            System.out.print("sk;jdlf");
+        }
+    }
+}
 
+B) file
+      import java.io.*;
+class All{
+ 
+ static void show() throws IOException {
+     System.out.print("Exception ha bhai");
+ }   
+}
 
 
 5)
@@ -128,11 +150,28 @@ public class Main{
     }
 }
 
+7)
+Resource Management:
+
+Write a program that uses the try-with-resources statement to automatically close a resource (e.g., a file or a database connection) when it is no longer needed.
+
+
+
+
 
 9)
 Handling RuntimeExceptions:
 
 Create a program that intentionally causes a RuntimeException (e.g., ArithmeticException or IllegalArgumentException). Handle this exception to gracefully manage the error.
+
+
+
+8)
+Assertion Usage:
+
+Implement a program that uses assertions to validate certain conditions. Show how assertions can be enabled or disabled during program execution.
+
+
 
 
 public class Main{
@@ -157,7 +196,6 @@ Exception Propagation:
 Write a program with nested method calls where an exception is thrown in a deeply nested method. Demonstrate how exception propagation works and how it can be handled at various levels.
 
 
-//this is worng ans;
 
 class A{
     void sh()
@@ -193,57 +231,5 @@ public class Main{
         sc.sho();
     }
 }
-
-
-import java.util.*;
-public class Main {
-    static void age(int age) {
-        if (age < 18) {
-            throw new ArithmeticException("input age greater than 18");
-        } else {
-            System.out.println("valid");
-        }
-    }
-
-    public static void main(String[] args) {
-        age(6);
-    }
-}
-
-// class A{
-//     void sh()
-//     {
-//         int a=32/0;
-//         System.out.print(a);
-//     }
-// }
-
-// public class Main{
-//     void show()
-//     {
-        
-//         A sd=new A();
-//         sd.sh();
-//     }
-//     void a()
-//     {
-//         show();
-//     }
-//     void sho()
-//     {
-//         try{
-//         a();
-//         }
-//         catch(Exception s){
-//           System.out.print("Handle"); 
-//         }
-//     }
-//     public static void main(String [] args)
-//     {
-//         Main sc=new Main();
-//         sc.sho();
-//     }
-// }
-	
 
 

@@ -1,17 +1,32 @@
-import java.io.Exception;
-public class All{
+class A extends Thread{
+    public void run(){
+        for(int i=1;i<=5;i++)
+        {
+            try{
+                Thread.sleep(900);
+            }
+            catch(Exception ex)
+            {
 
-    void show Exception ArthmeticException () 
-    {
-        System.out.print("This is  Exception ");
-        int a=3/0;
-        System.out.print(a);
+            }
+            System.out.print(i+" ");
+        }
     }
-    public static void main Exception Exception(String [] args)
+}
+public class All{
+    public static void main(String [] args)
     {
-        System.out.print("handle");
+        A sc=new A();
+        A cs=new A();
 
-        S
+        sc.start();
+        try{
+            sc.join();
+        }
+        catch(Exception k)
+        {
 
+        }
+        cs.start();
     }
 }

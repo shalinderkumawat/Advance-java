@@ -1,0 +1,39 @@
+thread is running 
+------------------------------
+a)Thread() :
+
+
+	class A extends Thread{
+    public void run()
+    {
+        System.out.print("Thread ");
+    }
+}
+public class Main{
+    public static void main(String [] args)
+    {
+        A sc=new A();
+        sc.run();
+    }
+}
+
+
+
+
+2) Java Thread Example by implementing Runnable interface
+
+class A implements Runnable{
+    public void run()
+    {
+        System.out.println("Thread ");
+    }
+}
+public class Main{
+    public static void main(String [] args)
+    {
+        A sc=new A();
+        sc.run();
+        Thread scc=new Thread(sc);
+        scc.start();
+    }
+}

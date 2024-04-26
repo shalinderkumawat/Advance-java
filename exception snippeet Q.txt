@@ -1,0 +1,380 @@
+snipeet based questions in exception 
+
+1)
+// What will happen when you try to compile and run this code?
+public class ExceptionExample1 {
+    public static void main(String[] args) {
+        try {
+            int result = 10 / 0;
+            System.out.println(result);
+        } catch (ArithmeticException e) {
+            System.out.println("ArithmeticException caught!");
+        }
+    }
+}
+
+
+Ans->   ArithmeticException caught!
+
+
+2)
+// What will be the output of this code?
+public class ExceptionExample2 {
+    public static void main(String[] args) {
+        try {
+            String str = null;
+            System.out.println(str.length());
+        } catch (NullPointerException e) {
+            System.out.println("NullPointerException caught!");
+        }
+    }
+}
+
+
+
+Ans->  NullPointerException caught!
+
+
+
+
+3)
+// What will happen when you try to compile and run this code?
+public class ExceptionExample3 {
+    public static void main(String[] args) {
+        try {
+            int[] arr = new int[5];
+            System.out.println(arr[10]);
+        } catch (ArrayIndexOutOfBoundsException e) {
+            System.out.println("ArrayIndexOutOfBoundsException caught!");
+        }
+    }
+}
+
+Ans->  ArrayIndexOutOfBoundsException caught!
+
+
+
+4)
+// What is the output of this code?
+public class ExceptionExample4 {
+    public static void main(String[] args) {
+        try {
+            int num = Integer.parseInt("ABC");
+            System.out.println(num);
+        } catch (NumberFormatException e) {
+            System.out.println("NumberFormatException caught!");
+        }
+    }
+}
+
+Ans->  NumberFormatException caught!
+
+
+5)
+// Will this code compile? If not, what is the issue?
+public class ExceptionExample5 {
+    public static void main(String[] args) {
+        try {
+            // Some code that may throw an exception
+        } catch (Exception e) {
+            // Handling the exception
+        }
+    }
+}
+
+Ans->   nothing print and this code is compile.
+
+6)
+// What is the output of this code?
+public class ExceptionExample6 {
+    public static void main(String[] args) {
+        try {
+            throw new RuntimeException("Custom exception");
+        } catch (RuntimeException e) {
+            System.out.println(e.getMessage());
+        }
+    }
+}
+
+
+
+Ans->  ???
+
+
+7)
+// What will happen when you try to compile and run this code?
+public class ExceptionExample7 {
+    public static void main(String[] args) {
+        try {
+            int[] arr = new int[-5];
+        } catch (NegativeArraySizeException e) {
+            System.out.println("NegativeArraySizeException caught!");
+        }
+    }
+}
+
+
+Ans->   NegativeArraySizeException caught!
+
+
+
+8)
+// Will this code compile? If not, what is the issue?
+public class ExceptionExample8 {
+    public static void main(String[] args) {
+        try {
+            // Some code that may throw an exception
+        } finally {
+            System.out.println("Finally block executed");
+        }
+    }
+}
+
+
+Ans->    Finally block executed
+
+
+9)
+// What is the output of this code?
+public class ExceptionExample9 {
+    public static void main(String[] args) {
+        try {
+            int result = divide(10, 0);
+            System.out.println(result);
+        } catch (ArithmeticException e) {
+            System.out.println("ArithmeticException caught!");
+        }
+    }
+
+    private static int divide(int a, int b) {
+        return a / b;
+    }
+}
+
+Ans->  ArithmeticException caught!
+
+
+10)
+// What is the output of this code?
+public class ExceptionExample10 {
+    public static void main(String[] args) {
+        try {
+            int[] arr = new int[3];
+            arr[3] = 10;
+        } catch (ArrayIndexOutOfBoundsException e) {
+            System.out.println("ArrayIndexOutOfBoundsException caught!");
+        } catch (Exception e) {
+            System.out.println("Exception caught!");
+        }
+    }
+}
+
+
+Ans->   ArrayIndexOutOfBoundsException caught!
+
+
+11)
+// What will happen when you try to compile and run this code?
+public class ExceptionExample11 {
+    public static void main(String[] args) {
+        try {
+            throw new Exception("Custom exception");
+        } catch (RuntimeException e) {
+            System.out.println("RuntimeException caught!");
+        } catch (Exception e) {
+            System.out.println("Exception caught!");
+        }
+    }
+}
+
+
+Ans->    Exception caught!
+
+	throw Exception == Exception 
+
+
+12)
+// Will this code compile? If not, what is the issue?
+public class ExceptionExample12 {
+    public static void main(String[] args) {
+        try {
+            // Some code that may throw an exception
+        } catch (ArithmeticException | NullPointerException e) {
+            // Handling the exception
+        }
+    }
+}
+
+
+Ans->  nothing print 
+
+
+13)
+// What is the output of this code?
+public class ExceptionExample13 {
+    public static void main(String[] args) {
+        try {
+            int result = divide(10, 2);
+            System.out.println(result);
+        } catch (ArithmeticException e) {
+            System.out.println("ArithmeticException caught!");
+        } finally {
+            System.out.println("Finally block executed");
+        }
+    }
+
+    private static int divide(int a, int b) {
+        return a / b;
+    }
+}
+
+
+Ans->   ArithmeticException caught!
+        Finally block executed
+
+
+14)
+// What will happen when you try to compile and run this code?
+public class ExceptionExample14 {
+    public static void main(String[] args) {
+        try {
+            throw new RuntimeException("Custom exception");
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
+        } finally {
+            System.out.println("Finally block executed");
+        }
+    }
+}
+
+
+Ans->    ?????
+	 Finally block executed
+
+
+15)
+// Will this code compile? If not, what is the issue?
+public class ExceptionExample15 {
+    public static void main(String[] args) {
+        try {
+            // Some code that may throw an exception
+        } catch (Exception e) {
+            System.out.println("Exception caught!");
+        } finally {
+            System.out.println("Finally block executed");
+        }
+    }
+}
+
+
+
+Ans->    Exception caught!
+         Finally block executed 
+
+
+16)
+// What is the output of this code?
+public class ExceptionExample16 {
+    public static void main(String[] args) {
+        try {
+            int result = divide(10, 0);
+            System.out.println(result);
+        } catch (ArithmeticException e) {
+            System.out.println("ArithmeticException caught!");
+        } finally {
+            System.out.println("Finally block executed");
+        }
+    }
+
+    private static int divide(int a, int b) {
+        return a / b;
+    }
+}
+
+
+Ans->    ArithmeticException caught!
+	 Finally block executed
+
+
+17)
+// What is the output of this code?
+public class ExceptionExample17 {
+    public static void main(String[] args) {
+        try {
+            throw new RuntimeException("Custom exception");
+        } catch (ArithmeticException e) {
+            System.out.println("ArithmeticException caught!");
+        } finally {
+            System.out.println("Finally block executed");
+        }
+    }
+}
+
+
+Ans->    Finally block executed
+
+
+
+18)
+// Will this code compile? If not, what is the issue?
+public class ExceptionExample18 {
+    public static void main(String[] args) {
+        try {
+            // Some code that may throw an exception
+        } catch (Exception e) {
+            System.out.println("Exception caught!");
+        } catch (ArithmeticException e) {
+            System.out.println("ArithmeticException caught!");
+        }
+    }
+}
+
+
+
+Ans->   ??????
+
+
+19)
+// What is the output of this code?
+public class ExceptionExample19 {
+    public static void main(String[] args) {
+        try {
+            int result = divide(10, 2);
+            System.out.println(result);
+        } finally {
+            System.out.println("Finally block executed");
+        }
+    }
+
+    private static int divide(int a, int b) {
+        return a / b;
+    }
+}
+
+
+Ans->    Finally block executed
+
+
+20)
+// Will this code compile? If not, what is the issue?
+public class ExceptionExample20 {
+    public static void main(String[] args) {
+        try {
+            // Some code that may throw an exception
+        } catch (Exception e) {
+            System.out.println("Exception caught!");
+        } finally {
+            // Some code in the finally block
+        } catch (ArithmeticException e) {
+            System.out.println("ArithmeticException caught!");
+        }
+    }
+}
+
+
+Ans-> this code is not compile because catch is only single and you need the try ans catch..
+
+
+
+
+

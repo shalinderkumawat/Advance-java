@@ -1,0 +1,153 @@
+A 
+run
+
+t1
+t2
+t3
+t4
+t5 
+
+simulatenously 
+
+separate
+
+t1 t2 :separate
+
+t3 t4 t5 :simulatenously
+------------------------------	
+
+class A extends Thread{
+    public void run(){
+        for(int i=1;i<=5;i++)
+        {
+            try{
+                Thread.sleep(900);
+            }
+            catch(Exception ex)
+            {
+
+            }
+            System.out.print(i+" ");
+        }
+    }
+}
+public class Main{
+    public static void main(String [] args)
+    {
+        A sc=new A();
+        A cs=new A();
+        A d=new A();
+        A h=new A();
+        A p=new A();
+        
+        d.start();
+        sc.start();
+        
+        try{
+            sc.join();
+        }
+        catch(Exception k)
+        {
+
+        }
+        System.out.println();
+        cs.start();
+        h.start();
+        p.start();
+    }
+}
+-------------------------------
+A 
+run 
+
+main method (): 
+t1 :getName 
+t1.setname
+t1.getname
+-------------------
+
+class A extends Thread{
+    public void run()
+    {
+        for(int i=1;i<=5;i++)
+        {
+            System.out.print(i+" ");
+        }
+    }
+}
+public class Main{
+    public static void main(String [] args)
+    {
+        A sc=new A();
+        // A j=new A();
+       
+       System.out.println(sc.getName());
+        sc.start( );
+        sc.setName("This is ankit ");
+        System.out.println(sc.getName());
+        
+        
+    }
+}
+
+-----------------------------------------------------
+A 
+run 
+
+main method (): 
+t1 :getName 
+t2.getname
+t1.setname
+t2setname
+t1.getname
+t2.getname
+---------------------
+
+class A extends Thread{
+    public void run()
+    {
+        for(int i=1;i<=5;i++)
+        {
+            System.out.print(i+" ");
+        }
+    }
+}
+public class Main{
+    public static void main(String [] args)
+    {
+        A t1=new A();
+        A t2=new A();
+       
+       System.out.println(t1.getName());
+       System.out.println(t2.getName());
+       
+       t1.setName("T1 thread is set");
+       t2.setName("T2 thread is set");
+       
+       System.out.println(t1.getName());
+       System.out.println(t2.getName());
+    }
+}
+
+
+--------------------------------------------------------
+class A 
+constructor :A class k constructor thread string ki value change krni hey 
+
+-------------------------------------------------------
+
+class A extends Thread {
+    A(String sc){
+        
+        super(sc);
+        
+    }
+}
+public class Main{
+    public static void main(String [] args)
+    {
+        String sc="hi this thread ";
+        A ha=new A(sc);
+        System.out.println(ha.getName());
+    }
+}

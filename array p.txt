@@ -285,6 +285,10 @@ public class All{
 2)Write a Java program to segregate 0s, 1s, and 2s in an array.
 
 
+
+
+
+
 3)Write a Java program to find the majority element in an array (the element that appears more
 than n/2 times).
 
@@ -311,7 +315,52 @@ that the larger element appears after the smaller element.
 
 
 
+5)Write a Java program to find the minimum difference between two elements in an array.
 
+6)Write a Java program to find the longest increasing subarray.
+
+
+
+
+
+7)Reverse an Array in-place: java at specific place
+
+public class Main{
+   static void swap(int a[],int i,int j)
+    {
+        i=0;
+        j=a.length-1;
+        int temp=a[i];
+        a[i]=a[j];
+        a[j]=temp;
+    }
+    void show(int a[])
+    {
+        int h=0;
+        for(int i=0;i<a.length;i++)
+        {
+           swap(a,i,i); 
+        }
+        for(int i=0;i<a.length;i++)
+        {
+            System.out.print(a[i]+" ");
+        }
+    }
+    public static void main(String [] args)
+    {
+        int a[]={1,2,3,4,6,7,8};
+        Main sc=new Main();
+        sc.show(a);
+    }
+}
+
+
+
+8)Remove Duplicates from Sorted Array: remove only first duplicate element
+
+
+
+9)Remove Duplicates from unSorted Array: remove only first duplicate element
 
 
 
