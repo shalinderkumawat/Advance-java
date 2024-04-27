@@ -108,4 +108,23 @@ public class Main{
 Create a Java program that defines a custom unchecked exception. Use this exception to handle a specific situation in the program.
 
 
-???????????
+class A{
+    public void show()
+    {
+        int sdlk=9/0;
+        System.out.print("sdlk");
+        // throw Exception ("jo");
+    }
+}
+public class Main{
+    public static void main(String [] args)
+    {
+            try{
+                A sc=new A();
+                sc.show();
+            }
+            catch(Exception o){
+                System.out.print("Exception ");
+            }
+    }
+}

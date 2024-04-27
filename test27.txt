@@ -1,0 +1,308 @@
+1)
+* * * * * 
+ * * * * 
+  * * * 
+   * * 
+    * 
+    * 
+   * * 
+  * * * 
+ * * * * 
+* * * * * 
+
+
+public class Main{
+    public static void main(String [] agrs)
+ {   
+  for(int i=1;i<=5;i++)
+  {
+      for(int s=i;s>=1;s--)
+      {
+          System.out.print(" ");
+      }
+
+      for(int j=5;j>=i;j--)
+      {
+          System.out.print("* ");
+      }
+      System.out.println();
+  }
+  for(int i=1;i<=5;i++)
+  {
+    for(int s=5;s>=i;s--)
+      {
+          System.out.print(" ");
+      }
+      for(int j=1;j<=i;j++)
+      {
+          System.out.print("* ");
+      }
+      System.out.println();
+  }
+}
+}
+ 
+
+
+2)
+0
+12
+234
+3456
+45678
+
+
+public class Main{
+    public static void main(String [] agrs)
+ {   
+  
+   for(int i=0;i<=4;i++)
+   {
+    
+       for(int j=0;j<=i;j++)
+       {
+           System.out.print(i+j);
+           
+       }
+       System.out.println();
+   }
+}
+}
+
+
+3)
+Given an array of integers, rearrange the array so that the even-indexed elements are greater than the odd-indexed elements.
+
+public class Main{
+    
+    
+    
+    static void swap(int a[],int i,int j)
+    {
+        int temp=a[i];
+        a[i]=a[j];
+        a[j]=temp;
+    }
+    
+    static void print(int a[])
+    {
+      for(int i=0;i<=a.length-1;i++)
+      {
+          for(int j=1;j<=a.length-1;j++)
+          {
+              if(a[i]%2==0&&a[j]%2!=0)
+              {
+                  if(a[i]>a[j]){
+                 swap(a,i,j);
+                  }
+              }
+          }
+      }
+      for(int i=0;i<=a.length-1;i++)
+      {
+          System.out.print(a[i]+" ");
+      }
+      
+    }
+    public static void main(String [] args)
+    {
+        int a[]={1,2,3,4,5,6};
+        print(a);
+       
+       
+    }
+}
+
+
+
+4)
+Implement a Java function to transpose a given matrix in place 
+
+public class Main
+{
+  public static void main (String[]agrs)
+  {
+
+    int a[][]={{1,2,3},{4,5,6},{7,8,9}};
+    for(int i=0;i<=a.length-1;i++)
+    {
+        for(int j=0;j<=a.length-1;j++)
+        {
+            System.out.print(a[i][j]+" ");
+        }
+        System.out.println();
+    }
+    System.out.println("This is new ");
+    for(int i=0;i<=a.length-1;i++)
+    {
+        for(int j=0;j<=a.length-1;j++)
+        {
+            System.out.print(a[j][i]+" ");
+        }
+        System.out.println();
+    }
+  }
+}
+
+
+5)
+Implement a complex class hierarchy for a university system with classes for students, professors, courses, and enrollments, and demonstrate various operations like course registration and grade calculation.
+
+
+6)
+Develop a program that reads a string from the user and converts it to an integer. Handle the NumberFormatException if the input is not a valid integer.
+
+public class All
+{
+  public static void main (String[]agrs)
+  {
+  try{
+      String s="sjdl";
+      Integer sd=Integer.parseInt(s);
+  }
+  catch(Exception scc)
+  {
+    System.out.println(" the input is not a valid integer."+scc);
+  }
+  }
+
+}
+
+
+
+7)
+Basic Thread Creation: Create two threads and make them print "Hello" and "World" alternatively.
+
+class A extends Thread{
+    public void run(){
+       
+       System.out.print("Hello world ");
+    }
+   
+}
+public class Main{
+    public static void main (String [] args)
+    {
+        A scc=new A();
+        scc.start();
+        A p=new A();
+        p.start();
+    }
+}
+
+
+8)
+Write a program to demonstrate the use of multiple catch blocks for different exceptions.
+
+public  class Main{
+    public static void main (String [] args)
+    {
+       try{
+           int a=6/0;
+           System.out.print(a);
+           try{
+               String s=null;
+               System.out.print(s.length());
+           }
+           catch(Exception scc)
+           {
+               System.out.println("inner 1");
+           }
+       }
+       catch(NullPointerException sc)
+       {
+           try{
+               int a[]=new int[9];
+               a[9]=2/0;
+               System.out.println(a[9]);
+           }
+           catch(ArrayIndexOutOfBoundsException sccc)
+           {
+               System.out.println("This is catch 1");
+           }
+           System.out.print(sc);
+           
+       }
+       try{
+           String ds=null;
+           System.out.print(ds.length());
+       }
+       catch(Exception csc)
+       {
+           System.out.print(csc+" This is catch block ");
+       }
+    }
+}
+
+
+9)
+Create a Java program that throws an ArrayIndexOutOfBoundsException and handles it gracefully.
+
+class A {
+    void show() throws ArrayIndexOutOfBoundsException {
+        System.out.print("This is handle ");
+    }
+
+}
+public class Main{
+    public static void main(String [] args)
+    {
+        try{
+            A sc=new A();
+            sc.show();
+        }
+        catch(Exception j)
+        {
+            System.out.println("null");
+        }
+    }
+}
+
+
+10)
+Develop a Java program that uses the finally block to ensure a piece of code is executed regardless of whether an exception occurs or not.
+
+public  class Main{
+    public static void main (String [] args)
+    {
+       try{
+           int a=6/0;
+           System.out.print(a);
+           try{
+               String s=null;
+               System.out.print(s.length());
+           }
+           catch(Exception scc)
+           {
+               System.out.println("inner 1");
+           }
+       }
+       catch(NullPointerException sc)
+       {
+           try{
+               int a[]=new int[9];
+               a[9]=2/0;
+               System.out.println(a[9]);
+           }
+           catch(ArrayIndexOutOfBoundsException sccc)
+           {
+               System.out.println("This is catch 1");
+           }
+           System.out.print(sc);
+           
+       }
+// System.out.println("");
+       finally{
+           System.out.print("This is run");
+       }
+    }
+}
+
+
+
+
+
+
+
+
+

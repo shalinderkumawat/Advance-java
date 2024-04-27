@@ -106,9 +106,29 @@ class All{
 
 Custom Exception:
 
-Create a custom exception class called CustomValidationException. Write a program where this exception is thrown when certain validation criteria are not met. Handle this custom exception in your program.
+Create a custom exception class called CustomValidationException.
+ Write a program where this exception is thrown when certain validation criteria are not met. Handle this custom exception in your program.
 
-
+class CustomValidationException{
+    void show() throws Exception
+    {
+        int u= 6/0;
+        System.out.println(u);
+    }
+}
+public class Main{
+    public static void main(String [] args)
+    {
+        try{
+            CustomValidationException scc=new CustomValidationException();
+         scc.show();
+        }
+        catch(Exception s)
+        {
+            System.out.println("comment");
+        }
+    }
+}
 
 6)
 Multiple Exception Types:
