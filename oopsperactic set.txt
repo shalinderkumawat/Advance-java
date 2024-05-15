@@ -166,4 +166,215 @@ public class Main extends BankAccount{
 }
 
 
+---------------------------------------------------------------
+5:
+Create an abstract class Animal with a method makeSound(). Create subclasses Dog and Cat that implement this method.
+---------------
+
+abstract class Animal{
+    
+   abstract void makeSound();
+   
+}
+class Dog extends Animal{
+    void makeSound(){
+        System.out.println("this is Dog sound ");
+}
+}
+class Cat extends Animal{
+    void makeSound()
+    {
+        System.out.println("This is cat sound");
+    }
+}
+public class Main{
+    public static void main(String [] args)
+    {
+        Dog sc=new Dog();
+        
+        sc.makeSound();
+        
+        Cat j=new Cat();
+        
+        j.makeSound();
+    }
+}
+
+
+----------------------------------------------------------------
+6:
+Create a Car class with private attributes make, model, and year. Provide a parameterless constructor and a constructor that takes these attributes as parameters.
+----------------------------------------------
+
+class Car{
+     private int make;
+     private int model;
+     private int year;
+     
+     void set(int make,int model,int year)
+     {
+         this.make=make;
+         this.model=model;
+         this.year=year;
+     }
+    int get()
+    {
+        return make;
+    }
+    int getm(){
+        return model;
+    }
+    int gety()
+    {
+        return year;
+    }
+}
+public class Main{
+    public static void main(String [] agrs)
+    {
+       
+       Car sc=new Car();
+       sc.set(2,23,8293);
+      System.out.print( sc.get());
+        System.out.println(sc.gety());
+        System.out.println(sc.getm());
+    }
+}   
+
+
+7:
+Create a class Calculator with methods for addition, subtraction, multiplication, and division. Use method overloading to handle different argument types.
+-----------------------------------
+
+
+class Calculator{
+    void addtion()
+    {
+        int a=2;
+        int b=2;
+        System.out.println("The addtion  class Cal : "+(a+b));
+    }
+    void subtraction()
+    {
+        int a=23;
+        int b=32;
+        System.out.println("The subtraction class Cal : "+(a-b));
+    }
+    void multiplication()
+    {
+        int a=2;
+        int b=23;
+        System.out.println("The multiplication class Cal : "+(a*b));
+    }
+    void division()
+    {
+        int a=293;
+        int b=23;
+        System.out.println("The division class Cal : "+(a/b));
+    }
+    
+    void addtion(int n)
+    {
+        System.out.println("This is overload class Cal");
+    }
+}
+public class Main{
+    public static void main(String [] args)
+    {
+        Calculator s=new Calculator();
+        s.addtion();
+        s.subtraction();
+        s.division();
+        s.addtion(2392);
+    }
+}
+
+
+9:
+Create an interface Playable with a method play(). Implement this interface with classes Guitar and Piano.
+---------------------------------
+
+interface Playable{
+    void play();
+    
+}
+class Guitar implements Playable{
+    public void play()
+    {
+        System.out.println("This is guitar");
+    }
+}
+class Piano implements Playable{
+    public void play()
+    {
+        System.out.println("This is Piano class ");
+    }
+}
+public class Main{
+    public static void main(String [] args)
+    {
+        Guitar sc=new Guitar();
+        sc.play();
+        Piano cs=new Piano();
+        cs.play();
+    }
+}
+
+-----------------------------------------------------------------------------------
+10:
+Create an abstract class Shape with an abstract method calculateArea(). Implement this class with subclasses Circle and Rectangle.
+
+    abstract class Shape{
+        abstract void calculateArea();
+    }
+    class Circle extends Shape{
+        void calculateArea()
+        {
+            System.out.println("This is ciricle class ");
+        }
+    }
+    class Rectangle extends Shape{
+        void calculateArea()
+        {
+            System.out.println("This is Rectangle class ");
+        }
+    }
+    public class Main{
+        public static void main(String [] agrs)
+        {
+            Circle sc=new Circle();
+            sc.calculateArea();
+            Rectangle cs=new Rectangle();
+            cs.calculateArea();
+        }
+    }
+*****************************************************************************************************************
+		MODERATE LEVEL 
+
+
+1:
+Create a class Book with private attributes title and author. Implement the equals() method to compare two Book objects based on their title and author.
+-------------------------------
+
+class Book{
+        private String title;
+        private String author;
+        void equals(String title,String author)
+        {
+            this.title=title;
+            this.author=author;
+        }
+}
+public class Main{
+    public static void main(String [] args)
+    {
+        Book sc=new Book();
+        sc.equals("sdjll","sdiiiiiiio");
+    }
+}
+
+
+2:
+Create an interface Playable with a default method playMusic(). Create a class MP3Player that implements this interface and overrides the default method.
+---------------------------------
 

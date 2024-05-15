@@ -1,0 +1,46 @@
+Shailendra Kumawat
+Java Developer
+
+Contact Information:
+
+Email: shailendrakumawat699@gmail.com
+Phone: 6378978008
+Location: Jaipur
+Profile
+As a budding Java enthusiast, I bring a fresh perspective and a strong foundation in Java programming acquired through self-study and hands-on projects. Eager to leverage my skills and passion for coding to contribute to innovative Java projects.
+
+Education
+Bachelor of Computer Applications (BCA)
+pursuing
+Maharishi Arvind University
+
+Work Experience
+Java Developer Intern
+Regex Software Services
+12/2023 - Present, Jaipur, Rajasthan
+
+Collaborated with cross-functional teams to understand project requirements and prioritize tasks.
+Worked closely with team members on project tasks to enhance skills and contribute to the development of Java-based software solutions.
+
+
+Developed a web application using HTML, CSS, JavaScript, and React to retrieve user profiles based on GitHub usernames.
+Implemented a seamless interface for users to input a GitHub username, fetching and displaying user profile information including repositories, followers, and more.
+Collaborated with Aman , Kuldeep, who assisted in writing React components, enhancing the application's functionality and usability.
+Demonstrated proficiency in front-end web development technologies and effective team collaboration.
+Skills
+Programming Languages: Core Java, HTML, CSS, SQL
+Platforms & Tools: Windows, Linux, Git, GitHub
+Achievements
+HackerRank: Achieved 4 stars in Core Java knowledge and solved 90+ questions on various platforms.
+HackerRank: Achieved 3 stars on the first day of learning SQL and solved over 50 selection query questions on different platforms.
+Languages
+English: Professional Working Proficiency
+Hindi: Full Professional Proficiency
+Interests
+Coding
+Learning
+Listening to Music
+Walking
+Sports
+Instagram Influencers
+

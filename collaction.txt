@@ -1,0 +1,449 @@
+arraylist :user input 
+
+all wrapper classes 
+
+5 data insert 
+------------------------
+
+import java.util.*;
+public class All{
+    public static void main(String [] args)
+    {
+        Scanner input=new Scanner (System.in);
+        System.out.println("Enter the value of size");
+        int size=input.nextInt();
+
+
+        ArrayList<Integer> sc=new ArrayList<>();
+        for(int i=0;i<size;i++)
+        {
+            System.out.println("Enter the value of "+i+" : ");
+            int value=input.nextInt();
+            sc.add(value);
+        }
+        System.out.println(sc);
+        ArrayList<Float> scc=new ArrayList<>();
+
+
+        for(int i=0;i<size;i++)
+        {
+            System.out.println("Enter the value of "+i+" : ");
+            Float value=input.nextFloat();
+            scc.add(value);
+        }
+        System.out.println(scc);
+
+
+        ArrayList<Double> scw=new ArrayList<>();
+        for(int i=0;i<size;i++)
+        {
+            System.out.println("Enter the value of "+i+" : ");
+            Double value=input.nextDouble();
+            scw.add(value);
+        }
+        System.out.println(scw);
+
+
+        ArrayList<Long> sw=new ArrayList<>();
+        for(int i=0;i<size;i++)
+        {
+            System.out.println("Enter the value of "+i+" : ");
+            Long value=input.nextLong();
+            sw.add(value);
+        }
+        System.out.println(sw);
+
+        ArrayList<Byte> w=new ArrayList<>();
+        for(int i=0;i<size;i++)
+        {
+            System.out.println("Enter the value of "+i+" : ");
+            Byte value=input.nextByte();
+            w.add(value);
+        }
+        System.out.println(w);
+
+        ArrayList <String > u=new ArrayList<>();
+        for(int i=0;i<size;i++)
+        {
+            System.out.println("Enter the value ");
+            String value=input.nextLine();
+            u.add(value);
+        }
+        System.out.println(u);
+
+        ArrayList<Boolean> k=new ArrayList<>();
+        for(int i=0;i<size;i++)
+        {
+            System.out.println("Enter the value of ");
+            Boolean sss=input.nextBoolean();
+            k.add(sss);
+        }
+        System.out.println(k);
+    }
+}
+
+ 
+arraylist :al1
+
+al2
+
+al3
+
+al4
+
+al1 add al4
+
+al2 add al3
+
+al3 add al1 
+
+import java.lang.reflect.Array;
+import java.util.*;
+public class All{
+    public static void main(String [] args)
+    {
+        Scanner iput=new Scanner(System.in);
+        ArrayList<Integer> sc=new ArrayList<>();
+        int size=3;
+        for(int i=0;i<size;i++)
+        {
+            Scanner input=new Scanner (System.in);
+            int value=input.nextInt();
+            sc.add(value);           
+        }
+        // System.out.print("This is arraylist 1 :");
+        System.out.println(sc);
+        ArrayList<Integer> sccc=new ArrayList<>();
+       
+        for(int i=0;i<size;i++)
+        {
+            Scanner input=new Scanner (System.in);
+            int value=input.nextInt();
+            sccc.add(value);           
+        }
+        System.out.println(sccc);
+
+        System.out.println("This is add value :");
+        sc.addAll(sccc);
+
+        System.out.println(sc);
+
+        ArrayList<Integer> al3=new ArrayList<>();
+        for(int i=0;i<size;i++)
+        {
+            Scanner input=new Scanner(System.in);
+            System.out.println("Enter the value of i: "+i);
+            int add=input.nextInt();
+            al3.add(add);
+        }
+        System.out.println(al3);
+        
+
+        ArrayList<Integer> al4=new ArrayList<>();
+        for(int i=0;i<size;i++)
+        {
+            Scanner input=new Scanner(System.in);
+            System.out.println("Enter the value of i: "+i);
+            int add=input.nextInt();
+            al3.add(add);
+        }
+        System.out.println(al4);
+
+        System.out.println("Real value of this al3 and al4");
+
+        System.out.println("after");
+
+        al3.addAll(al4);
+
+        System.out.println(al3);
+
+
+        
+
+        
+    }
+}
+
+
+
+write one one example of the code : 
+ add
+addAll
+get(int index)
+ isEmpty()
+lastIndexOf(Object o)
+contains(Object o)
+ indexOf(Object o)
+remove(int index)
+removeAll(Collection<?> c)
+set(int index, E element)
+size()
+
+
+------------------------------------------------------------------
+user input wrapper class 
+
+Book :through array list : user input 
+int id;  
+
+file MAIN
+
+import java.util.*;
+
+public class Main{
+    public static void main(String [] args)
+    {
+        Scanner input=new Scanner (System.in);
+        int id=input.nextInt();
+        String name=input.nextLine();
+    input.nextLine();
+        String author=input.nextLine();
+       input.nextLine();
+        String publisher=input.nextLine();
+        
+        
+     A sc=new A(id,name,author,publisher); 
+          A j=new A( id,name,author,publisher) ;
+
+     ArrayList<A> cs=new ArrayList<>();
+        cs.add(sc);
+        cs.add(j);
+        
+        for(A p:cs)
+        {
+           System.out.print(p.id);
+           System.out.print(p.name);
+           System.out.print(p.author);
+           System.out.print(p.publisher);
+           System.out.print(p.id);
+        }
+    }
+}
+
+FIEE A
+
+class A{
+    int id;
+    String name;
+    String author;
+    String publisher;
+    
+    A(int id,String name,String author,String publisher)
+    
+    {
+        this.id=id;
+        this.name=name;
+        this.author=author;
+        this.publisher=publisher;
+    }
+}
+
+al1
+Student 
+name
+fname
+mname
+class
+year
+address
+number
+bloodgroup 
+
+
+al2
+Employe 
+empname
+id
+empfname
+empmname
+company
+salary 
+
+file A:
+
+
+class A{
+    String  Student;
+    
+String     name;
+
+String     fname;
+String     mname;
+
+String     clas;
+int     year;
+
+String     address;
+
+int     number;
+char    bloodgroup ;
+A(String Student,String name,String fname,String mname,String clas,int year,String address,int number,char bloodgroup)
+{
+    this.Student=Student;
+    this.name=name;
+    this.fname=fname;
+    this.mname=mname;
+    this.clas=clas;
+    this.year=year;
+    this.address=address;
+    this.number=number;
+    this.bloodgroup=bloodgroup;
+}
+
+file b;
+
+
+}
+class B {
+   String  Employe; 
+   String  empname;
+   int   id;
+   String  empfname;
+   String  empmname;
+   String  company;
+   int  salary ;
+B (String Employe,String empname,int id,String empfname,String empmname,String company,int salary)
+{
+    this.Employe=Employe;
+    this.empname=empname;
+    this.id=id;
+    this.empfname=empfname;
+    this.empmname=empmname;
+    this.company=company;
+    this.salary=salary;
+}
+
+
+main file;
+
+}
+public class Main{
+    public static void main(String [] args)
+    {
+        A sc=new A(ds, nsdull, nuldsfl, nudfsll, df, 0, nusdfll, 0, 0)
+        B cs=new B(sd, dsfnull, 0, nusdfll, nsdfull, ndsull, 0)
+ArrayList ss=new ArrayList();
+ss.add(sc);
+ss.add(cs);
+for(String i: ss)
+{
+System.out.print(i+" ");
+
+}
+    }
+}
+
+
+aggregation :
+Mobile :oppo realme oneplus apple 
+
+Amazon :shirt jeans shoes watch 
+
+flipcart :agarbati mombati phoolbatti chawal 
+
+JioMart :rice aata daal oil 
+
+Blinkit :choclate softdrink icecream chips 
+
+Main class :
+arraylist 
+al1
+al2
+al3
+al4
+al5
+
+
+
+// Mobile :oppo realme oneplus apple 
+
+import java.util.ArrayList;
+
+class Mobile{
+    String oppo,realme,oneplus,apple;
+    Mobile(String oppo,String realme,String oneplus,String apple)
+    {
+        this.oppo=oppo;
+        this.realme=realme;
+        this.oneplus=oneplus;
+        this.apple=apple;
+    }
+}
+// Amazon :shirt jeans shoes watch 
+class Amazon{
+    String shirt,jeans,shoes,watch;
+    Amazon(String shirt,String jeans,String shoes,String watch)
+    {
+        this.shirt=shirt;
+        this.jeans=jeans;
+        this.shoes=shoes;
+        this.watch=watch;
+    }
+}
+// flipcart :agarbati mombati phoolbatti chawal 
+class Flipcart{
+    String agarbati,mombati,phoolbatti,chawal;
+    Flipcart(String aagarbati,String mombati,String phoolbatti,String  chawal)
+    {
+        this.agarbati=aagarbati;
+        this.chawal=chawal;
+        this.mombati=mombati;
+        this.phoolbatti=phoolbatti;
+    }
+}
+// JioMart :rice aata daal oil 
+class JioMart{
+    String rice ,aata,daal,oil;
+    JioMart(String rice,String aata,String daal,String oil)
+    {
+        this.aata=aata;
+        this.daal=daal;
+        this.oil=oil;
+        this.rice=rice;
+    }
+}
+// Blinkit :choclate softdrink icecream chips 
+class Blinkit{
+    String choclate,softdrink,icecream,chips;
+    Blinkit(String choclate,String softdrink,String icecream ,String chips)
+    {
+        this.chips=chips;
+        this.choclate=choclate;
+        this.softdrink=softdrink;
+        this.icecream=icecream;
+
+    }
+}
+// Main class :
+// arraylist 
+// al1
+// al2
+// al3
+// al4
+// al5
+public class All{
+    public static void main(String [] args)
+    {
+        Mobile sc=new Mobile(nullsdsd, nsdull, nusdfll, nsdfull);
+        Amazon cs=new Amazon(null, null, null, null);
+        Flipcart scc=new Flipcart(null, null, null, null);
+        JioMart css=new JioMart(null, null, null, null);
+        Blinkit h=new Blinkit(null, null, null, null);
+
+        ArrayList s=new ArrayList<>();
+        s.add(sc);
+        s.add(cs);
+        s.add(scc);
+        s.add(css);
+        s.add(h);
+
+        for(int j: s)
+        {
+            System.out.println(j);
+        }
+    }
+}
+
+
+
+

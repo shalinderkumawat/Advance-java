@@ -1,0 +1,9 @@
+arraylist :user input 
+
+all wrapper classes 
+
+5 data insert 
+-----------------------------------------------------------
+arraylist :al1
+
+

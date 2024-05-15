@@ -1,0 +1,56 @@
+arraylist :all wrapper used 
+Integer
+Float
+Character
+Short
+Byte
+Boolean
+Long 
+Double 
+String 
+-------------
+// Integer
+// Float
+// Character
+// Short
+// Byte
+// Boolean
+// Long 
+// Double 
+// String 
+
+import java.util.ArrayList;
+
+public class All{
+    public static void main(String [] args)
+    {
+        ArrayList <Integer> cs=new ArrayList<>();
+        cs.add(9);
+        cs.add(999);
+
+        System.out.println(cs);
+        ArrayList<Float> sc=new ArrayList<>();
+        sc.add(9.3f);
+        sc.add(8.0f);
+        System.out.println(sc);
+        ArrayList <Character> s=new ArrayList<>();
+        s.add('j');
+        s.add('u');
+        System.out.println(s);
+        ArrayList <Short> c=new ArrayList<>();
+        c.add(null);
+        System.out.println(c);
+        ArrayList <Byte> u=new ArrayList<>();
+        u.add(87);
+        u.add(34);
+        System.out.println(u);
+        ArrayList <String > ss=new  ArrayList<>();
+        ss.add("name");
+        ss.add("your");
+        System.out.println(ss);
+        ArrayList <Long> cc=new ArrayList<>();
+        cc.add(5557);
+        System.out.println(cc);
+
+    }
+}

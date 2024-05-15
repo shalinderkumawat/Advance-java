@@ -1,0 +1,852 @@
+arraylist :even number
+
+-----------------------------------------------------------------
+
+import java.util.*;
+
+public class All{
+    public static void main(String[] args) {
+        ArrayList<Integer> sc=new ArrayList<>();
+        sc.add(2);
+        sc.add(3);
+        sc.add(5);
+        sc.add(10);
+        for(int i=0;i<sc.size();i++)
+        {
+            if((sc.get(i))%2==0)
+            {
+                System.out.print("This number is even number ");
+                System.out.println(sc.get(i));
+            }
+        }
+    }
+}
+
+
+-------------------------------------------------------------
+arraylist :odd number
+----------------------------
+
+import java.util.*;
+
+public class All{
+    public static void main(String[] args) {
+        ArrayList<Integer> sc=new ArrayList<>();
+        sc.add(2);
+        sc.add(3);
+        sc.add(5);
+        sc.add(10);
+        for(int i=0;i<sc.size();i++)
+        {
+            if((sc.get(i))%2!=0)
+            {
+                System.out.print("This number is odd number ");
+                System.out.println(sc.get(i));
+            }
+        }
+    }
+}
+
+arraylist :table print of every  number
+
+import java.util.*;
+
+public class All{
+    public static void main(String[] args) {
+        ArrayList<Integer> sc=new ArrayList<>();
+        sc.add(2);
+        sc.add(3);
+        sc.add(5);
+        sc.add(10);
+        for(int i=0;i<sc.size();i++)
+        {
+           
+                for(int j=1;j<=10;j++)
+                {
+                    System.out.println((sc.get(i))*j+"  ");
+                }
+           
+        }
+    }
+}
+
+
+linkedlist:
+
+import java.util.*;
+public class All{
+    public static void main(String [] args)
+    {
+        LinkedList sc=new LinkedList<>();
+        sc.add("this is linkedlist");
+        sc.add("dls");
+        sc.add(9);
+        sc.add(9.9);
+        System.out.println(sc);
+    }
+}
+
+
+
+linkedlist : 
+wrapper class :used (all add only 5 element)
+
+import java.util.*;
+public class Main{
+    public static void main(String [] args)
+    {
+        //Integer
+        
+        LinkedList<Integer> sc=new LinkedList<>();
+        sc.add(0);
+        sc.add(2);
+        sc.add(9);
+        sc.add(99);
+        System.out.print(sc);
+        
+        // float
+        
+        LinkedList <Float> cs=new LinkedList<>();
+        cs.add(9f);
+        cs.add(23f);
+        cs.add(99f);
+        cs.add(8f);
+        cs.add(090f);
+        System.out.print(cs);
+          
+        //char
+        LinkedList <Character> scc=new LinkedList<>();
+        scc.add('e');
+        scc.add('j');
+        scc.add('e');
+        System.out.print(scc);
+        
+        // String 
+        LinkedList <String > css=new LinkedList<>();
+        css.add("String ");
+        css.add("jlks");
+        css.add("shailendra ");
+        css.add("kumawat");
+        
+        System.out.print(css);
+        
+        // long 
+        
+        LinkedList <Long> s=new LinkedList<>();
+        s.add(234234);
+        s.add(923843872);
+        s.add(872387432);
+    
+        System.out.print(s);
+        
+        // Double
+        
+        LinkedList <Double> c=new LinkedList<>();
+        c.add(324f);
+        c.add(99999f);
+        c.add(888888f);
+        c.add(3949234f);
+        c.add(8999898f);
+        
+        System.out.print(c);
+        
+        // boolean
+        
+        LinkedList <Boolean> scs=new LinkedList<>();
+        // scs.add(f)
+        
+    }
+}
+
+
+one one example make : 
+
+add(int index, E element)
+
+	import java.util.*;
+public class A {
+    public static void main(String [] args)
+    {
+        LinkedList sc=new LinkedList();
+        sc.add(23);
+        sc.add(90);
+        sc.add(99);
+        System.out.print(sc);
+    }
+}
+addAll(Collection<? extends E> c)
+
+import java.util.*;
+public class A{
+    public static void main(String [] args)
+    {
+        LinkedList sc=new LinkedList();
+        sc.add(900);
+        sc.add(98);
+        
+        System.out.print(sc);
+        
+        LinkedList cs=new LinkedList();
+        cs.add(99000);
+        cs.add(8349);
+        cs.add("String");
+        
+        System.out.println(cs);
+        
+        sc.addAll(cs);
+        
+        System.out.println(sc);
+        
+        
+    }
+}
+
+addFirst(E e)
+
+import java.util.*;
+public class A{
+    public static void main(String [] args)
+    {
+        LinkedList sc=new LinkedList();
+        sc.add(900);
+        sc.add(98);
+        
+        System.out.print(sc);
+        
+        LinkedList cs=new LinkedList();
+        cs.add(99000);
+        cs.add(8349);
+        cs.add("String");
+        
+        System.out.println(cs);
+        
+        sc.addFirst(cs);
+        
+        System.out.println(sc);
+        
+        
+    }
+}
+addLast(E e)
+import java.util.*;
+public class A{
+    public static void main(String [] args)
+    {
+        LinkedList sc=new LinkedList();
+        sc.add(900);
+        sc.add(98);
+        
+        System.out.print(sc);
+        
+        LinkedList cs=new LinkedList();
+        cs.add(99000);
+        cs.add(8349);
+        cs.add("String");
+        
+        System.out.println(cs);
+        
+        sc.addLast(cs);
+        
+        System.out.println(sc);
+        
+        
+    }
+}
+
+clone()
+
+import java.util.*;
+public class A{
+    public static void main(String [] args)
+    {
+        LinkedList sc=new LinkedList();
+        sc.add(900);
+        sc.add(98);
+        
+        System.out.print(sc);
+        
+        LinkedList cs=new LinkedList();
+        cs.add(99000);
+        cs.add(8349);
+        cs.add("String");
+        
+        System.out.println(cs);
+        
+        sc.addLast(cs);
+      System.out.println(  sc.clone());
+        
+        System.out.println(sc);
+        
+        
+    }
+}
+contains(Object o)
+
+import java.util.*;
+public class A{
+    public static void main(String [] args)
+    {
+        LinkedList sc=new LinkedList();
+        sc.add(900);
+        sc.add(98);
+        
+        System.out.print(sc);
+        
+        LinkedList cs=new LinkedList();
+        cs.add(99000);
+        cs.add(8349);
+        cs.add("String");
+        
+        System.out.println(cs);
+        
+       sc.contains(cs);
+      System.out.println(  sc.contains(cs));
+        
+        System.out.println(sc);
+        
+        
+    }
+}
+
+
+get(int index)
+
+	import java.util.*;
+public class A{
+    public static void main(String [] args)
+    {
+        LinkedList sc=new LinkedList();
+        sc.add(900);
+        sc.add(98);
+        
+        System.out.print(sc);
+        
+        // LinkedList cs=new LinkedList();
+        // cs.add(99000);
+        // cs.add(8349);
+        // cs.add("String");
+        
+        // // System.out.println(cs);
+        
+    //   sc.contains(cs);
+      System.out.println(  sc.get(1));
+        
+       
+        
+        
+    }
+}
+
+getFirst()
+
+import java.util.*;
+public class A{
+    public static void main(String [] args)
+    {
+        LinkedList sc=new LinkedList();
+        sc.add(900);
+        sc.add(98);
+        
+        System.out.print(sc);
+        
+        // LinkedList cs=new LinkedList();
+        // cs.add(99000);
+        // cs.add(8349);
+        // cs.add("String");
+        
+        // // System.out.println(cs);
+        
+    //   sc.contains(cs);
+      System.out.println(  sc.getFirst());
+        
+       
+        
+        
+    }
+}
+getLast()
+
+import java.util.*;
+public class A{
+    public static void main(String [] args)
+    {
+        LinkedList sc=new LinkedList();
+        sc.add(900);
+        sc.add(98);
+        
+        System.out.print(sc);
+        
+        // LinkedList cs=new LinkedList();
+        // cs.add(99000);
+        // cs.add(8349);
+        // cs.add("String");
+        
+        // // System.out.println(cs);
+        
+    //   sc.contains(cs);
+      System.out.println(  sc.getLast());
+        
+       
+        
+        
+    }
+}
+ indexOf(Object o)
+
+import java.util.*;
+public class A{
+    public static void main(String [] args)
+    {
+        LinkedList sc=new LinkedList();
+        sc.add(900);
+        sc.add(98);
+        
+        System.out.print(sc);
+        
+        LinkedList cs=new LinkedList();
+        cs.add(99000);
+        cs.add(8349);
+        cs.add("String");
+        
+        // // System.out.println(cs);
+        
+    //   sc.contains(cs);
+      System.out.println(  sc.indexOf(cs));
+        
+       
+        
+        
+    }
+}
+
+lastIndexOf(Object o)
+
+
+
+listIterator(int index)
+
+offer(E e)
+
+offerFirst(E e)
+
+ offerLast(E e)
+
+peek()
+
+peekFirst()
+
+peekLast()
+
+poll()
+
+pollFirst()
+
+pollLast()
+
+ remove()
+import java.util.*;
+public class A{
+    public static void main(String [] args)
+    {
+        LinkedList sc=new LinkedList();
+        sc.add(90);
+        sc.add("String ");
+        sc.add(98432);
+        sc.add("This is not ");
+        sc.size();
+        System.out.print(sc);
+        System.out.print(sc.size());
+        
+       sc.remove();
+        System.out.print(sc);
+    }
+}
+
+
+remove(int index)
+
+import java.util.*;
+public class A{
+    public static void main(String [] args)
+    {
+        LinkedList sc=new LinkedList();
+        sc.add(90);
+        sc.add("String ");
+        sc.add(98432);
+        sc.add("This is not ");
+        sc.size();
+        System.out.print(sc);
+        System.out.print(sc.size());
+        
+       sc.remove(2);
+        System.out.print(sc);
+    }
+}
+
+remove(Object o)
+
+import java.util.*;
+public class A{
+    public static void main(String [] args)
+    {
+        LinkedList sc=new LinkedList();
+        sc.add(90);
+        sc.add("String ");
+        sc.add(98432);
+        sc.add("This is not ");
+        sc.size();
+        System.out.print(sc);
+        System.out.print(sc.size());
+        
+        LinkedList cs=new LinkedList();
+        cs.add(23);
+        cs.add(90);
+        
+        System.out.println(cs);
+       sc.remove(sc);
+        System.out.println(cs);
+    }
+}
+
+removeFirst()
+
+removeFirstOccurrence(Object o)
+
+removeLast()
+
+removeLastOccurrence(Object o)
+
+
+set(int index, E element)
+
+
+import java.util.*;
+public class A{
+    public static void main(String [] args)
+    {
+        LinkedList sc=new LinkedList();
+        sc.add(90);
+        sc.add("String ");
+        sc.add(98432);
+        sc.add("This is not ");
+        sc.size();
+        System.out.print(sc);
+        System.out.print(sc.size());
+        
+        sc.set(2,234);
+        System.out.print(sc);
+    }
+}
+
+
+
+size()
+import java.util.*;
+public class A{
+    public static void main(String [] args)
+    {
+        LinkedList sc=new LinkedList();
+        sc.add(90);
+        sc.add("String ");
+        sc.add(98432);
+        sc.add("This is not ");
+        sc.size();
+        System.out.print(sc.size());
+    }
+}
+
+
+------------------------------------------------------------------------
+Java LinkedList Example to reverse a list of elements
+through for loop 
+
+-----------------------------
+
+import java.util.*;
+
+public class Main{
+    public static void main(String [] args)
+    {
+        LinkedList sc=new LinkedList();
+        sc.add(9);
+        sc.add(99);
+        sc.add(98);
+        sc.add(887);
+        System.out.print(sc);
+        System.out.println();
+        for(int i=sc.size();i>=0;i++)
+        {
+            System.out.print(sc.get(i)+" ");
+        }
+    }
+}
+
+--------------------------------------------------
+user input wrapper class 
+
+Book :through LinkedList : user input 
+int id;  
+String name,author,publisher;  
+int quantity;  
+-----------------------------------------------
+
+import java.util.*;
+
+// FIEE A
+
+class A{
+    int id;
+    String name;
+    String author;
+    String publisher;
+    
+    A(int id,String name,String author,String publisher)
+    
+    {
+        this.id=id;
+        this.name=name;
+        this.author=author;
+        this.publisher=publisher;
+    }
+}
+
+
+
+public class Main{
+    public static void main(String [] args)
+    {
+        Scanner input=new Scanner (System.in);
+        int id=input.nextInt();
+        String name=input.nextLine();
+    input.nextLine();
+        String author=input.nextLine();
+       input.nextLine();
+        String publisher=input.nextLine();
+        
+        
+     A sc=new A(id,name,author,publisher); 
+          A j=new A( id,name,author,publisher) ;
+
+     LinkedList<A> cs=new LinkedList<>();
+        cs.add(sc);
+        cs.add(j);
+        
+        for(A p:cs)
+        {
+           System.out.print(p.id);
+           System.out.print(p.name);
+           System.out.print(p.author);
+           System.out.print(p.publisher);
+           System.out.print(p.id);
+        }
+    }
+}
+
+-----------------------------------------------
+LinkedList
+al1
+Student 
+name
+fname
+mname
+class
+year
+address
+number
+bloodgroup 
+
+
+al2
+Employe 
+empname
+id
+empfname
+empmname
+company
+salary 
+----------------------------------
+
+import java.util.LinkedList;
+
+interface Data {
+    void display();
+}
+
+class A implements Data {
+    String Student;
+    String name;
+    String fname;
+    String mname;
+    String clas;
+    int year;
+    String address;
+    int number;
+    char bloodgroup;
+
+    A(String Student, String name, String fname, String mname, String clas, int year, String address, int number, char bloodgroup) {
+        this.Student = Student;
+        this.name = name;
+        this.fname = fname;
+        this.mname = mname;
+        this.clas = clas;
+        this.year = year;
+        this.address = address;
+        this.number = number;
+        this.bloodgroup = bloodgroup;
+    }
+
+    public void display() {
+        System.out.println("A: " + Student + " " + name + " " + fname + " " + mname + " " + clas + " " + year + " " + address + " " + number + " " + bloodgroup);
+    }
+}
+
+class B implements Data {
+    String Employe;
+    String empname;
+    int id;
+    String fname;
+    String mname;
+    String company;
+    int salary;
+
+    B(String Employe, String empname, int id, String fname, String mname, String company, int salary) {
+        this.Employe = Employe;
+        this.empname = empname;
+        this.id = id;
+        this.fname = fname;
+        this.mname = mname;
+        this.company = company;
+        this.salary = salary;
+    }
+
+    public void display() {
+        System.out.println("B: " + Employe + " " + empname + " " + id + " " + fname + " " + mname + " " + company + " " + salary);
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        A sc = new A("ds", "nsdull", "nuldsfl", "nudfsll", "df", 0, "nusdfll", 0, 'A');
+        B cs = new B("sd", "dsfnull", 0, "nusdfll", "nsdfull", "ndsull", 0);
+        LinkedList<Data> ss = new LinkedList<>();
+        ss.add(sc);
+        ss.add(cs);
+        for (Data obj : ss) {
+            obj.display();
+        }
+    }
+}
+
+
+aggregation :
+Mobile :oppo realme oneplus apple 
+
+Amazon :shirt jeans shoes watch 
+
+flipcart :agarbati mombati phoolbatti chawal 
+
+JioMart :rice aata daal oil 
+
+Blinkit :choclate softdrink icecream chips 
+
+Main class :
+LinkedList 
+al1
+al2
+al3
+al4
+
+// Mobile :oppo realme oneplus apple 
+
+import java.util.*;
+
+class Mobile{
+    String oppo,realme,oneplus,apple;
+    Mobile(String oppo,String realme,String oneplus,String apple)
+    {
+        this.oppo=oppo;
+        this.realme=realme;
+        this.oneplus=oneplus;
+        this.apple=apple;
+    }
+}
+// Amazon :shirt jeans shoes watch 
+class Amazon{
+    String shirt,jeans,shoes,watch;
+    Amazon(String shirt,String jeans,String shoes,String watch)
+    {
+        this.shirt=shirt;
+        this.jeans=jeans;
+        this.shoes=shoes;
+        this.watch=watch;
+    }
+}
+// flipcart :agarbati mombati phoolbatti chawal 
+class Flipcart{
+    String agarbati,mombati,phoolbatti,chawal;
+    Flipcart(String aagarbati,String mombati,String phoolbatti,String  chawal)
+    {
+        this.agarbati=aagarbati;
+        this.chawal=chawal;
+        this.mombati=mombati;
+        this.phoolbatti=phoolbatti;
+    }
+}
+// JioMart :rice aata daal oil 
+class JioMart{
+    String rice ,aata,daal,oil;
+    JioMart(String rice,String aata,String daal,String oil)
+    {
+        this.aata=aata;
+        this.daal=daal;
+        this.oil=oil;
+        this.rice=rice;
+    }
+}
+// Blinkit :choclate softdrink icecream chips 
+class Blinkit{
+    String choclate,softdrink,icecream,chips;
+    Blinkit(String choclate,String softdrink,String icecream ,String chips)
+    {
+        this.chips=chips;
+        this.choclate=choclate;
+        this.softdrink=softdrink;
+        this.icecream=icecream;
+
+    }
+}
+// Main class :
+// arraylist 
+// al1
+// al2
+// al3
+// al4
+// al5
+public class All{
+    public static void main(String [] args)
+    {
+        // Mobile sc=new Mobile(nullsdsd, nsdull, nusdfll, nsdfull);
+        Amazon cs=new Amazon(null, null, null, null);
+        Flipcart scc=new Flipcart(null, null, null, null);
+        JioMart css=new JioMart(null, null, null, null);
+        Blinkit h=new Blinkit(null, null, null, null);
+
+        LinkedList s=new LinkedList<>();
+        // s.add(sc);
+        s.add(cs);
+        s.add(scc);
+        s.add(css);
+        s.add(h);
+
+        for(int j: s)
+        {
+            System.out.println(j);
+        }
+    }
+}
+
+
+
+
+
+

@@ -1,0 +1,109 @@
+A 
+1----->5
+
+B :2
+
+C :3
+
+D :4
+
+E :5
+
+F :6
+
+work simultaneously 
+-----------
+
+import java.util.*;
+class A{
+   synchronized public void run(int n)
+    {
+
+        for(int i=1;i<=10;i++)
+        {
+            System.out.print(i*n+" ");
+        }
+    }
+}
+class B extends Thread{
+    A t;
+    B(A t)
+    {
+        this.t=t;
+    }
+    public void run()
+    {
+        System.out.println("Enter the table number 1 :");
+        Scanner input=new Scanner (System.in);
+        int a=input.nextInt();
+        t.run(a);
+    }
+}
+class C extends Thread {
+    A r;
+    C (A r)
+    {
+        this.r=r;
+    }
+    public void run(){
+        Scanner input=new Scanner (System.in);
+        System.out.println("Enter the number of table 2 : ");
+        int table2=input.nextInt();
+        r.run(table2);
+    }
+}
+class y extends Thread {
+    A r;
+    y (A r)
+    {
+        this.r=r;
+    }
+    public void run(){
+        Scanner input=new Scanner (System.in);
+        System.out.println("Enter the number of table 2 : ");
+        int table2=input.nextInt();
+        r.run(table2);
+    }
+}
+class O extends Thread {
+    A r;
+    O (A r)
+    {
+        this.r=r;
+    }
+    public void run(){
+        Scanner input=new Scanner (System.in);
+        System.out.println("Enter the number of table 2 : ");
+        int table2=input.nextInt();
+        r.run(table2);
+    }
+}
+class L extends Thread {
+    A r;
+    L (A r)
+    {
+        this.r=r;
+    }
+    public void run(){
+        Scanner input=new Scanner (System.in);
+        System.out.println("Enter the number of table 2 : ");
+        int table2=input.nextInt();
+        r.run(table2);
+    }
+}
+public class All{
+    public static void main(String [] args)
+    {
+        A sd=new A();
+        B l=new B(sd);
+        C f=new C(sd);
+        Y jk=new y(sc);
+        O sdd=new O(sd);
+        L ds=new L(sd);
+        l.start();
+        f.start();
+        jk.start();
+        sdd.start();
+        ds.start();
+    }
+}

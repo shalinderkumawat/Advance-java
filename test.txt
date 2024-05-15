@@ -1,0 +1,195 @@
+20)
+* 
+* * 
+* * * 
+* * * * 
+* * * 
+* * 
+* 
+
+public class Main{
+    public static void main(String [] args)
+    {
+        for(int i=1;i<=4;i++)
+        {
+            for(int j=1;j<=i;j++)
+            {
+                System.out.print("*");
+            }
+            System.out.println();
+        } 
+        for(int i=1;i<=3;i++)
+        {
+            for(int j=3;j>=i;j--)
+            {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+    }
+}
+
+19)
+Even or Odd:
+Write a Java program to check if a given number is even or odd.
+
+import java.util.*;
+public class Main{
+    public static void main(String [] args)
+    {
+        Scanner input=new Scanner (System.in);
+        int num=input.nextInt();
+        if(num%2==0)
+        {
+            System.out.print("number is odd")
+        }
+        else 
+        {
+            System.out.print("number is even number ");
+        }
+    }
+}
+
+18)
+1 
+0 1 
+1 0 1 
+0 1 0 1 
+1 0 1 0 1 
+0 1 0 1 0 1 
+
+public class All{
+    public static void main(String [] args)
+    {
+        for(int i=1;i<=4;i++)
+        {
+            for(int j=1;j<=i;j++)
+            {
+                if((i+j)%2==0)
+                {
+                    System.out.print("1");
+                }
+                else {
+                    System.out.print("0");
+                }
+                
+            }System.out.println();
+        }
+    }
+}
+
+17)
+)Problem Statement
+You are required to implement the following function.
+Int OperationChoices(int c, int n, int a , int b )
+The function accepts 3 positive integers ‘a’ , ‘b’ and ‘c ‘ as its arguments. Implement the
+function to return.
+( a+ b ) , if c=1
+( a – b ) , if c=2
+( a * b ) , if c=3
+(a / b) , if c =4
+Assumption : All operations will result in integer output.
+Example:
+Input
+c :1
+a:12
+b:16
+Output:
+Since ‘c’=1 , (12+16) is performed which is equal to 28 , hence 28 is returned.
+Sample Input
+c : 2
+a : 16
+b : 20
+Sample Output
+-4
+
+import java.util.Scanner;
+
+public class All{
+    static int OperationChoices(int c, int n, int a , int b )
+    {
+        if(c==1)
+        {
+            int sum=a+b;
+            return sum;
+        }
+        else if(c==2)
+        {
+            int sum=a-b;
+            return sum;
+        }
+        else if(c==3)
+        {
+            int sum=a*b;
+            return sum;
+        }
+        else if(c==4)
+        {
+            int sum=a/b;
+            return sum;
+        }
+        else
+        {
+            return 0;
+        }
+    }
+    public static void main(String [] args)
+    {
+        Scanner input=new Scanner (System.in);
+        int a=input.nextInt();
+        int b=input.nextInt();
+        int c=input.nextInt();
+        int n=0;
+
+       All.OperationChoices(c, n, a, b);
+       System.out.println(All.OperationChoices(c, n, a, b));
+        
+    }
+}
+
+
+
+15)
+Addition of two numbers a Twist
+Using a method, pass two variables and find the sum of two numbers.
+Test case:
+Number 1 – 20
+Number 2 – 20.38
+Sum = 40.38
+There were a total of 4 test cases. Once you compile 3 of them will be shown to you
+and 1 will be a hidden one. You have to display error message if numbers are not
+numeric.
+
+
+
+14)
+Problem Statement – Raj wants to know the maximum marks scored by him in each
+semester. The mark should be between 0 to 100 ,if goes beyond the range display “You
+have entered invalid mark.”
+Sample Input 1:
+Enter no of semester:
+3
+Enter no of subjects in 1 semester:
+3
+Enter no of subjects in 2 semester:
+4
+Enter no of subjects in 3 semester:
+2
+Marks obtained in semester 1:
+50
+60
+70
+Marks obtained in semester 2:
+90
+98
+76
+67
+Marks obtained in semester 3:
+89
+76
+Sample Output 1:
+Maximum mark in 1 semester:70
+Maximum mark in 2 semester:98
+Maximum mark in 3 semester:89
+
+

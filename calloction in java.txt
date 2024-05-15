@@ -1,0 +1,292 @@
+arraylist :all wrapper used 
+Integer
+Float
+Character
+Short
+Byte
+Boolean
+Long 
+Double 
+String 
+-----------------
+
+import java.lang.reflect.Array;
+import java.util.ArrayList;
+
+public class All{
+    public static void main(String [] args)
+    {
+        ArrayList <Integer> ne=new ArrayList<>();
+        ne.add(12);
+        ne.add(122);
+        ne.add(999);
+        System.out.println(ne);
+       
+        ArrayList <Float> n=new ArrayList<>();
+        n.add(1.2f);
+        n.add(12.2f);
+        n.add(99.9f);
+        System.out.println(n);
+        System.out.println();
+        
+        ArrayList <Character> nu=new ArrayList<>();
+        nu.add('f');
+        nu.add('s');
+        nu.add('s');
+        System.out.println(nu);
+        System.out.println();
+
+
+        
+        ArrayList <Shortr> nuu=new ArrayList<>();
+        nuu.add('f');
+        nuu.add('s');
+        nuu.add('s');
+        System.out.println(nuu);
+        System.out.println();
+        
+        ArrayList <Byte> nuul=new ArrayList<>();
+        nuul.add('f');
+        nuul.add('s');
+        nuul.add('s');
+        System.out.println(nuul);
+        System.out.println();
+
+
+       
+        
+        ArrayList <Boolean> nul=new ArrayList<>();
+        nul.add(true);
+        nul.add(false);
+        nul.add(true);
+        System.out.println(nul);
+        System.out.println();
+
+
+        ArrayList <Long > nl=new ArrayList<>();
+        nl.add(23324324);
+        nl.add(21343231);
+        nl.add(213232);
+        System.out.println(nl);
+        System.out.println();
+
+        
+
+
+        ArrayList <Double  > nll=new ArrayList<>();
+        nll.add(23324324f);
+        nll.add(21343231f);
+        nll.add(213232f);
+        System.out.println(nll);
+        System.out.println();
+
+        
+        
+        ArrayList <String   > nlll=new ArrayList<>();
+        nlll.add("23324324f");
+        nlll.add("21343231f");
+        nlll.add("213232f");
+        System.out.println(nlll);
+        System.out.println();
+
+        
+    }
+}
+
+
+arraylist :all wrapper used 
+Integer
+Float
+Character
+Short
+Byte
+Boolean
+Long 
+Double 
+String 
+
+print through for loop 
+------------------------------
+
+
+
+
+import java.lang.reflect.Array;
+import java.util.ArrayList;
+
+public class All{
+    public static void main(String [] args)
+    {
+        ArrayList <Integer> ne=new ArrayList<>();
+        ne.add(12);
+        ne.add(122);
+        ne.add(999);
+        System.out.println(ne);
+        System.out.println();
+        for(int i=0;i<ne.size();i++)
+        {
+            System.out.print(ne.get(i)+" ");
+        }
+        ArrayList <Float> n=new ArrayList<>();
+        n.add(1.2f);
+        n.add(12.2f);
+        n.add(99.9f);
+        System.out.println(n);
+        System.out.println();
+        for(int i=0;i<n.size();i++)
+        {
+            System.out.print(n.get(i)+" ");
+        }
+        ArrayList <Character> nu=new ArrayList<>();
+        nu.add('f');
+        nu.add('s');
+        nu.add('s');
+        System.out.println(nu);
+        System.out.println();
+
+
+        
+        ArrayList <Shortr> nuu=new ArrayList<>();
+        nuu.add('f');
+        nuu.add('s');
+        nuu.add('s');
+        System.out.println(nuu);
+        System.out.println();
+        for(int i=0;i<nu.size();i++)
+
+        ArrayList <Byte> nuul=new ArrayList<>();
+        nuul.add('f');
+        nuul.add('s');
+        nuul.add('s');
+        System.out.println(nuul);
+        System.out.println();
+
+
+        
+        for(int i=0;i<nu.size();i++)
+        {
+            System.out.print(nu.get(i)+" ");
+            System.out.print(nuu.get(i)+" ");
+            System.out.print(nuul.get(i)+" ");
+            // System.out.print(nuu.get(i)+" ");
+        }
+        
+        ArrayList <Boolean> nul=new ArrayList<>();
+        nul.add(true);
+        nul.add(false);
+        nul.add(true);
+        System.out.println(nul);
+        System.out.println();
+
+
+        ArrayList <Long > nl=new ArrayList<>();
+        nl.add(23324324);
+        nl.add(21343231);
+        nl.add(213232);
+        System.out.println(nl);
+        System.out.println();
+
+        for(int i=0;i<nul.size();i++)
+        {
+            System.out.println(nul.get(i));
+            System.out.println(nl.get(i));
+        }
+
+
+        ArrayList <Double  > nll=new ArrayList<>();
+        nll.add(23324324f);
+        nll.add(21343231f);
+        nll.add(213232f);
+        System.out.println(nll);
+        System.out.println();
+
+        for(int i=0;i<nul.size();i++)
+        {
+            // System.out.println(nul.get(i));
+            System.out.println(nll.get(i));
+        }
+        
+        
+        ArrayList <String   > nlll=new ArrayList<>();
+        nlll.add("23324324f");
+        nlll.add("21343231f");
+        nlll.add("213232f");
+        System.out.println(nlll);
+        System.out.println();
+
+        for(int i=0;i<nul.size();i++)
+        {
+            // System.out.println(nul.get(i));
+            System.out.println(nlll.get(i));
+        }
+    }
+}
+
+
+----------------------------------------------------------------------
+string :
+CURD 
+-------------------
+
+import java.util.*;
+public class  All{
+    public static void main(String [] args)
+    {
+        ArrayList <String> sc=new ArrayList<>();//c
+        sc.add("name");
+        sc.add("this ");
+        //r
+        System.out.println(sc);
+        //for loop
+        for(int i=0;i<sc.size();i++)
+        {
+            System.out.println(sc.get(i));
+        }
+        //u
+        sc.set(1, "null");
+        System.out.println(sc);
+
+        //d
+
+        sc.remove(0);
+        System.out.println(sc);
+
+        //size(),get();,set(),remove()
+
+    }
+}
+
+
+INTEGER :CURD OPERATION 
+
+// INTEGER :CURD OPERATION 
+import java.util.*;
+public class All{
+    public static void main(String [] args)
+    {
+        //c
+        ArrayList<Integer> sc=new ArrayList<>();
+        sc.add(23);
+        sc.add(90);
+        sc.add(98);
+        System.out.println("real value of array list");
+        System.out.println(sc);
+
+        //u
+
+
+        System.out.print(sc.size());
+
+        sc.set(1,78);
+        System.out.println("u");
+        System.out.println(sc);
+
+        //d
+
+        sc.remove(0);
+
+        System.out.println(sc);
+
+    }
+}
+

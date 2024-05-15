@@ -1,0 +1,265 @@
+1)
+Write a Java program to create two threads. One thread should print odd numbers from 1 to 10, and the other thread should print even numbers from 2 to 10. Ensure proper synchronization to alternate between the two threads.
+
+class OddThread extends Thread {
+    public void run() {
+        for (int i = 1; i <= 10; i += 2) {
+            System.out.println("Odd: " + i);
+            synchronized (this) {
+                notify();
+                try {
+                    wait();
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+            }
+        }
+    }
+}
+
+class EvenThread extends Thread {
+    public void run() {
+        for (int i = 2; i <= 10; i += 2) {
+            System.out.println("Even: " + i);
+            synchronized (this) {
+                notify();
+                try {
+                    wait();
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+            }
+        }
+    }
+}
+
+public class All {
+    public static void main(String[] args) {
+        OddThread oddThread = new OddThread();
+        EvenThread evenThread = new EvenThread();
+        oddThread.start();
+        evenThread.start();
+    }
+}
+
+
+
+2)
+Write a Java program that demonstrates the use of the synchronized keyword to achieve thread safety. Create a class with a shared resource and two threads trying to access and modify that resource. Use synchronization to avoid conflicts.
+
+
+class SharedResource {
+    private int value = 0;
+
+    public synchronized void increment() {
+        value++;
+    }
+
+    public synchronized int getValue() {
+        return value;
+    }
+}
+
+class Thread1 extends Thread {
+    private SharedResource resource;
+
+    public Thread1(SharedResource resource) {
+        this.resource = resource;
+    }
+
+    public void run() {
+        for (int i = 0; i < 100000; i++) {
+            resource.increment();
+        }
+    }
+}
+
+class Thread2 extends Thread {
+    private SharedResource resource;
+
+    public Thread2(SharedResource resource) {
+        this.resource = resource;
+    }
+
+    public void run() {
+        for (int i = 0; i < 100000; i++) {
+            resource.increment();
+        }
+    }
+}
+
+public class All {
+    public static void main(String[] args) throws InterruptedException {
+        SharedResource resource = new SharedResource();
+        Thread1 thread1 = new Thread1(resource);
+        Thread2 thread2 = new Thread2(resource);
+        thread1.start();
+        thread2.start();
+        thread1.join();
+        thread2.join();
+        System.out.println("Final value: " + resource.getValue());
+    }
+}
+
+3)
+Write a Java program that creates a simple countdown timer using Thread.sleep(). The program should start from 10 and print the remaining time after each second until reaching 0. 	
+
+public class All {
+    public static void main(String[] args) {
+        int time = 10;
+        while (time > 0) {
+            System.out.println("Remaining time: " + time);
+            try {
+                Thread.sleep(1000); // sleep for 1 second
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+            time--;
+        }
+        System.out.println("Time's up!");
+    }
+}
+
+
+4)
+Create a Java program to simulate a traffic light. Use three threads to represent three different colors (red, yellow, and green). Each color should be displayed for a specific duration using Thread.sleep().
+
+
+public class All {
+    public static void main(String[] args) {
+        Thread redLight = new Thread(new Runnable() {
+            public void run() {
+                while (true) {
+                    System.out.println("Red light is on");
+                    try {
+                        Thread.sleep(5000); // sleep for 5 seconds
+                    } catch (InterruptedException e) {
+                        e.printStackTrace();
+                    }
+                }
+            }
+        });
+
+5)
+Design a Java program that simulates a race between three runners. Use three threads to represent the runners, and introduce delays with Thread.sleep(). Use Thread.join() to ensure that the race finishes only when all runners have completed.
+
+
+class Runner extends Thread {
+    private int id;
+
+    public Runner(int id) {
+        this.id = id;
+    }
+
+    public void run() {
+        try {
+            Thread.sleep((long) (Math.random() * 10000)); // sleep for a random duration between 0 and 10 seconds
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        System.out.println("Runner " + id + " finished the race");
+    }
+}
+
+public class Race {
+    public static void main(String[] args) throws InterruptedException {
+        Runner runner1 = new Runner(1);
+        Runner runner2 = new Runner(2);
+        Runner runner3 = new Runner(3);
+
+        runner1.start();
+        runner2.start();
+        runner3.start();
+
+        runner1.join();
+        runner2.join();
+        runner3.join();
+
+        System.out.println("The race is over");
+    }
+}
+
+
+6)
+Write a Java program that creates two threads. The first thread prints numbers from 1 to 5, and the second thread prints letters from 'A' to 'E'. Ensure proper synchronization using Thread.sleep() and Thread.join() to achieve an ordered output.
+
+
+class NumberThread extends Thread {
+    public void run() {
+        for (int i = 1; i <= 5; i++) {
+            System.out.print(i + " ");
+            try {
+                Thread.sleep(1000); // sleep for 1 second
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        }
+    }
+}
+
+class LetterThread extends Thread {
+    public void run() {
+        for (char c = 'A'; c <= 'E'; c++) {
+            System.out.print(c + " ");
+            try {
+                Thread.sleep(1000); // sleep for 1 second
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        }
+    }
+}
+
+public class OrderedOutput {
+    public static void main(String[] args) throws InterruptedException {
+        NumberThread numberThread = new NumberThread();
+        LetterThread letterThread = new LetterThread();
+
+        numberThread.start();
+        letterThread.start();
+
+        numberThread.join();
+        letterThread.join();
+
+        System.out.println("The program has finished executing");
+    }
+}
+
+
+        Thread yellowLight = new Thread(new Runnable() {
+            public void run() {
+                while (true) {
+                    System.out.println("Yellow light is on");
+                    try {
+                        Thread.sleep(2000); // sleep for 2 seconds
+                    } catch (InterruptedException e) {
+                        e.printStackTrace();
+                    }
+                }
+            }
+        });
+
+        Thread greenLight = new Thread(new Runnable() {
+            public void run() {
+                while (true) {
+                    System.out.println("Green light is on");
+                    try {
+                        Thread.sleep(3000); // sleep for 3 seconds
+                    } catch (InterruptedException e) {
+                        e.printStackTrace();
+                    }
+                }
+            }
+        });
+
+        redLight.start();
+        yellowLight.start();
+        greenLight.start();
+    }
+}
+
+
+5)
+Design a Java program that simulates a race between three runners. Use three threads to represent the runners, and introduce delays with Thread.sleep(). Use Thread.join() to ensure that the race finishes only when all runners have completed.
+
+
