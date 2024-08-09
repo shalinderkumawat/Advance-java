@@ -1593,41 +1593,157 @@
 
 // double linklist
 
+// public class Main{
+//     public static class Node {
+//         int data;
+//         Node next;
+//         Node pervious;
+//         Node (int data)
+//         {
+//             this.data=data;
+//         }
+//     }
+
+//     public static void main(String [] args)
+//     {
+//         Node a=new Node(0);
+//         Node b=new Node(1);
+//         Node c=new Node(2);
+//         Node d=new Node(3);
+//         Node e=new Node(4);
+//         a.next=b;
+//         a.pervious=null;
+//         b.next=c;
+//         b.pervious=a;
+//         c.next=d;
+//         c.pervious=b;
+//         d.next=e;
+//         d.pervious=c;
+//         e.next=null;
+
+//         Node temp=a;
+
+//         while (temp!=null) {
+//             System.out.println(temp.data);
+//             temp=temp.next;
+//         }
+//     }
+// }
+
+
+
+// public class Main{
+//     public static class Node {
+//         int data;
+//         Node next;
+//         Node previous;
+//         Node (int data)
+//         {
+//             this.data=data;
+//         }
+//     }
+//     public static class Linklist{
+//         Node head=null;
+//         Node tail=null;
+//         public void inset(int data)
+//         {
+//             Node temp=new Node(data);
+//             if(head==null)
+//             {
+//                 head=temp;
+                
+//             }
+//             else{
+//                 tail.next=temp;
+//                 temp.previous=tail;
+
+//             }
+//             tail=temp;
+//         }
+//         void dispaly(){
+//             Node temp=head;
+//             while(temp!=null){
+//                 System.out.println(temp.data);
+//                 temp=temp.next;
+                
+//             }
+//         }
+//     }
+//     public static void main(String [] args)
+//     {
+//         Linklist sc=new Linklist();
+
+//         sc.inset(1);
+//         sc.inset(2);
+//         sc.inset(3);
+
+//         sc.dispaly();
+//     }
+// }
+
+
+// insert at a indext
+
+
 public class Main{
     public static class Node {
         int data;
         Node next;
-        Node pervious;
         Node (int data)
         {
             this.data=data;
         }
     }
+    public static class Linklist
+        {
+                    Node head=null;
+                    Node tail=null;
+                    public void inset(int data)
+                    {
+                        Node temp=new Node(data);
+                        if(head==null)
+                        {
+                            head=temp;
+                            
+                        }
+                        else{
+                            tail.next=temp;
+                           
+            
+                        }
+                        tail=temp;
+                    }
 
-    public static void main(String [] args)
-    {
-        Node a=new Node(0);
-        Node b=new Node(1);
-        Node c=new Node(2);
-        Node d=new Node(3);
-        Node e=new Node(4);
-        a.next=b;
-        a.pervious=null;
-        b.next=c;
-        b.pervious=a;
-        c.next=d;
-        c.pervious=b;
-        d.next=e;
-        d.pervious=c;
-        e.next=null;
-
-        Node temp=a;
-
-        while (temp!=null) {
-            System.out.println(temp.data);
-            temp=temp.next;
+                    void inserhead(int value)
+                    {
+                        Node t=new Node(value);
+                        Node temp=head;
+                        if(temp==null)
+                        {
+                           t.next=head; 
+                        }
+                        else{
+                            t.next=temp;
+                            head=t;
+                        }
+                    }
+                    void dispaly(){
+                            Node temp=head;
+                            while(temp!=null){
+                             System.out.println(temp.data);
+                            temp=temp.next;                                                
+                     }
+                    }
+                            
         }
-    }
+        public static void main(String [] args)
+            {
+                Linklist sc=new Linklist();
+        
+                sc.inset(1);
+                sc.inset(2);
+                sc.inset(3);
+                sc.inserhead(50);
+                sc.dispaly();
+            }
 }
-
-
