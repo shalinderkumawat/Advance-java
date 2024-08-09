@@ -40,3 +40,23 @@ public class Main{
         }
     }
 }
+
+// This is odd number in Arraylist
+
+public class Main{
+    public static void main(String [] args)
+    {
+        ArrayList<Integer> sc=new ArrayList<>();
+        for(int i=1;i<=5;i++)
+        {
+            sc.add(i);
+        }
+        for(int i=0;i<sc.size();i++)
+        {
+            if(sc.get(i)%2!=0)
+            {
+                System.out.println("This is odd number : "+sc.get(i));
+            }
+        }
+    }
+}
