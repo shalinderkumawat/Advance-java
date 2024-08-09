@@ -104,3 +104,42 @@ public class Main{
     }
     }
 }
+
+// palindrom number in Arraylist 
+
+import java.util.ArrayList;
+import java.util.Scanner;
+public class Arraylist{
+    public static void main(String [] args)
+    {
+        Scanner input=new Scanner(System.in);
+        ArrayList<Integer> sc=new ArrayList<>();
+       
+        for(int i=0;i<=4;i++)
+        {
+            sc.add(input.nextInt());
+        }
+        for(int i=0;i<sc.size();i++)
+        {
+            int sum=0;
+            int rem=0;
+            int num=sc.get(i);
+            int n=num;
+            while (num!=0)
+            {
+                rem=num%10;
+                sum=sum*10+rem;
+                num=num/10;
+            }
+            if(sum==n)
+            {
+                System.out.println("This number is palindrome number : "+ sum);
+            }
+            else
+            {
+                System.out.println("This number is not palindrome number : "+ sum);
+
+            }
+        }
+    }
+}
