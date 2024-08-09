@@ -1591,3 +1591,43 @@
 // }
 
 
+// double linklist
+
+public class Main{
+    public static class Node {
+        int data;
+        Node next;
+        Node pervious;
+        Node (int data)
+        {
+            this.data=data;
+        }
+    }
+
+    public static void main(String [] args)
+    {
+        Node a=new Node(0);
+        Node b=new Node(1);
+        Node c=new Node(2);
+        Node d=new Node(3);
+        Node e=new Node(4);
+        a.next=b;
+        a.pervious=null;
+        b.next=c;
+        b.pervious=a;
+        c.next=d;
+        c.pervious=b;
+        d.next=e;
+        d.pervious=c;
+        e.next=null;
+
+        Node temp=a;
+
+        while (temp!=null) {
+            System.out.println(temp.data);
+            temp=temp.next;
+        }
+    }
+}
+
+
