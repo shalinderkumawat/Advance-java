@@ -63,14 +63,28 @@ public class Arraylist{
 
 // Inside Arraylist armstrong Number
 
-public class Arraylist{
+import java.util.ArrayList;
+import java.util.Scanner;
+public class Main{
     public static void main(String [] args)
     {
-        int num=153;
+        ArrayList<Integer> sc=new ArrayList<>();
+        
+        Scanner s=new Scanner(System.in);
+        int length=s.nextInt();
+        for(int i=0;i<length;i++)
+        {
+            System.out.println("Enter the value of : "+ i);
+            sc.add(s.nextInt());
+        }
         int sum=0;
         int rem=0;
-        int n=num;
-
+       
+        for(int i=0;i<sc.size();i++)
+        {
+            int num=sc.get(i);
+            int n=num;
+        
         while (num!=0) {
             rem=num%10;
             sum=sum+rem*rem*rem;
@@ -87,5 +101,6 @@ public class Arraylist{
             System.out.println(sum);
 
         }
+    }
     }
 }
