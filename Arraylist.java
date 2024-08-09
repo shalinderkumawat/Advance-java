@@ -23,7 +23,7 @@ public class Arraylist {
 
 //  This is even number in Arraylist
 
-public class Main{
+public class Arraylist{
     public static void main(String [] args)
     {
         ArrayList<Integer> sc=new ArrayList<>();
@@ -43,7 +43,7 @@ public class Main{
 
 // This is odd number in Arraylist
 
-public class Main{
+public class Arraylist{
     public static void main(String [] args)
     {
         ArrayList<Integer> sc=new ArrayList<>();
@@ -57,6 +57,35 @@ public class Main{
             {
                 System.out.println("This is odd number : "+sc.get(i));
             }
+        }
+    }
+}
+
+// Inside Arraylist armstrong Number
+
+public class Arraylist{
+    public static void main(String [] args)
+    {
+        int num=153;
+        int sum=0;
+        int rem=0;
+        int n=num;
+
+        while (num!=0) {
+            rem=num%10;
+            sum=sum+rem*rem*rem;
+            num=num/10;            
+        }
+        if(sum==n)
+        {
+            System.out.println("This is armstong number");
+            System.out.println(sum);
+        }
+        else 
+        {
+            System.out.println("This number is not armstong ");
+            System.out.println(sum);
+
         }
     }
 }
