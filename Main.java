@@ -1583,7 +1583,7 @@
 //         sc.display();
 
 //         System.out.println("This is delet");
-//         sc.delete(3);
+//         sc.delete(2);
 //         sc.display();
 //     }
 
@@ -1685,6 +1685,294 @@
 // insert at a indext
 
 
+// public class Main{
+//     public static class Node {
+//         int data;
+//         Node next;
+//         Node (int data)
+//         {
+//             this.data=data;
+//         }
+//     }
+//     public static class Linklist
+//         {
+//                     Node head=null;
+//                     Node tail=null;
+//                     public void inset(int data)
+//                     {
+//                         Node temp=new Node(data);
+//                         if(head==null)
+//                         {
+//                             head=temp;
+                            
+//                         }
+//                         else{
+//                             tail.next=temp;
+                           
+            
+//                         }
+//                         tail=temp;
+//                     }
+
+//                     void inserhead(int value)
+//                     {
+//                         Node t=new Node(value);
+//                         Node temp=head;
+//                         if(temp==null)
+//                         {
+//                            t.next=head; 
+//                         }
+//                         else{
+//                             t.next=temp;
+//                             head=t;
+//                         }
+//                     }
+//                     void dispaly(){
+//                             Node temp=head;
+//                             while(temp!=null){
+//                              System.out.println(temp.data);
+//                             temp=temp.next;                                                
+//                      }
+//                     }
+                            
+//         }
+//         public static void main(String [] args)
+//             {
+//                 Linklist sc=new Linklist();
+        
+//                 sc.inset(1);
+//                 sc.inset(2);
+//                 sc.inset(3);
+//                 sc.inserhead(50);
+//                 sc.dispaly();
+//             }
+// }
+
+
+// public class Main{
+//     public static class Node {
+//         int data;
+//         Node next;
+//         Node previous;
+//         Node (int data)
+//         {
+//             this.data=data;
+//         }
+//     }
+//     public static class Linklist{
+//         Node head=null;
+//         Node tail=null;
+//         public void insert(int value)
+//         {
+//             Node temp=new Node(value);
+//             if(head==null)
+//             {
+//                 head=temp;
+//                 tail=temp;
+//             }
+//             else{
+//                 tail.next=temp;
+//                 temp.previous=tail;
+//                 tail=temp;
+//             }
+//         }
+
+//         public void insertAt(int index  ,  int val)
+//         {
+//             Node t=new Node(val);
+//             Node temp=head;
+//             for(int i=0;i<index-1;i++)
+//             {
+//                 temp=temp.next;
+//             }
+           
+//             temp.previous=t.next;
+//             temp.next=t;
+//         }
+
+//         public void display(){
+//             Node temp=head;
+//             while(temp!=null)
+//                 {
+//                     System.out.println(temp.data);
+//                     temp=temp.next;
+//                 }
+//         }
+//     }
+//     public static void main(String [] args)
+//     {
+//         Linklist sc=new Linklist();
+//         sc.insert(0);
+//         sc.insert(1);
+//         sc.insert(2);
+//         sc.insert(3);
+
+//         sc.display();
+
+//         System.out.println("insert At index");
+//         sc.insertAt(1, 100);
+//         sc.display();
+//     }
+// }
+// import java.util.ArrayList;
+// public class Main{
+//     public static void main(String [] args)
+//     {
+//         ArrayList<Integer> sc=new ArrayList<>();
+       
+//         for (int i=0;i<=5;i++)
+//         {
+//             sc.add(calclute(i));
+//         }
+       
+        
+
+//         for (int i=0;i<sc.size();i++)
+//         {
+//             System.out.println(sc.get(i));
+//         }
+//     }
+//     public static int calclute(int value)
+//     {
+//         int val=0;
+//         for(int i=1;i<value;i++)
+//         {
+//             System.out.println(val+"");
+//             val=i*value;
+//         }
+//        return val;
+//     }
+// }
+
+
+// public class Main{
+//     public static void main(String [] args)
+//     {
+//         for(int i=1;i<=5;i++)
+//         {
+//             System.out.println(i+" fact "+ i+"*"+i);
+//         }
+//     }
+// }
+// import java.util.ArrayList;
+// public class Main{
+//     public static void main(String [] args)
+//     {
+        
+//         ArrayList<Integer> sc=new ArrayList<>();
+//         for(int i=1;i<=5;i++)
+//         {
+//             sc.add(i);
+//         }
+//         int size=sc.size();
+//         int fact=1;
+//         for(int i=1;i<=size-1;i++)
+//         {
+//             fact=fact*sc.get(i);
+//             System.out.println(sc.get(i)+" fact "+"i"+"="+fact);
+//         }
+        
+//     }
+// }
+// import java.lang.reflect.Array;
+// import java.util.ArrayList;
+// public class Main{
+//     public static void main(String [] args)
+//     {
+//         ArrayList<Integer> sc=new ArrayList<>();
+//         for(int i=1;i<=5;i++)
+//         {
+//             sc.add(i);
+//         }
+//         for(int i=0;i<sc.size();i++)
+//         {
+//             if(sc.get(i)%2==0)
+//             {
+//                 System.out.println("This is even number : "+sc.get(i));
+//             }
+//         }
+//     }
+// }
+
+// import java.util.ArrayList;
+// import java.util.Scanner;
+// public class Main{
+//     public static void main(String [] args)
+//     {
+//         ArrayList<Integer> sc=new ArrayList<>();
+        
+//         Scanner s=new Scanner(System.in);
+//         int length=s.nextInt();
+//         for(int i=0;i<length;i++)
+//         {
+//             System.out.println("Enter the value of : "+ i);
+//             sc.add(s.nextInt());
+//         }
+//         int sum=0;
+//         int rem=0;
+       
+//         for(int i=0;i<sc.size();i++)
+//         {
+//             int num=sc.get(i);
+//             int n=num;
+        
+//         while (num!=0) {
+//             rem=num%10;
+//             sum=sum+rem*rem*rem;
+//             num=num/10;            
+//         }
+//         if(sum==n)
+//         {
+//             System.out.println("This is armstong number");
+//             System.out.println(sum);
+//         }
+//         else 
+//         {
+//             System.out.println("This number is not armstong ");
+//             System.out.println(sum);
+
+//         }
+//     }
+//     }
+// }
+
+// import java.util.ArrayList;
+// import java.util.Scanner;
+// public class Main{
+//     public static void main(String [] args)
+//     {
+//         Scanner input=new Scanner(System.in);
+//         ArrayList<Integer> sc=new ArrayList<>();
+       
+//         for(int i=0;i<=4;i++)
+//         {
+//             sc.add(input.nextInt());
+//         }
+//         for(int i=0;i<sc.size();i++)
+//         {
+//             int sum=0;
+//             int rem=0;
+//             int num=sc.get(i);
+//             int n=num;
+//             while (num!=0)
+//             {
+//                 rem=num%10;
+//                 sum=sum*10+rem;
+//                 num=num/10;
+//             }
+//             if(sum==n)
+//             {
+//                 System.out.println("This number is palindrome number : "+ sum);
+//             }
+//             else
+//             {
+//                 System.out.println("This number is not palindrome number : "+ sum);
+
+//             }
+//         }
+//     }
+// }
+
 public class Main{
     public static class Node {
         int data;
@@ -1694,56 +1982,78 @@ public class Main{
             this.data=data;
         }
     }
-    public static class Linklist
+    public static class Linklist{
+        Node head=null;
+        Node tail=null;
+        public void insert(int value)
         {
-                    Node head=null;
-                    Node tail=null;
-                    public void inset(int data)
-                    {
-                        Node temp=new Node(data);
-                        if(head==null)
-                        {
-                            head=temp;
-                            
-                        }
-                        else{
-                            tail.next=temp;
-                           
-            
-                        }
-                        tail=temp;
-                    }
-
-                    void inserhead(int value)
-                    {
-                        Node t=new Node(value);
-                        Node temp=head;
-                        if(temp==null)
-                        {
-                           t.next=head; 
-                        }
-                        else{
-                            t.next=temp;
-                            head=t;
-                        }
-                    }
-                    void dispaly(){
-                            Node temp=head;
-                            while(temp!=null){
-                             System.out.println(temp.data);
-                            temp=temp.next;                                                
-                     }
-                    }
-                            
-        }
-        public static void main(String [] args)
+            Node temp=new Node(value);
+            if(head==null)
             {
-                Linklist sc=new Linklist();
-        
-                sc.inset(1);
-                sc.inset(2);
-                sc.inset(3);
-                sc.inserhead(50);
-                sc.dispaly();
+                head=temp;
             }
+            else{
+                tail.next=temp;
+            }
+            tail=temp;
+        }
+        public void insertAt(int index,int value)
+        {
+            Node t=new Node(value);
+            Node temp=head;
+            for(int i=0;i<index-1;i++)
+            {
+                temp=temp.next;
+            }
+            t.next=temp.next;
+            temp.next=t;
+
+        }
+        void delete(int index)
+        {
+            Node temp = head;
+            if(index==0)
+            {
+                temp=head.next;
+                head=temp;
+                
+            }
+            for(int i=0;i<index-1;i++)
+            {
+                temp = temp.next;
+            }
+            temp.next = temp.next.next;
+        }
+        
+        public void dispaly(){
+            Node temp=head;
+            while(temp!=null)
+            {
+                System.out.println(temp.data);
+                temp=temp.next;
+            }
+            
+        }
+        
+    }
+   
+    public static void main(String [] args)
+    {
+        Linklist sc=new Linklist();
+        for(int i=1;i<=5;i++)
+        {
+            sc.insert(i);
+        }
+        sc.dispaly();
+        System.out.println("After");
+        sc.insertAt(2,89);
+        sc.dispaly(
+
+        );
+        System.out.println("Delete");
+        sc.delete(3);
+        sc.dispaly();
+        System.out.println("peek value ");
+        sc.peek();
+    }
 }
