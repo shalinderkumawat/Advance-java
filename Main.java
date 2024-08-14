@@ -2423,20 +2423,67 @@
 
 //     }
 // }
-import java.util.Scanner;
+// import java.util.Scanner;
+// public class Main{
+//     public static void main(String [] args)
+//     {   
+//         Scanner input=new Scanner (System.in);
+//         System.out.println("Enter the number of a");
+//         int a=input.nextInt();
+//         System.out.println("Enter the value of b");
+//         int b=input.nextInt();
+      
+//         System.out.println("This is + "+(a+b));
+//         System.out.println("This is - "+(a-b));
+//         System.out.println("This is * "+a*b);
+//         System.out.println("This is / "+a/b);
+//         System.out.println("This is % "+a%b);
+//     }
+// }
+
+// 4. Write a C program to enter length and breadth of a rectangle and find its
+
+// import java.util.Scanner;
+// public class Main{
+//     public static void main(String [] args)
+//     {
+//         Scanner input=new Scanner(System.in);
+//         System.out.println("Enter the length of ");
+//         int length=input.nextInt();
+//         System.out.println("Enter the width of ");
+//         int width=input.nextInt();
+
+//         int perimeter=(length+width)*2;
+//         System.out.println(perimeter);
+//     }
+// }
+
+// 5. Write a C program to enter length and breadth of a rectangle and find its area.
+// import java.util.Scanner;
+// public class Main{
+//     public static void main(String [] args)
+//     {
+//         Scanner input=new Scanner(System.in);
+//         System.out.println("Enter the length of ");
+//         int length=input.nextInt();
+//         System.out.println("Enter the value of width");
+//         int width=input.nextInt();
+//         int area=length*width;
+//         System.out.println(area);
+//     }
+// }
+
+
+// 6. Write a C program to enter radius of a circle and find its diameter, circumference
+// and area.
+ import java.util.Scnaner;
 public class Main{
     public static void main(String [] args)
-    {   
+    {
+
         Scanner input=new Scanner (System.in);
-        System.out.println("Enter the number of a");
-        int a=input.nextInt();
-        System.out.println("Enter the value of b");
-        int b=input.nextInt();
-      
-        System.out.println("This is + "+(a+b));
-        System.out.println("This is - "+(a-b));
-        System.out.println("This is * "+a*b);
-        System.out.println("This is / "+a/b);
-        System.out.println("This is % "+a%b);
+        System.out.println("Enter the radius of the circle");
+        int radius=input.nextInt();
+        int float=(2*(radius/3.14f));
     }
 }
