@@ -1973,87 +1973,470 @@
 //     }
 // }
 
-public class Main{
-    public static class Node {
-        int data;
-        Node next;
-        Node (int data)
-        {
-            this.data=data;
-        }
-    }
-    public static class Linklist{
-        Node head=null;
-        Node tail=null;
-        public void insert(int value)
-        {
-            Node temp=new Node(value);
-            if(head==null)
-            {
-                head=temp;
-            }
-            else{
-                tail.next=temp;
-            }
-            tail=temp;
-        }
-        public void insertAt(int index,int value)
-        {
-            Node t=new Node(value);
-            Node temp=head;
-            for(int i=0;i<index-1;i++)
-            {
-                temp=temp.next;
-            }
-            t.next=temp.next;
-            temp.next=t;
+// public class Main{
+//     public static class Node {
+//         int data;
+//         Node next;
+//         Node (int data)
+//         {
+//             this.data=data;
+//         }
+//     }
+//     public static class Linklist{
+//         Node head=null;
+//         Node tail=null;
+//         public void insert(int value)
+//         {
+//             Node temp=new Node(value);
+//             if(head==null)
+//             {
+//                 head=temp;
+//             }
+//             else{
+//                 tail.next=temp;
+//             }
+//             tail=temp;
+//         }
+//         public void insertAt(int index,int value)
+//         {
+//             Node t=new Node(value);
+//             Node temp=head;
+//             for(int i=0;i<index-1;i++)
+//             {
+//                 temp=temp.next;
+//             }
+//             t.next=temp.next;
+//             temp.next=t;
 
-        }
-        void delete(int index)
-        {
-            Node temp = head;
-            if(index==0)
-            {
-                temp=head.next;
-                head=temp;
+//         }
+//         void delete(int index)
+//         {
+//             Node temp = head;
+//             if(index==0)
+//             {
+//                 temp=head.next;
+//                 head=temp;
                 
-            }
-            for(int i=0;i<index-1;i++)
-            {
-                temp = temp.next;
-            }
-            temp.next = temp.next.next;
-        }
+//             }
+//             for(int i=0;i<index-1;i++)
+//             {
+//                 temp = temp.next;
+//             }
+//             temp.next = temp.next.next;
+//         }
         
-        public void dispaly(){
-            Node temp=head;
-            while(temp!=null)
-            {
-                System.out.println(temp.data);
-                temp=temp.next;
-            }
+//         public void dispaly(){
+//             Node temp=head;
+//             while(temp!=null)
+//             {
+//                 System.out.println(temp.data);
+//                 temp=temp.next;
+//             }
             
-        }
+//         }
         
-    }
+//     }
    
-    public static void main(String [] args)
-    {
-        Linklist sc=new Linklist();
-        for(int i=1;i<=5;i++)
-        {
-            sc.insert(i);
-        }
-        sc.dispaly();
-        System.out.println("After");
-        sc.insertAt(2,89);
-        sc.dispaly(
+//     public static void main(String [] args)
+//     {
+//         Linklist sc=new Linklist();
+//         for(int i=1;i<=5;i++)
+//         {
+//             sc.insert(i);
+//         }
+//         sc.dispaly();
+//         System.out.println("After");
+//         sc.insertAt(2,89);
+//         sc.dispaly(
 
-        );
-        System.out.println("Delete");
-        sc.delete(3);
-        sc.dispaly();
-        System.out.println("peek value ");
-        sc.peek();
+//         );
+//         System.out.println("Delete");
+//         sc.delete(3);
+//         sc.dispaly();
+//         System.out.println("peek value ");
+//         sc.peek();
+//     }
+// }
+// public class Main{
+//     public static class Arraylist{
+//         int a[];
+//         int size;
+//         public Arraylist(){
+//             size=0;
+//             a=new int[10];
+//             }
+//             public void add(int data){
+//                 if(size==a.length){
+//                         int temp[]=new int[a.length*2];
+//                         for(int i=0;i<a.length;i++){
+//                             temp[i]=a[i];
+//                             }
+//                             a=temp;
+//                             }
+//                             a[size]=data;
+//                             size++;
+//                             }   
+//                             public void display()
+//                             {
+//                                 for (int i=0;i<a.length;i++)
+//                                 {
+//                                     System.out.print(a[i]+" ");
+//                                 }
+//                             }
+//     }
+//     public static void main(String [] args)
+//     {
+//         Arraylist sc=new Arraylist();
+//         for(int i=1;i<=5;i++)
+//         {
+//             sc.add(i);
+//         }
+//         sc.display();
+        
+//     }
+// }
+// import java.util.ArrayList;
+// public class Main{
+//     public static void main(String [] args)
+//     {
+//         ArrayList<Integer> sc=new ArrayList<>();
+//         for(int i=1;i<=50;i++)
+//         {
+//             sc.add(i);
+//         }
+//         int fact=1;
+//         for(int i=0;i<sc.size();i++)
+//         {
+//             fact=fact*sc.get(i);
+//             System.out.println("This i fact :" +fact);
+//         }
+//         int a=0;
+//         int b=1;
+//         for(int i=0;i<sc.size();i++)
+//         {
+//             a=sc.get(i)
+//            int sum=a+b;
+//         }
+
+//     }
+// }
+
+// import java.util.ArrayList;
+// import java.util.Scanner;
+// public class Main{
+//     public static void main(String [] args)
+//     {
+//         ArrayList<Integer> sc=new ArrayList<>();
+        
+//         Scanner s=new Scanner(System.in);
+//         int length=s.nextInt();
+//         for(int i=0;i<length;i++)
+//         {
+//             System.out.println("Enter the value of : "+ i);
+//             sc.add(s.nextInt());
+//         }
+//         for(int i=0;i<sc.size();i++)
+//         {
+//             System.out.println(sc.get(i));
+//         }
+//         int sum=0;
+//         int rem=0;
+       
+//         for(int i=0;i<sc.size();i++)
+//         {
+//             int num=sc.get(i);
+//             int n=num;
+        
+//         while (num!=0) {
+//             rem=num%10;
+//             sum=sum+rem*rem*rem;
+//             num=num/10;            
+//         }
+//         if(sum==n)
+//         {
+//             System.out.println("This is armstong number");
+//             System.out.println(sum);
+//         }
+//         else 
+//         {
+//             System.out.println("This number is not armstong ");
+//             System.out.println(sum);
+
+//         }
+//     }
+//     }
+// }
+// public class Main{
+//     public static void swap(int a[],int i,int j)
+//     {
+//         int temp=a[i];
+//         a[i]=a[j];
+//         a[j]=temp;
+//     }
+//     public static void display(int a[])
+//     {
+//         for(int i=0;i<a.length;i++)
+//         {
+//             System.out.print(a[i]+" ");
+//         }
+//     }
+//     public static void main(String [] args)
+//     {
+//         int a[]={1,0,1,2,1,0,1};
+//         for(int i=0;i<a.length;i++)
+//         {
+//             for(int j=i+1;j<a.length;j++)
+//             {
+//                 if(a[j]==0)
+//                 {
+//                     swap(a, i, j);
+//                 }
+//                 else if(a[i]==2)
+//                 {
+//                     swap(a, i, j);
+//                 }
+//             }
+            
+//         }
+//         Main.display(a);
+//     }
+// }
+
+
+// public class Main{
+//     public static void swap(int a[],int i,int j)
+//     {
+//         int temp=a[i];
+//         a[i]=a[j];
+//         a[j]=temp;
+//     }
+//     public static void print(int a[])
+//     {
+//         for(int i=0;i<a.length;i++)
+//         {
+//             System.out.print(a[i]+" ");
+//         }
+//     }
+//     public static void main(String [] args)
+//     {
+//         int a[]={1,3,2,4,1,2,43,63,9,90};
+//         for(int i=0;i<a.length-1;i++)
+//         {
+//             for(int j=i+1;j<a.length;j++)
+//             {
+//             if(a[i]>=a[j])
+//             {
+//               swap(a, i ,j);
+//             }
+//         }
+//         }
+//         Main.print(a);
+//     }
+// }
+
+
+// public class Main{
+//     public static void main(String [] args)
+//     {
+//         int a[][]={{1,2,3},{4,5,6},{7,8,9}};
+//          for(int i=0;i<a.length-1;i++)
+//          {
+//             for(int j=0;j<a.length-1;j++)
+//             {
+//                 if(a[i][j]<a[i+1][j+1])
+//                 {
+//                 int temp=a[i][j];
+//                 a[i][j]=a[i+1][j+1];
+//                 a[i+1][j+1]=temp;
+//                 }
+//             }
+//             System.out.println();
+//          }
+//          for(int i=0;i<a.length;i++)
+//          {
+//             for(int j=0;j<a.length;j++)
+//             {
+//                 if(a[i][j]<a[i+1][j+1])
+//                 {
+//                 System.out.print(a[i][j]+" ");
+//                 }
+//             }
+//             System.out.println();
+//          }
+         
+//     }
+// }
+
+// import java.util.regex.Matcher;
+// import java.util.regex.Pattern;
+// import java.util.*;
+// public class Main{
+//     public static void main(String [] args)
+//     {
+//         String input="633ht533";
+//         String re="[0-9]{3}[a-z]{2}[0-9]{3}";
+//         Pattern p=Pattern.compile(re);
+//         Matcher m=p.matcher(input);
+//         if(m.find()&&m.group().equals(input))
+//         {
+//             System.out.println("valide");
+//         }
+//         else 
+//         {
+//             System.out.println("not");
+//         }
+//     }
+// }
+
+// public class Main{
+//     public static int main(String [] arss)
+//     {
+//         int a[]={2,7,11,15};
+//         int target=9;
+//         int other[]=new int[a.length];
+//         for(int i=0;i<a.length-1;i++)
+//         {
+//             for(int j=i+1;j<a.length;j++)
+//             {
+//             if(target==(a[i]+a[j]))
+//             {
+//                 other[j]=j;
+                
+//             }
+            
+//             }
+            
+//         }
+//         return other;    
+//     }
+// }
+
+// public class Main{
+//     public  static boolean isPalindrome(int x) {
+//         int num=x;
+//         int rem=0;
+//         int sum=0;
+//         int n=num;
+//         while(num>0)
+//         {
+//             rem=num%10;
+//             sum=sum+10*rem;
+//             num=num/10;
+//         }
+//         if(sum==num)
+//         {
+//             return true;
+//         }
+//         else
+//         {
+//             return false;
+//         }
+//     }
+//     public static void main(String [] args)
+//     {
+//         int num=121;
+//         int rem,sum=0;
+//         int n=num;
+//         Main.isPalindrome(num);
+//         while(num>0)
+//         {
+//             rem=num%10;
+//             sum=sum*10+rem;
+//             num=num/10;
+//         }
+//         if(sum==n)
+//         {
+//             System.out.println("true");
+//         }
+//         else
+//         {
+//             System.out.println("fals");
+//         }
+//     }
+// }
+// 
+// public class Main{
+
+//     public static boolean isPalindrome(int x) {
+//         int num=x;
+//         int sum,rem=0;
+//         sum=0;
+//         while (num>0) {
+//             rem=num%10;
+//             sum=sum*10+rem;
+//             num=num/10;
+//         }
+//         if(sum==x)
+//         {
+//             return true;
+//         }
+//         else{
+//             return false;
+//         }
+//     }
+//     public static void main(String[] args) {
+       
+//       System.out.print(Main.isPalindrome(1221));
+
+//     }
+// }
+
+// import java.util.Scanner;
+// public class Main{
+//     public static void main(String [] args)
+//     {
+//         Scanner input=new Scanner(System.in);
+//         System.out.println("Enter a number");
+//         int a=input.nextInt();
+//         System.out.println(a);
+//         System.out.println("Enter the float value ");
+//         float b=input.nextFloat();
+//         System.out.println(b);
+//         System.out.println("Enter the value long ");
+//         long c=input.nextLong();
+//         System.out.println(c);
+//         System.out.println("Enter the value of double ");
+//         double d=input.nextDouble();
+//         System.out.println(d);
+//         System.out.println("Enter the char");
+//         char e=input.next().charAt(0);
+//         System.out.println(e);
+//         System.out.println("Enter the String value ");
+//         String f=input.nextLine();
+//         System.out.println("Enter the value of boolean");
+//         boolean g=input.nextBoolean();
+//         System.out.println(g);
+
+//     }
+// }
+// import java.util.Scanner;
+// public class Main{
+//     public static void main(String [] args)
+//     {
+//         Scanner input=new Scanner (System.in);
+//         System.out.println("Enter the number of a");
+//         int a=input.nextInt();
+//         System.out.println("Enter the value of b");
+//         int b=input.nextInt();
+//         int c=a+b;
+//         System.out.println(c);
+
+//     }
+// }
+import java.util.Scanner;
+public class Main{
+    public static void main(String [] args)
+    {   
+        Scanner input=new Scanner (System.in);
+        System.out.println("Enter the number of a");
+        int a=input.nextInt();
+        System.out.println("Enter the value of b");
+        int b=input.nextInt();
+      
+        System.out.println("This is + "+(a+b));
+        System.out.println("This is - "+(a-b));
+        System.out.println("This is * "+a*b);
+        System.out.println("This is / "+a/b);
+        System.out.println("This is % "+a%b);
     }
 }
