@@ -2476,14 +2476,147 @@
 
 // 6. Write a C program to enter radius of a circle and find its diameter, circumference
 // and area.
- import java.util.Scnaner;
+// import java.util.Scanner;
+// public class Main{
+//     public static void main(String [] args)
+//     {
+//         Scanner input=new Scanner(System.in);
+//         int radius=input.nextInt();
+//         double circumference = 2*(3.14/radius);
+//         System.out.println("circumference : "+circumference);
+//         double area = (3.14/radius*radius);
+//         System.out.println("area : "+area);
+
+//     }
+// }
+
+// 7. Write a C program to enter length in centimeter and convert it into meter and
+// kilometer.
+// import java.util.Scanner;
+// public class Main{
+//     public static void main(String [] args)
+//     {
+//         Scanner input=new Scanner(System.in);
+//         System.out.println("Enter the value of centimeter : ");
+//         float centimeter=input.nextFloat();
+//         float meter = (centimeter/100);
+//         System.out.println("meter : "+ meter);
+//         float kilometer = (centimeter/100000);
+//         System.out.println("kilometer"+ kilometer);
+
+//     }
+// }
+
+// 8. Write a C program to enter temperature in Celsius and convert it into Fahrenheit.
+
+
+// import java.util.Scanner;
+// public class Main{
+//     public static void main(String [] args)
+//     {
+//         Scanner input=new Scanner(System.in);
+//         System.out.println("Enter the value of celsius : ");
+//         int celsius=input.nextInt();
+//         float Fahrenheit=(celsius * 9/5) + 32 ;
+//         System.out.println("Fahrenheit : "+Fahrenheit);
+//     }
+// }
+
+// 9. Write a C program to enter temperature in Fahrenheit and convert to Celsius
+
+
+// import java.util.Scanner;
+// public class Main{
+//     public static void main(String [] args)
+//     {
+//         Scanner input=new Scanner(System.in);
+//         System.out.println("Enter the value of celsius : ");
+//         int Fahrenheit=input.nextInt();
+//         float celsius=(Fahrenheit - 32) * 5/9;
+//         System.out.println("celsius : "+celsius);
+//     }
+// }
+
+
+// 10. Write a C program to convert days into years, weeks and days.
+
+// import java.util.Scanner;
+// public class Main 
+// {
+//     public static void main(String args[])
+//     {
+//         int m, year, week, day;
+//         Scanner s = new Scanner(System.in);
+//         System.out.print("Enter the number of days:");
+//         m = s.nextInt();
+//         year = m / 365;
+//         m = m % 365;
+//         System.out.println("No. of years:"+year);
+//         week = m / 7;
+//         m = m % 7;
+//         System.out.println("No. of weeks:"+week);
+//         day = m;
+//         System.out.println("No. of days:"+day);
+//     }
+// }
+
+// 11. Write a C program to find power of any number x ^ y.?
+
+
+// import java.util.Scanner;
+
+// public class Main {
+//     public static void main(String[] args) {
+//         Scanner scanner = new Scanner(System.in);
+
+//         System.out.print("Enter base (x): ");
+//         int base = scanner.nextInt();
+
+//         System.out.print("Enter exponent (y): ");
+//         int exponent = scanner.nextInt();
+
+//         int result = 1;
+
+//         for (int i = 1; i <= exponent; i++) {
+//             result =result * base; // Multiply result by base in each iteration
+//         }
+
+//         System.out.println("Result: " + result);
+//     }
+// }
+
+
+// 12.Write a C program to enter any number and calculate its square root.
+
+// import java.util.Scanner;
+// public class Main{
+//     public static void main(String [] args)
+//     {
+//         Scanner input=new Scanner (System.in);
+//         System.out.println("Enter the number ");
+//         int n=input.nextInt();
+//         int x= n/2;
+//         int Guess=x;
+//         Guess=1/2*(Guess+n/Guess);
+//         System.out.println("Guess"+Guess);
+//     }
+// }
+
+
+class A{
+    int a=9;
+    int b=90;
+    void display()
+    {
+        System.out.println("This is method");
+    }
+}
 public class Main{
     public static void main(String [] args)
     {
-
-        Scanner input=new Scanner (System.in);
-        System.out.println("Enter the radius of the circle");
-        int radius=input.nextInt();
-        int float=(2*(radius/3.14f));
+        A sc=new A();
+        sc.display();
+        System.out.println(sc.a);
+        System.out.println(sc.b);
     }
 }
