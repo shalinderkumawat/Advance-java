@@ -2603,20 +2603,635 @@
 // }
 
 
-class A{
-    int a=9;
-    int b=90;
-    void display()
-    {
-        System.out.println("This is method");
-    }
-}
+// 12.Write a C program to enter any number and calculate its square root.
+
+
+// 13.Write a C program to enter two angles of a triangle and find the third angle.
+
+// Ans)
+
+// public class Main{
+//     public static void main(String [] args)
+//     {
+//         int first=23;
+//         int second=32;
+//         int third=180-(first+second);
+//         System.out.println("This is third side : "+third);
+//     }
+// }
+
+// 14.Write a C program to enter base and height of a triangle and find its area.
+
+// public class Main{
+//     public static void main(String [] args)
+//     {
+//         int base=6;
+//         int height=4;
+//         long area=base*height*1/2;
+//         System.out.println("This is Area of tringle : "+area);
+//     }
+// }
+
+// 15.Write a C program to calculate area of an equilateral triangle.
+
+
+// import java.util.Scanner;
+
+// public class Main {
+//     public static void main(String[] args) {
+//         Scanner scanner = new Scanner(System.in);
+
+//         System.out.print("Enter the side of the equilateral triangle: ");
+//         double side = scanner.nextDouble();
+
+//         double area = (Math.sqrt(3) / 4) * side * side;
+
+//         System.out.println("Area of the equilateral triangle: " + area);
+//     }
+// }
+
+
+
+// 16.Write a C program to enter marks of five subjects and calculate total, average
+// and percentage.
+
+// public class Main{
+//     public static void main(String [] args)
+//     {
+//         int hindi=45;
+//         int english=56;
+//         int maths=78;
+//         int science=90;
+//         int social=67;
+//         int total=hindi+english+maths+science+social;
+//         int average=total/5;
+//         double percentage=(double)total/500*100;
+//         System.out.println("This is Total of five subject : "+total);
+//         System.out.println("percentage : "+percentage);
+//     }
+// }
+
+// 17.Write a C program to enter P, T, R and calculate Simple Interest.
+
+
+
+// 18.Write a C program to enter P, T, R and calculate Compound Interest.
+
+
+
+// 19.Write a C program to find maximum between two numbers.
+
+// Ans)
+
+// public class Main{
+//     public static void main(String [] args)
+//     {
+//         int first=23;
+//         int second=300;
+//         int three=2;
+
+//         if(first>second&&first>three)
+//         {
+//             System.out.println("First number is grater than : "+first);
+//         }
+//         else if(second>first||second>three)
+//         {
+//             System.out.println("second number is grater than : "+second);
+//         }
+//         else if(three>second&&three>first)
+//         {
+//             System.out.println("last number is grater than : "+three);
+//         }
+//     }
+// }
+
+// 21.Write a C program to check whether a number is negative, positive or zero.
+// import java.util.Scanner;
+// public class Main{
+//     public static void main(String [] args)
+//     {
+//         Scanner input=new Scanner (System.in);
+//         System.out.println("Enter the number : ");
+//         int a=input.nextInt();
+//         if(a==0)
+//         {
+//             System.out.println("number is zero : "+a);
+//         }
+//         else if(a>0)
+//         {
+//             System.out.println("Number is positive : "+a);
+//         }
+//         else 
+//         {
+//             System.out.println("number is negitive : "+a);
+//         }
+//     }
+// }
+
+
+// 22.Write a C program to check whether a number is divisible by 5 and 11 or not.
+
+
+// public class Main{
+//     public static void main(Stirng [] args)
+//     {
+//         int number = 6;
+//         if(number%5==0||number%11==0)
+//         {
+//             System.out.println("Number is divisibul 5 and 11  : "+number);
+//         }
+//         else 
+//         {
+//             System.out.println("Number is not divisibul 5 and 11 : "+number);
+//         }
+//     }
+// }
+
+// 23.Write a C program to check whether a number is even or odd.
+
+
+// public class Main{
+//     public static void main(String [] args)
+//     {
+//         int number =23;
+//         if(number%2==0)
+//         {
+//             System.out.println("This number is even number : "+number);
+//         }
+//         else {
+//             System.out.println("This number is odd number : "+number);
+//         }
+//     }
+// }
+
+// 24.Write a C program to check whether a year is leap year or not.
+
+// public class Main{
+//     public static void main(String [] args)
+//     {
+//         int year=2024;
+//         if((year % 4 == 0 && year % 100 != 0) || (year % 400 == 0))
+//         {
+//             System.out.println("This is leap year : "+year);
+//         }
+//         else 
+//         {
+//             System.out.println("this is not leap year : "+year);
+//         }
+//     }
+// }
+
+// 25.Write a C program to check whether a character is alphabet or not.
+
+
+// public class Main{
+//     public static void main(String [] args)
+//     {
+//         String a="1";
+//         if(a.matches("[0-1]"))
+//         {
+//             System.out.println("This is alphabet : "+a);
+//             }
+//         else if(a.matches("[a-z][A-Z]")){
+//            System.out.println("This is character : "+a);
+//         }
+                
+//     }
+// }
+
+// 26.Write a C program to input any alphabet and check whether it is vowel or
+// consonant.
+
+// import java.util.Scanner;
+// public class Main{
+//     public static void main(String [] args)
+//     {
+//         Scanner input=new Scanner (System.in);
+//         char a=input.next().charAt(0);
+//         if(a=='a'||a=='e'||a=='i'||a=='o'||a=='u')
+//         {
+//             System.out.println("This is vowel : "+a);
+//         }
+//         else if(a=='A'||a=='E'||a=='I'||a=='O'||a=='U')
+//         {
+//             System.out.println("This is vowel : "+a);
+
+//         }
+//         else 
+//         {
+//             System.out.println("This is consonant : "+a);
+//         }
+//     }
+// }
+
+// 27.Write a C program to input any character and check whether it is alphabet, digit
+// or special character.
+
+// import java.util.Scanner;
+// public class Main{
+//     public static void main(String [] args)
+//     {
+//         Scanner input=new Scanner (System.in);
+//         String a=input.next();
+//         if(a.matches("[a-zA-Z]"))
+//         {
+//             System.out.println("This is alphabat : "+a);
+//         }
+//         else if(a.matches("[0-9]"))
+//         {
+//             System.out.println("This is number : "+ a);
+//         }
+//         else 
+//         {
+//             System.out.println("This is special character : "+a);
+//         }
+//     }
+// }
+
+// 28.Write a C program to check whether a character is uppercase or lowercase
+// alphabet.
+
+// public class Main{
+//     public static void main(String [] args)
+//     {
+//        char a='a';
+//        if(a>='a'&&a<='z')
+//        {
+//         System.out.println("This is lower case  : "+a);
+//        }
+//        else if(a>='A'&&a<='Z')
+//        {
+//         System.out.println("this is upper case characters : "+a);
+//        }
+//        else 
+//        {
+//         System.out.println("nothing ");
+//        }
+//     }
+// }
+
+// 29.Write a C program to input week number and print week day.
+
+// public class Main{
+//     public static void main(String [] args)
+//     {
+//         int number=3;
+//         switch(number)
+//         {
+//             case 1:
+//             System.out.println("Monday");
+//             break;
+//             case 2:
+//             System.out.println("Tuesday");
+//             break;
+//             case 3:
+//             System.out.println("Wednesday");
+//             break;
+//             case 4:
+//             System.out.println("Thursday");
+//             break;
+//             case 5:
+//             System.out.println("Friday");
+//             break;
+//             case 6:
+//             System.out.println("Saturday");
+//             break;
+
+
+//             case 7:
+//             System.out.println("Sunday");
+//             break;
+            
+//             default:
+//             System.out.println("Invalid number");
+//             }
+//         }
+//     }
+
+
+// 30.Write a C program to input month number and print number of days in that
+// month.
+
+// public class Main{
+//     public static void main(String [] args)
+//     {
+//         int number=4;
+//         switch(number)
+//         {
+//             case 1:
+//             System.out.println("january");
+//             break;
+//             case 2:
+//             System.out.println("february");
+//             break;
+//             case 3:
+//             System.out.println("march");
+//             break;
+//             case 4:
+//             System.out.println("april");
+//             break;
+//             case 5:
+//             System.out.println("may");
+//             break;
+//             case 6:
+//             System.out.println("june");
+//             break;
+//             case 7:
+//             System.out.println("july");
+//             break;
+//             case 8:
+//             System.out.println("August");
+//             break;
+//             case 9:
+//             System.out.println("september");
+//             break;
+//             case 10:
+//             System.out.println("october");
+//             break;
+//             case 11:
+//             System.out.println("November");
+//             break;
+//             case 12:
+//             System.out.println("December");
+//             break;
+//             default:
+//             System.out.println("Invalid month");
+//             }
+        
+//     }
+// }
+
+// 31.Write a C program to count total number of notes in given amount.
+
+// import java.util.Scanner;
+// public class Main{
+//     public static void main(String [] args)
+//     {
+//         Scanner input=new Scanner (System.in);
+//         System.out.println("Enter the amount : ");
+//         int amount=input.nextInt();
+//         System.out.println("Amount : "+amount);
+//         int notes=0;
+//         for(int i=0;i<amount;i+=10)
+//         {
+//             notes++;
+//         }
+//         System.out.println("Totel Notes : "+notes);
+//     }
+// }
+
+// 37.Write a C program to input marks of five subjects Physics, Chemistry, Biology,
+// Mathematics and Computer. Calculate percentage and grade according to
+// following:
+// Percentage >= 90% : Grade A
+// Percentage >= 80% : Grade B
+// Percentage >= 70% : Grade C
+// Percentage >= 60% : Grade D
+// Percentage >= 40% : Grade E
+// Percentage < 40% : Grade F
+
+// public class Main{
+//     public static void main(String [] args)
+//     {
+//         int Physics=90;
+//         int Chemistry=45;
+//         int Biology=89;
+//         int Mathematics=70;
+//         int Computer=60;
+
+//         int totelnumber=Physics+Chemistry+Biology+Mathematics+Computer;
+//         int percentage=totelnumber/5;
+//         System.out.println("percentage : "+percentage);
+//         System.out.println("totelnumber"+totelnumber);
+
+//         if(percentage<40)
+//         {
+//             System.out.println("Grade F");
+//         }
+//         else if(percentage >=45 && percentage<=41)
+//         {
+//             System.out.println("Grade E");
+//         }
+//         else if(percentage >= 60&&percentage<=41)
+//         {
+//             System.out.println("Grade D");
+//         }
+//         else if(percentage >= 70 && percentage<61)
+//         {
+//             System.out.println("Grade C");
+//         }
+//         else if(percentage<=71 && percentage >= 80  )
+//         {
+//             System.out.println("Grade B");
+//         }
+//         else if(percentage >= 90 && percentage<=91)
+//         {
+//             System.out.println("Grade A");
+//         }
+       
+//     }
+// }
+
+// 42.Write a C program to check whether an alphabet is vowel or consonant using
+// switch case.
+
+// public class Main{
+//     public static void main(String [] args)
+//     {
+//         char a='a';
+//         switch (a) {
+//             case 'a':
+//                 System.out.println("vowal");
+//                 break;
+//             case 'e':
+//                 System.out.println("vowal");
+//                 break;
+//             case 'i':
+//                 System.out.println("vowal");
+//                 break;
+//             case 'o':
+//                 System.out.println("vowal");
+//                 break;
+//             case 'u':
+//                 System.out.println("vowal");
+//                 break;
+        
+//             default:
+//             System.out.println("consonant");
+//                 break;
+//         }
+//     }
+// }
+
+// 43.Write a C program to find maximum between two numbers using switch case.
+
+// public class Main{
+//     public static void main(String [] args)
+//     {
+//         String numb="maix";
+//         switch (numb) {
+//             case "maix":
+//             int first=2;
+//             int second=90;
+//             if(first>second)
+//             {
+//                 System.out.println("this is maix : "+first);
+//             }
+//             else 
+//             {
+//                 System.out.println("This is maix : "+second);
+//             }
+//                 break;
+        
+//             default:
+//             System.out.println("Sorry nothing");
+//                 break;
+//         }
+//     }
+// }
+
+// 44.Write a C program to check whether a number is even or odd using switch case.
+
+// import java.util.Scanner;
+// public class Main{
+//     public static void main(String [] args)
+//     {
+//         Scanner input=new Scanner (System.in);
+//         System.out.println("Enter the what you want : ");
+//         String value=input.next();
+
+//         System.out.println("Enter the number :");
+//         int num=input.nextInt();
+        
+//         switch (value) {
+//             case "even":
+                      
+//                        if(num%2==0)
+//                        {
+//                         System.out.println("this number is even number : "+num);
+//                        }
+//                        else 
+//                        {
+//                         System.out.println("this numebr is not even number : "+num);
+//                        }
+
+//                 break;
+//             case "odd":
+                      
+//                        if(num%2==0)
+//                        {
+//                         System.out.println("this number is odd number : "+num);
+//                        }
+//                        else 
+//                        {
+//                         System.out.println("this numebr is not odd number : "+num);
+//                        }
+
+//                 break;
+        
+//             default:
+//                 break;
+//         }
+//     }
+// }
+
+// 45.Write a C program to check whether a number is positive, negative or zero using
+// switch case.
+// import java.util.Scanner;
+// public class Main{
+//     public static void main(String [] args)
+//     {
+//         Scanner input=new Scanner (System.in);
+//         System.out.println("Enter the number like zero and positive number : ");
+//         String value=input.next();
+
+        
+//         System.out.println("Enter String type text like what you want :");
+//         int num=input.nextInt();
+//         switch (value) {
+            
+           
+//             case "positive":
+//                 if(num<0)
+//                 {
+//                     System.out.println("This number is positive number : "+num);
+//                 }
+//                 break;
+//             case "zero":
+//                 if(num==0)
+//                 {
+//                     System.out.println("This number is zero number : "+num);
+//                 }
+//                 break;
+//             case "negative":
+//                 if(num>0)
+//                 {
+//                     System.out.println("This number is negative  number : "+num);
+//                 }
+//                 break;
+//             default:
+//                 break;
+//         }
+//     }
+// }
+
+
+
+
+
+// 47.Write a C program to create Simple Calculator using switch case.
+// import java.util.Scanner;
+// public class Main{
+//     public static void main(String [] args)
+//     {
+//         Scanner input=new Scanner (System.in);
+//         System.out.println("                                   This is Calculator                           ");
+//         System.out.println("Enter the first value ");
+//         int first=input.nextInt();
+//         System.out.println("Enter the value of second : ");
+//         int second=input.nextInt();
+//         System.out.println("Enter the Symbol + - * % / :");
+//         String num=input.next();
+//         switch (num) {
+//             case "+":
+//                 System.out.println(first+second);
+//                 break;
+//             case "-":
+//             System.out.println(first-second);
+//             break;
+
+//             case "*":
+//             System.out.println(first*second);
+//             break;
+
+//             case "/":
+//             System.out.println(first/second);
+//             break;
+
+//             case "%":
+//             System.out.println(first%second);
+//             break;
+
+//             default:
+//             System.out.println("Enter the rigth value");
+//                 break;
+//         }
+//     }
+// }
+
+// 48.Write a C program to print all natural numbers from 1 to n. - using while loop
+
+import java.util.Scanner;
 public class Main{
     public static void main(String [] args)
     {
-        A sc=new A();
-        sc.display();
-        System.out.println(sc.a);
-        System.out.println(sc.b);
+        Scanner input=new Scanner (System.in);
+        System.out.println("Enter the number : ");
+        int number=input.nextInt();
+       
+        while (0<=number) {
+            System.out.println(number);
+            number++;
+        }
     }
 }
