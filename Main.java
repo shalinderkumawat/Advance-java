@@ -3221,17 +3221,286 @@
 
 // 48.Write a C program to print all natural numbers from 1 to n. - using while loop
 
-import java.util.Scanner;
-public class Main{
-    public static void main(String [] args)
-    {
-        Scanner input=new Scanner (System.in);
-        System.out.println("Enter the number : ");
-        int number=input.nextInt();
+// import java.util.Scanner;
+// public class Main{
+//     public static void main(String [] args)
+//     {
+//         Scanner input=new Scanner (System.in);
+//         System.out.println("Enter the number : ");
+//         int number=input.nextInt();
        
-        while (0<=number) {
-            System.out.println(number);
-            number++;
-        }
+//         while (0<number) {
+//             System.out.println(number);
+//             number++;
+//         }
+//     }
+// }
+
+
+// 49.Write a C program to print all natural numbers in reverse (from n to 1). - using
+// while loop
+
+// public class Main{
+//     public static void main(String [] args)
+//     {
+//         int n=1;
+        
+//         while(n<=10)
+//         {
+//             System.out.println(n);
+//             n++;
+//         }
+//     }
+// }
+
+
+// 50.Write a C program to print all alphabets from a to z. - using while loop
+
+// Ans)
+// public class Main{
+//     public static void main(String [] args)
+//     {
+//         char a='a';
+//         while(a<='z')
+//         {
+//             System.out.println(a);
+//             a++;
+
+//         }
+//     }
+// }
+
+// 51.Write a C program to print all even numbers between 1 to 100. - using while loop
+
+// Ans)
+// public class Main{
+//     public static void main(String [] args)
+//     {
+//         int n=0;
+//         while (n!=100) {
+//             if(n%2==0)
+//             {
+//                 System.out.println(n);
+//             }
+//             n++;
+//         }
+//     }
+// }
+// 52.Write a C program to print all odd numbers between 1 to 100. -
+// using while loop
+// Ans)
+
+// public class Main{
+//     public static void main(String [] args)
+//     {
+//         int n=1;
+//         while (n!=101) {
+//             System.out.println(n++);
+//         }
+//     }
+// }
+
+// 53.Write a C program to find sum of all natural numbers between 1 to n.
+
+// Ans)
+
+// public class Main{
+//     public static void main(String [] args)
+//     {
+//         int a=1;
+//         int n=10;
+//         int sum=0;
+//         while (a<=n) {
+//             sum=sum+a;
+//             a++;
+//             System.out.println(sum);
+//         }
+//         System.out.println("Sum : "+sum);
+
+//     }
+// }
+
+// 54.Write a C program to find sum of all even numbers between 1 to n.
+
+// Ans)
+
+
+
+
+// public class Main{
+//     public static void main(String [] args)
+//     {
+//         int a=1;
+//         int n=10;
+//         int sum=0;
+//         while (a<=n) {
+//             if(a%2==0)
+//             {
+//             sum=sum+a;
+            
+//             System.out.println(sum);
+//             }
+//             a++;
+//         }
+//         System.out.println("Sum : "+sum);
+
+//     }
+// }
+
+
+// 55.Write a C program to find sum of all odd numbers between 1 to n.
+
+// public class Main{
+//     public static void main(String [] args)
+//     {
+//         int a=1;
+//         int n=10;
+//         int sum=0;
+//         while (a<=n) {
+//             if(a%2!=0)
+//             {
+//                 sum=+a;
+//                 System.out.println(sum);
+
+//             }
+//             a++;
+//         }
+//         System.out.println("Totel odd sum : "+sum);
+//     }
+// }
+
+// 56.Write a C program to print multiplication table of any number.
+// import java.util.Scanner;
+// public class Main{
+//     public static void main(String [] args)
+//     {
+//         Scanner input=new Scanner(System.in);
+//         int num=input.nextInt();
+//         for(int i=1;i<=10;i++)
+//         {
+//             System.out.println(num+" * "+i+" = "+(num*i));
+//         }
+//     }
+// }
+
+// 57.Write a C program to count number of digits in a number.
+
+// public class Main{
+//     public static void main(String [] args)
+//     {
+//         int num=12435;
+//         int count=0;
+//         int rem=0;
+//         while(num!=0)
+//         {
+//             rem=num%10;
+//             count++;
+//             num=num/10;
+//         }
+//         System.out.println("This is digite : "+count);
+//     }
+// }
+
+// 58.Write a C program to find first and last digit of a number.
+// import java.util.*;
+// public class Main{
+//     public static void main(String [] args)
+//     {
+//         int num=12133333;
+//         int rem=0;
+//        while (num!=0) {
+//         rem=num%10;
+//         if(rem==num)
+//         {
+//             System.out.println("First digit of number is : "+rem);
+//         }
+//             num=num/10;
+//         }
+
+//         int nu=1213335;
+//         int re=0;
+//         while (nu!=0) {
+//             re=nu%10;
+//             if(nu==num)
+//             {
+//             }
+//             else{
+//                 System.out.println("This is last number : "+re);
+//                 break;
+//             }
+            
+//             nu=nu/10;
+//        }
+//     }
+// }
+
+// 59.Write a C program to find sum of first and last digit of a number.
+
+// public class Main{
+//     public static void main(String [] args)
+//     {
+//         int num=102;
+//         int rem=0;
+//         int first=0;
+//         while (num!=0) {
+//             rem=num%10;
+//             if(rem==num)
+//             {
+//                 first=rem;
+//             }
+//             num=num/10;
+//         }
+//         int nu=102;
+//         int re=0;
+//         int second=0;
+//         while (nu!=0) {
+//             re=nu%10;
+//             if(nu==num)
+//             {
+               
+//                 }
+//                 else{
+//                     second=re;
+//                     break;
+//                     }
+//                     nu=nu/10;
+//                     }
+//                     System.out.println("This is first number : "+first);
+//                     System.out.println("This is second number : "+second);
+//                     System.out.println("The sum of first and second number : "+(first+second));
+//     }
+// }
+
+// 60.Write a C program to swap first and last digits of a number.
+
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter a number: ");
+        int number = scanner.nextInt();
+
+        int firstDigit, lastDigit, digits, swappedNumber;
+
+        // Get the last digit
+        lastDigit = number % 10;
+
+        // Count the total number of digits in the number
+        digits = (int) Math.log10(number);
+
+        // Get the first digit
+        firstDigit = (int) (number / Math.pow(10, digits));
+
+        // Remove the first digit
+        int remainingNumber = number % (int) Math.pow(10, digits);
+
+        // Remove the last digit and then add the first digit to the end
+        remainingNumber = remainingNumber / 10;
+
+        // Construct the new number
+        swappedNumber = (int) (lastDigit * Math.pow(10, digits) + remainingNumber * 10 + firstDigit);
+
+        System.out.println("Number after swapping first and last digits: " + swappedNumber);
     }
 }
