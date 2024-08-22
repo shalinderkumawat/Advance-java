@@ -3473,34 +3473,243 @@
 
 // 60.Write a C program to swap first and last digits of a number.
 
-import java.util.Scanner;
+// public class Main{
+   
+//     public static void main(String [] args)
+//     {
+//        int a[]={1,2,3,4,5};
+    
+//            int temp=a[0];
+//             a[0]=a[a.length-1];
+//             a[a.length-1]=temp;
+           
+        
+//         for(int i=0;i<a.length;i++)
+//         {
+//             System.out.print(a[i]+" ");
+//         }
+//     }
+// }
 
-public class Main {
-    public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        System.out.print("Enter a number: ");
-        int number = scanner.nextInt();
 
-        int firstDigit, lastDigit, digits, swappedNumber;
 
-        // Get the last digit
-        lastDigit = number % 10;
+// 61.Write a C program to calculate sum of digits of a number.
 
-        // Count the total number of digits in the number
-        digits = (int) Math.log10(number);
+// public class Main{
+//     public static void main(String [] args)
+//     {
+//         int num=1234;
+//         int rem=0;
+//         int sum=0;
+//         while (num!=0) {
+//             rem=num%10;
+//             sum=sum+rem;
+//             num=num/10;
+            
+//         }
+//         System.out.println("Totel sum number : "+sum);
+        
+//     }
+// }
 
-        // Get the first digit
-        firstDigit = (int) (number / Math.pow(10, digits));
 
-        // Remove the first digit
-        int remainingNumber = number % (int) Math.pow(10, digits);
+// 62.Write a C program to calculate product of digits of a number.
 
-        // Remove the last digit and then add the first digit to the end
-        remainingNumber = remainingNumber / 10;
+// public class Main{
+//     public static void main(String [] arg)
+//     {
+//         int number = 123;
+//        int product=1;
+//         int rem=0;
+//         while(number!=0)
+//         {
+//             rem=number%10;
+//             product=product*rem;
+//             number=number/10;
+//         }
+//         System.out.println("product : "+product);
+//     }
+// }
 
-        // Construct the new number
-        swappedNumber = (int) (lastDigit * Math.pow(10, digits) + remainingNumber * 10 + firstDigit);
+// 63.Write a C program to enter a number and print its reverse.
 
-        System.out.println("Number after swapping first and last digits: " + swappedNumber);
+// public class Main{
+//     public static void main(String [] args)
+//     {
+//         int num=102;
+//         int rem=0;
+//         while (num!=0) {
+//             rem=num%10;
+//             num=num/10;
+//             System.out.print(rem);
+//         }
+//     }
+// }
+
+// 64.Write a C program to check whether a number is palindrome or not.
+
+
+// public class Main{
+//     public static void main(String [] agrs)
+//     {
+//         int num=101;
+//         int rem=0;
+//         int temp=num;
+//         int sum=0;
+
+//         while (num!=0) {
+//             rem=num%10;
+//             sum=sum*10+rem;
+//             num=num/10;
+//         }
+//         if(sum==temp)
+//         {
+//             System.out.println("This is palindrom number : "+sum);
+//         }
+//         else 
+//         {
+//             System.out.println("This is not palindrom number : "+sum);
+//         }
+//     }
+// }
+
+// 65.Write a C program to find frequency of each digit in a given integer.
+
+
+// public class Main{
+//     public static void main(String [] args)
+//     {
+
+//     }
+// }
+
+
+// 66.Write a C program to enter a number and print it in words.
+// import java.util.Scanner;
+// public class Main{
+//     public static void main(String [] args)
+//     {
+//         Scanner input=new Scanner(System.in);
+//         int num=input.nextInt();
+//         switch (num) {
+//             case 0:
+//                 System.out.println("Zero");
+//                 break;
+//             case 1:
+//             System.out.println("one");
+//                 break;
+//                 case 2:
+//                 System.out.println("Two");
+//                 break;
+//                 case 3:
+//                 System.out.println("Three");
+//                 break;
+//                 case 4:
+//                 System.out.println("Four");
+//                 break;
+//                 case 5:
+//                 System.out.println("Five");
+//                 break;
+//                 case 6:
+//                 System.out.println("Six");
+//                 break;
+//                 case 7:
+//                 System.out.println("Seven");
+//                 break;
+//                 case 8:
+//                 System.out.println("Eight");
+//                 break;
+//                 case 9:
+//                 System.out.println("Nine");
+//                 break;
+//                 default:
+//                 System.out.println("Invalid number");
+//                 break;
+//         }
+//     }
+// }
+
+
+// 67.Write a C program to print all ASCII character with their values.
+
+// public class Main{
+//     public static void main(String [] args)
+//     {
+       
+//         for(int num=0;num<=127;num++)
+//         {
+//             char a=(char)num;
+        
+//             System.out.println(a);
+            
+//         }
+//     }
+// }
+
+// 68.Write a C program to find power of a number using for loop.
+
+// public class Main{
+//     public static void main(String [] args)
+//     {
+//         int base=2;
+//         int last=3;
+//         long power=1;
+    
+//         for(int i=1;i<=last;i++)
+//         {
+//             power*=base;
+//         }
+//         System.out.println("power : "+power);
+//     }
+// }
+
+// 69.Write a C program to find all factors of a number.
+
+// public class Main{
+//     public static void main(String [] args)
+//     {
+//         int number=12;
+//         for(int i=1;i<=number;i++)
+//         {
+//             if(number%i==0)
+//             {
+//                 System.out.println("This is factors : "+ i);
+//             }
+//         }
+//     }
+// }
+
+
+// 70.Write a C program to calculate factorial of a number.
+
+// public class Main{
+//     public static void main(String [] args)
+//     {
+//         int num=5;
+//         int fact=1;
+//         for(int i=1;i<=num;i++)
+//         {
+//             fact=fact*i;
+//         }
+//         System.out.println(fact);
+//     }
+// }
+
+// 71.Write a C program to find HCF (GCD) of two numbers.
+
+public class Main{
+    public static void main(String [] args)
+    {
+        int num=1234;
+        int rem=0;
+        int sum=0;
+        while (num!=0) {
+            rem=num%10;
+            sum=sum+rem;
+            num=num/10;
+            
+        }
+        System.out.println("Totel sum number : "+sum);
+        
     }
 }
