@@ -63,47 +63,47 @@ public class Arraylist{
 
 // Inside Arraylist armstrong Number
 
-import java.util.ArrayList;
-import java.util.Scanner;
-public class Main{
-    public static void main(String [] args)
-    {
-        ArrayList<Integer> sc=new ArrayList<>();
+// import java.util.ArrayList;
+// import java.util.Scanner;
+// public class Main{
+//     public static void main(String [] args)
+//     {
+//         ArrayList<Integer> sc=new ArrayList<>();
         
-        Scanner s=new Scanner(System.in);
-        int length=s.nextInt();
-        for(int i=0;i<length;i++)
-        {
-            System.out.println("Enter the value of : "+ i);
-            sc.add(s.nextInt());
-        }
-        int sum=0;
-        int rem=0;
+//         Scanner s=new Scanner(System.in);
+//         int length=s.nextInt();
+//         for(int i=0;i<length;i++)
+//         {
+//             System.out.println("Enter the value of : "+ i);
+//             sc.add(s.nextInt());
+//         }
+//         int sum=0;
+//         int rem=0;
        
-        for(int i=0;i<sc.size();i++)
-        {
-            int num=sc.get(i);
-            int n=num;
+//         for(int i=0;i<sc.size();i++)
+//         {
+//             int num=sc.get(i);
+//             int n=num;
         
-        while (num!=0) {
-            rem=num%10;
-            sum=sum+rem*rem*rem;
-            num=num/10;            
-        }
-        if(sum==n)
-        {
-            System.out.println("This is armstong number");
-            System.out.println(sum);
-        }
-        else 
-        {
-            System.out.println("This number is not armstong ");
-            System.out.println(sum);
+//         while (num!=0) {
+//             rem=num%10;
+//             sum=sum+rem*rem*rem;
+//             num=num/10;            
+//         }
+//         if(sum==n)
+//         {
+//             System.out.println("This is armstong number");
+//             System.out.println(sum);
+//         }
+//         else 
+//         {
+//             System.out.println("This number is not armstong ");
+//             System.out.println(sum);
 
-        }
-    }
-    }
-}
+//         }
+//     }
+//     }
+// }
 
 // palindrom number in Arraylist 
 

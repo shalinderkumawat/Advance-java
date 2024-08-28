@@ -1,0 +1,90 @@
+insert element at the bottom of the stack and at any index 
+
+------------------------------------------------------------
+
+
+Ans)
+import java.util.Stack;
+
+public class Main{
+    public static void main(String [] args)
+    {
+        Stack <Integer> sc=new Stack<>();
+        sc.add(1);
+        sc.add(2);
+        sc.add(3);
+        sc.add(4);
+
+        System.out.println(sc);
+
+        System.out.println("insert element at the bottom of the stack and at any index");
+        sc.add(3, 45);
+        System.out.println(+sc);
+    }
+}
+
+----------------------------------------------------------------------
+print all the elements through array in stack 
+import java.util.Stack;
+public class Main{
+    public static void main(String [] args)
+    {
+        Stack<Integer> sc=new Stack<>();
+        sc.add(1);
+        sc.add(2);
+        sc.add(3);
+        sc.add(4);
+
+        for(int i:sc)
+        {
+            System.out.print(i+" ");
+        }
+    }
+}
+
+
+----------------------------------------------------------------------
+print all the elements of the stack through normally 
+
+import java.util.Stack;
+public class Main{
+    public static void main(String [] args)
+    {
+        Stack <Integer> sc=new Stack<>();
+        sc.add(1);
+        sc.add(2);
+        sc.add(3);
+        sc.add(4);
+
+        System.out.println(sc);
+    }
+}
+
+
+stack underflow of the stack 
+
+import java.util.Stack;
+public class Main{
+    public static void main(String [] args)
+    {
+        Stack <Integer> sc=new Stack<>();
+        sc.add(1);
+        sc.add(2);
+        sc.add(3);
+        sc.add(4);
+
+        System.out.println(sc);
+
+        sc.pop();
+        System.out.println("This is remove one"+sc);
+        sc.pop();
+        System.out.println("This is remove two"+sc);
+        sc.pop();
+        System.out.println("This is remove three"+sc);
+        sc.pop();
+        System.out.println("This is remove four"+sc);
+        sc.pop();
+        System.out.println(sc);
+    }
+}
+

@@ -1,0 +1,8 @@
+empty()
+push(E item)
+pop()
+peek()
+search(Object o)
+--------------------------------------------------------
+Iterator in Java
+

@@ -1,0 +1,28 @@
+1)
+ArrayList Operations:
+
+Write a program to initialize an ArrayList and perform the following operations: add elements, remove elements, and print the final list.
+
+Ans)
+import java.util.ArrayList;
+public class Main{
+    public static void main(String [] args)
+    {
+        ArrayList <Integer> obj=new ArrayList<>();
+        obj.add(230);
+        obj.add(23);
+
+        System.out.println(obj);
+
+        obj.remove(0);
+        System.out.println(obj);
+    }
+}
+
+2)
+LinkedList Operations:
+
+Implement a doubly-linked list from scratch in Java, including methods for insertion, deletion, and traversal.
+
+
+Ans)

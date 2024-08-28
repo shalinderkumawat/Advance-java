@@ -1,0 +1,1772 @@
+		do all questions in java 
+
+1. Write a C program to perform input/output of all basic data types.
+
+Ans)
+import java.util.Scanner;
+public class Main{
+    public static void main(String [] args)
+    {
+        Scanner input=new Scanner(System.in);
+        System.out.println("Enter a number");
+        int a=input.nextInt();
+        System.out.println(a);
+        System.out.println("Enter the float value ");
+        float b=input.nextFloat();
+        System.out.println(b);
+        System.out.println("Enter the value long ");
+        long c=input.nextLong();
+        System.out.println(c);
+        System.out.println("Enter the value of double ");
+        double d=input.nextDouble();
+        System.out.println(d);
+        System.out.println("Enter the char");
+        char e=input.next().charAt(0);
+        System.out.println(e);
+        System.out.println("Enter the String value ");
+        String f=input.nextLine();
+        System.out.println("Enter the value of boolean");
+        boolean g=input.nextBoolean();
+        System.out.println(g);
+        
+    }
+}
+
+
+2. Write a C program to enter two numbers and find their sum.
+
+Ans)
+import java.util.Scanner;
+public class Main{
+    public static void main(String [] args)
+    {
+        Scanner input=new Scanner (System.in);
+        System.out.println("Enter the number of a");
+        int a=input.nextInt();
+        System.out.println("Enter the value of b");
+        int b=input.nextInt();
+        int c=a+b;
+        System.out.println(c);
+
+    }
+}
+
+3. Write a C program to enter two numbers and perform all arithmetic operations.
+
+Ans)import java.util.Scanner;
+public class Main{
+    public static void main(String [] args)
+    {   
+        Scanner input=new Scanner (System.in);
+        System.out.println("Enter the number of a");
+        int a=input.nextInt();
+        System.out.println("Enter the value of b");
+        int b=input.nextInt();
+      
+        System.out.println("This is + "+(a+b));
+        System.out.println("This is - "+(a-b));
+        System.out.println("This is * "+a*b);
+        System.out.println("This is / "+a/b);
+        System.out.println("This is % "+a%b);
+    }
+}
+
+4. Write a C program to enter length and breadth of a rectangle and find its
+perimeter.
+Ans)
+import java.util.Scanner;
+public class Main{
+    public static void main(String [] args)
+    {
+        Scanner input=new Scanner(System.in);
+        System.out.println("Enter the length of ");
+        int length=input.nextInt();
+        System.out.println("Enter the width of ");
+        int width=input.nextInt();
+
+        int perimeter=(length+width)*2;
+        System.out.println(perimeter);
+    }
+}
+
+5. Write a C program to enter length and breadth of a rectangle and find its area.
+
+Ans)
+import java.util.Scanner;
+public class Main{
+    public static void main(String [] args)
+    {
+        Scanner input=new Scanner(System.in);
+        System.out.println("Enter the length of ");
+        int length=input.nextInt();
+        System.out.println("Enter the value of width");
+        int width=input.nextInt();
+        int area=length*width;
+        System.out.println(area);
+    }
+}
+6. Write a C program to enter radius of a circle and find its diameter, circumference
+and area.
+
+
+Ans)
+import java.util.Scanner;
+public class Main{
+    public static void main(String [] args)
+    {
+        Scanner input=new Scanner(System.in);
+        int radius=input.nextInt();
+        double circumference = 2*(3.14/radius);
+        System.out.println("circumference : "+circumference);
+        double area = (3.14/radius*radius);
+        System.out.println("area : "+area);
+
+    }
+}
+
+7. Write a C program to enter length in centimeter and convert it into meter and
+kilometer.
+
+Ans)
+import java.util.Scanner;
+public class Main{
+    public static void main(String [] args)
+    {
+        Scanner input=new Scanner(System.in);
+        System.out.println("Enter the value of centimeter : ");
+        float centimeter=input.nextFloat();
+        float meter = (centimeter/100);
+        System.out.println("meter : "+ meter);
+        float kilometer = (centimeter/100000);
+        System.out.println("kilometer"+ kilometer);
+
+    }
+}
+
+
+8. Write a C program to enter temperature in Celsius and convert it into Fahrenheit.
+
+Ans)
+import java.util.Scanner;
+public class Main{
+    public static void main(String [] args)
+    {
+        Scanner input=new Scanner(System.in);
+        System.out.println("Enter the value of celsius : ");
+        int celsius=input.nextInt();
+        float Fahrenheit=(celsius * 9/5) + 32 ;
+        System.out.println("Fahrenheit : "+Fahrenheit);
+    }
+}
+
+9. Write a C program to enter temperature in Fahrenheit and convert to Celsius
+
+Ans)
+import java.util.Scanner;
+public class Main{
+    public static void main(String [] args)
+    {
+        Scanner input=new Scanner(System.in);
+        System.out.println("Enter the value of celsius : ");
+        int Fahrenheit=input.nextInt();
+        float celsius=(Fahrenheit - 32) * 5/9;
+        System.out.println("celsius : "+celsius);
+    }
+}
+
+10.Write a C program to convert days into years, weeks and days.
+Ans)
+import java.util.Scanner;
+public class Main 
+{
+    public static void main(String args[])
+    {
+        int m, year, week, day;
+        Scanner s = new Scanner(System.in);
+        System.out.print("Enter the number of days:");
+        m = s.nextInt();
+        year = m / 365;
+        m = m % 365;
+        System.out.println("No. of years:"+year);
+        week = m / 7;
+        m = m % 7;
+        System.out.println("No. of weeks:"+week);
+        day = m;
+        System.out.println("No. of days:"+day);
+    }
+}
+
+
+11. Write a C program to find power of any number x ^ y.?
+
+Ans)_
+
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Enter base (x): ");
+        int base = scanner.nextInt();
+
+        System.out.print("Enter exponent (y): ");
+        int exponent = scanner.nextInt();
+
+        int result = 1;
+
+        for (int i = 1; i <= exponent; i++) {
+            result =result * base; // Multiply result by base in each iteration
+        }
+
+        System.out.println("Result: " + result);
+    }
+}
+
+
+12.Write a C program to enter any number and calculate its square root.
+
+Ans)
+
+
+
+
+13.Write a C program to enter two angles of a triangle and find the third angle.
+
+Ans)
+public class Main{
+    public static void main(String [] args)
+    {
+        int first=23;
+        int second=32;
+        int third=180-(first+second);
+        System.out.println("This is third side : "+third);
+    }
+}
+14.Write a C program to enter base and height of a triangle and find its area.
+
+Ans)
+public class Main{
+    public static void main(String [] args)
+    {
+        int base=6;
+        int height=4;
+        long area=base*height*1/2;
+        System.out.println("This is Area of tringle : "+area);
+    }
+}
+
+15.Write a C program to calculate area of an equilateral triangle.
+
+Ans)
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Enter the side of the equilateral triangle: ");
+        double side = scanner.nextDouble();
+
+        double area = (Math.sqrt(3) / 4) * side * side;
+
+        System.out.println("Area of the equilateral triangle: " + area);
+    }
+}
+
+16.Write a C program to enter marks of five subjects and calculate total, average
+and percentage.
+
+Ans)
+public class Main{
+    public static void main(String [] args)
+    {
+        int hindi=45;
+        int english=56;
+        int maths=78;
+        int science=90;
+        int social=67;
+        int total=hindi+english+maths+science+social;
+        int average=total/5;
+        double percentage=(double)total/500*100;
+        System.out.println("This is Total of five subject : "+total);
+        System.out.println("percentage : "+percentage);
+    }
+}
+
+17.Write a C program to enter P, T, R and calculate Simple Interest.
+
+Ans)
+
+
+
+
+18.Write a C program to enter P, T, R and calculate Compound Interest.
+
+Ans)
+
+
+
+19.Write a C program to find maximum between two numbers.
+
+Ans)
+public class Main{
+    public static void main(String [] args)
+    {
+        int first=23;
+        int second=3;
+        if(first>second)
+        {
+            System.out.println("First number is grater than : "+first);
+        }
+        else 
+        {
+            System.out.println("second number is grater than : "+second);
+        }
+    }
+}
+
+20.Write a C program to find maximum between three numbers.
+
+Ans)
+public class Main{
+    public static void main(String [] args)
+    {
+        int first=23;
+        int second=300;
+        int three=2;
+
+        if(first>second&&first>three)
+        {
+            System.out.println("First number is grater than : "+first);
+        }
+        else if(second>first||second>three)
+        {
+            System.out.println("second number is grater than : "+second);
+        }
+        else if(three>second&&three>first)
+        {
+            System.out.println("last number is grater than : "+three);
+        }
+    }
+}
+
+
+21.Write a C program to check whether a number is negative, positive or zero.
+
+Ans)
+import java.util.Scanner;
+public class Main{
+    public static void main(String [] args)
+    {
+        Scanner input=new Scanner (System.in);
+        System.out.println("Enter the number : ");
+        int a=input.nextInt();
+        if(a==0)
+        {
+            System.out.println("number is zero : "+a);
+        }
+        else if(a>0)
+        {
+            System.out.println("Number is positive : "+a);
+        }
+        else 
+        {
+            System.out.println("number is negitive : "+a);
+        }
+    }
+}
+
+22.Write a C program to check whether a number is divisible by 5 and 11 or not.
+
+Ans)
+public class Main{
+    public static void main(Stirng [] args)
+    {
+        int number = 6;
+        if(number%5==0||number%11==0)
+        {
+            System.out.println("Number is divisibul 5 and 11  : "+number);
+        }
+        else 
+        {
+            System.out.println("Number is not divisibul 5 and 11 : "+number);
+        }
+    }
+}
+
+23.Write a C program to check whether a number is even or odd.
+
+Ans)
+public class Main{
+    public static void main(String [] args)
+    {
+        int number =23;
+        if(number%2==0)
+        {
+            System.out.println("This number is even number : "+number);
+        }
+        else {
+            System.out.println("This number is odd number : "+number);
+        }
+    }
+}
+
+24.Write a C program to check whether a year is leap year or not.
+
+Ans)
+public class Main{
+    public static void main(String [] args)
+    {
+        int year=2024;
+        if((year % 4 == 0 && year % 100 != 0) || (year % 400 == 0))
+        {
+            System.out.println("This is leap year : "+year);
+        }
+        else 
+        {
+            System.out.println("this is not leap year : "+year);
+        }
+    }
+}
+
+25.Write a C program to check whether a character is alphabet or not.
+
+Ans)
+public class Main{
+    public static void main(String [] args)
+    {
+        String a="1";
+        if(a.matches("[0-1]"))
+        {
+            System.out.println("This is alphabet : "+a);
+            }
+        else if(a.matches("[a-z][A-Z]")){
+           System.out.println("This is character : "+a);
+        }
+                
+    }
+}
+
+26.Write a C program to input any alphabet and check whether it is vowel or
+consonant.
+
+Ans)
+import java.util.Scanner;
+public class Main{
+    public static void main(String [] args)
+    {
+        Scanner input=new Scanner (System.in);
+        char a=input.next().charAt(0);
+        if(a=='a'||a=='e'||a=='i'||a=='o'||a=='u')
+        {
+            System.out.println("This is vowel : "+a);
+        }
+        else if(a=='A'||a=='E'||a=='I'||a=='O'||a=='U')
+        {
+            System.out.println("This is vowel : "+a);
+
+        }
+        else 
+        {
+            System.out.println("This is consonant : "+a);
+        }
+    }
+}
+
+27.Write a C program to input any character and check whether it is alphabet, digit
+or special character.
+
+Ans)
+import java.util.Scanner;
+public class Main{
+    public static void main(String [] args)
+    {
+        Scanner input=new Scanner (System.in);
+        String a=input.next();
+        if(a.matches("[a-zA-Z]"))
+        {
+            System.out.println("This is alphabat : "+a);
+        }
+        else if(a.matches("[0-9]"))
+        {
+            System.out.println("This is number : "+ a);
+        }
+        else 
+        {
+            System.out.println("This is special character : "+a);
+        }
+    }
+}
+
+28.Write a C program to check whether a character is uppercase or lowercase
+alphabet.
+Ans)
+public class Main{
+    public static void main(String [] args)
+    {
+       char a='a';
+       if(a>='a'&&a<='z')
+       {
+        System.out.println("This is lower case  : "+a);
+       }
+       else if(a>='A'&&a<='Z')
+       {
+        System.out.println("this is upper case characters : "+a);
+       }
+       else 
+       {
+        System.out.println("nothing ");
+       }
+    }
+}
+
+
+29.Write a C program to input week number and print week day.
+Ans)
+public class Main{
+    public static void main(String [] args)
+    {
+        int number=3;
+        switch(number)
+        {
+            case 1:
+            System.out.println("Monday");
+            break;
+            case 2:
+            System.out.println("Tuesday");
+            break;
+            case 3:
+            System.out.println("Wednesday");
+            break;
+            case 4:
+            System.out.println("Thursday");
+            break;
+            case 5:
+            System.out.println("Friday");
+            break;
+            case 6:
+            System.out.println("Saturday");
+            break;
+
+
+            case 7:
+            System.out.println("Sunday");
+            break;
+            
+            default:
+            System.out.println("Invalid number");
+            }
+        }
+    }
+
+
+30.Write a C program to input month number and print number of days in that
+month.
+Ans)
+public class Main{
+    public static void main(String [] args)
+    {
+        int number=4;
+        switch(number)
+        {
+            case 1:
+            System.out.println("january");
+            break;
+            case 2:
+            System.out.println("february");
+            break;
+            case 3:
+            System.out.println("march");
+            break;
+            case 4:
+            System.out.println("april");
+            break;
+            case 5:
+            System.out.println("may");
+            break;
+            case 6:
+            System.out.println("june");
+            break;
+            case 7:
+            System.out.println("july");
+            break;
+            case 8:
+            System.out.println("August");
+            break;
+            case 9:
+            System.out.println("september");
+            break;
+            case 10:
+            System.out.println("october");
+            break;
+            case 11:
+            System.out.println("November");
+            break;
+            case 12:
+            System.out.println("December");
+            break;
+            default:
+            System.out.println("Invalid month");
+            }
+        
+    }
+}
+
+31.Write a C program to count total number of notes in given amount.
+
+Ans)
+import java.util.Scanner;
+public class Main{
+    public static void main(String [] args)
+    {
+        Scanner input=new Scanner (System.in);
+        System.out.println("Enter the amount : ");
+        int amount=input.nextInt();
+        System.out.println("Amount : "+amount);
+        int notes=0;
+        for(int i=0;i<amount;i+=10)
+        {
+            notes++;
+        }
+        System.out.println("Totel Notes : "+notes);
+    }
+}
+
+32.Write a C program to input angles of a triangle and check whether triangle is
+valid or not.
+
+Ans)
+
+
+
+33.Write a C program to input all sides of a triangle and check whether triangle is
+valid or not.
+
+Ans)
+
+
+
+
+34.Write a C program to check whether the triangle is equilateral, isosceles or
+scalene triangle.
+
+Ans)
+
+
+
+35.Write a C program to find all roots of a quadratic equation.
+
+Ans)
+
+
+
+36.Write a C program to calculate profit or loss.
+
+Ans)
+
+
+
+37.Write a C program to input marks of five subjects Physics, Chemistry, Biology,
+Mathematics and Computer. Calculate percentage and grade according to
+following:
+Percentage >= 90% : Grade A
+Percentage >= 80% : Grade B
+Percentage >= 70% : Grade C
+Percentage >= 60% : Grade D
+Percentage >= 40% : Grade E
+Percentage < 40% : Grade F
+
+Ans)
+public class Main{
+    public static void main(String [] args)
+    {
+        int Physics=90;
+        int Chemistry=45;
+        int Biology=89;
+        int Mathematics=70;
+        int Computer=60;
+
+        int totelnumber=Physics+Chemistry+Biology+Mathematics+Computer;
+        int percentage=totelnumber/5;
+        System.out.println("percentage : "+percentage);
+        System.out.println("totelnumber"+totelnumber);
+
+        if(percentage<40)
+        {
+            System.out.println("Grade F");
+        }
+        else if(percentage >=45 && percentage<=41)
+        {
+            System.out.println("Grade E");
+        }
+        else if(percentage >= 60&&percentage<=41)
+        {
+            System.out.println("Grade D");
+        }
+        else if(percentage >= 70 && percentage<61)
+        {
+            System.out.println("Grade C");
+        }
+        else if(percentage<=71 && percentage >= 80  )
+        {
+            System.out.println("Grade B");
+        }
+        else if(percentage >= 90 && percentage<=91)
+        {
+            System.out.println("Grade A");
+        }
+       
+    }
+}
+
+38.Write a C program to input basic salary of an employee and calculate its Gross
+salary according to following:
+Basic Salary <= 10000 : HRA = 20%, DA = 80%
+Basic Salary <= 20000 : HRA = 25%, DA = 90%
+Basic Salary > 20000 : HRA = 30%, DA = 95%
+
+Ans)
+
+
+
+
+39.Write a C program to input electricity unit charges and calculate total electricity
+bill according to the given condition:
+For first 50 units Rs. 0.50/unit
+For next 100 units Rs. 0.75/unit
+For next 100 units Rs. 1.20/unit
+For unit above 250 Rs. 1.50/unit
+An additional surcharge of 20% is added to the bill
+
+Ans)
+
+
+
+
+40.Write a C program to print day of week name using switch case.
+
+Ans)
+public class Main{
+    public static void main(String [] args)
+    {
+        int number=3;
+        switch(number)
+        {
+            case 1:
+            System.out.println("Monday");
+            break;
+            case 2:
+            System.out.println("Tuesday");
+            break;
+            case 3:
+            System.out.println("Wednesday");
+            break;
+            case 4:
+            System.out.println("Thursday");
+            break;
+            case 5:
+            System.out.println("Friday");
+            break;
+            case 6:
+            System.out.println("Saturday");
+            break;
+
+
+            case 7:
+            System.out.println("Sunday");
+            break;
+            
+            default:
+            System.out.println("Invalid number");
+            }
+        }
+    }
+41.Write a C program print total number of days in a month using switch case.
+
+Ans)
+public class Main{
+    public static void main(String [] args)
+    {
+        int number=4;
+        switch(number)
+        {
+            case 1:
+            System.out.println("january");
+            break;
+            case 2:
+            System.out.println("february");
+            break;
+            case 3:
+            System.out.println("march");
+            break;
+            case 4:
+            System.out.println("april");
+            break;
+            case 5:
+            System.out.println("may");
+            break;
+            case 6:
+            System.out.println("june");
+            break;
+            case 7:
+            System.out.println("july");
+            break;
+            case 8:
+            System.out.println("August");
+            break;
+            case 9:
+            System.out.println("september");
+            break;
+            case 10:
+            System.out.println("october");
+            break;
+            case 11:
+            System.out.println("November");
+            break;
+            case 12:
+            System.out.println("December");
+            break;
+            default:
+            System.out.println("Invalid month");
+            }
+        
+    }
+}
+
+42.Write a C program to check whether an alphabet is vowel or consonant using
+switch case.
+
+Ans)
+
+public class Main{
+    public static void main(String [] args)
+    {
+        char a='a';
+        switch (a) {
+            case 'a':
+                System.out.println("vowal");
+                break;
+            case 'e':
+                System.out.println("vowal");
+                break;
+            case 'i':
+                System.out.println("vowal");
+                break;
+            case 'o':
+                System.out.println("vowal");
+                break;
+            case 'u':
+                System.out.println("vowal");
+                break;
+        
+            default:
+            System.out.println("consonant");
+                break;
+        }
+    }
+}
+
+
+43.Write a C program to find maximum between two numbers using switch case.
+
+Ans)public class Main{
+    public static void main(String [] args)
+    {
+        String numb="maix";
+        switch (numb) {
+            case "maix":
+            int first=2;
+            int second=90;
+            if(first>second)
+            {
+                System.out.println("this is maix : "+first);
+            }
+            else 
+            {
+                System.out.println("This is maix : "+second);
+            }
+                break;
+        
+            default:
+            System.out.println("Sorry nothing");
+                break;
+        }
+    }
+}
+
+44.Write a C program to check whether a number is even or odd using switch case.
+
+Ans)
+import java.util.Scanner;
+public class Main{
+    public static void main(String [] args)
+    {
+        Scanner input=new Scanner (System.in);
+        System.out.println("Enter the what you want : ");
+        String value=input.next();
+
+        System.out.println("Enter the number :");
+        int num=input.nextInt();
+        
+        switch (value) {
+            case "even":
+                      
+                       if(num%2==0)
+                       {
+                        System.out.println("this number is even number : "+num);
+                       }
+                       else 
+                       {
+                        System.out.println("this numebr is not even number : "+num);
+                       }
+
+                break;
+            case "odd":
+                      
+                       if(num%2==0)
+                       {
+                        System.out.println("this number is odd number : "+num);
+                       }
+                       else 
+                       {
+                        System.out.println("this numebr is not odd number : "+num);
+                       }
+
+                break;
+        
+            default:
+                break;
+        }
+    }
+}
+
+45.Write a C program to check whether a number is positive, negative or zero using
+switch case.
+
+Ans)
+import java.util.Scanner;
+public class Main{
+    public static void main(String [] args)
+    {
+        Scanner input=new Scanner (System.in);
+        System.out.println("Enter the number like zero and positive number : ");
+        String value=input.next();
+
+        
+        System.out.println("Enter String type text like what you want :");
+        int num=input.nextInt();
+        switch (value) {
+            
+           
+            case "positive":
+                if(num<0)
+                {
+                    System.out.println("This number is positive number : "+num);
+                }
+                break;
+            case "zero":
+                if(num==0)
+                {
+                    System.out.println("This number is zero number : "+num);
+                }
+                break;
+            case "negative":
+                if(num>0)
+                {
+                    System.out.println("This number is negative  number : "+num);
+                }
+                break;
+            default:
+                break;
+        }
+    }
+}
+
+46.Write a C program to find roots of a quadratic equation using switch case.
+
+Ans)
+
+
+
+47.Write a C program to create Simple Calculator using switch case.
+
+Ans)
+import java.util.Scanner;
+public class Main{
+    public static void main(String [] args)
+    {
+        Scanner input=new Scanner (System.in);
+        System.out.println("                                   This is Calculator                           ");
+        System.out.println("Enter the first value ");
+        int first=input.nextInt();
+        System.out.println("Enter the value of second : ");
+        int second=input.nextInt();
+        System.out.println("Enter the Symbol + - * % / :");
+        String num=input.next();
+        switch (num) {
+            case "+":
+                System.out.println(first+second);
+                break;
+            case "-":
+            System.out.println(first-second);
+            break;
+
+            case "*":
+            System.out.println(first*second);
+            break;
+
+            case "/":
+            System.out.println(first/second);
+            break;
+
+            case "%":
+            System.out.println(first%second);
+            break;
+
+            default:
+            System.out.println("Enter the rigth value");
+                break;
+        }
+    }
+}
+
+48.Write a C program to print all natural numbers from 1 to n. - using while loop
+
+Ans)
+
+public class Main{
+    public static void main(String [] args)
+    {
+        int n=1;
+        
+        while(n<=10)
+        {
+            System.out.println(n);
+            n++;
+        }
+    }
+}
+
+
+49.Write a C program to print all natural numbers in reverse (from n to 1). - using
+while loop
+
+Ans)
+public class Main{
+    public static void main(String [] args)
+    {
+        int n=10;
+        
+        while(n>=1)
+        {
+            System.out.println(n);
+            n--;
+        }
+    }
+}
+
+50.Write a C program to print all alphabets from a to z. - using while loop
+
+Ans)
+public class Main{
+    public static void main(String [] args)
+    {
+        char a='a';
+        while(a<='z')
+        {
+            System.out.println(a);
+            a++;
+
+        }
+    }
+}
+
+51.Write a C program to print all even numbers between 1 to 100. - using while loop
+
+Ans)
+public class Main{
+    public static void main(String [] args)
+    {
+        int n=0;
+        while (n!=100) {
+            if(n%2==0)
+            {
+                System.out.println(n);
+            }
+            n++;
+        }
+    }
+}
+
+52.Write a C program to print all odd number between 1 to 100.
+
+Ans)
+
+public class Main{
+    public static void main(String [] args)
+    {
+        int n=1;
+        while (n!=101) {
+            System.out.println(n++);
+        }
+    }
+}
+
+
+53.Write a C program to find sum of all natural numbers between 1 to n.
+
+Ans)
+public class Main{
+    public static void main(String [] args)
+    {
+        int a=1;
+        int n=10;
+        int sum=0;
+        while (a<=n) {
+            sum=sum+a;
+            a++;
+            System.out.println(sum);
+        }
+        System.out.println("Sum : "+sum);
+
+    }
+}
+
+
+54.Write a C program to find sum of all even numbers between 1 to n.
+
+Ans)
+public class Main{
+    public static void main(String [] args)
+    {
+        int a=1;
+        int n=10;
+        int sum=0;
+        while (a<=n) {
+            if(a%2==0)
+            {
+            sum=sum+a;
+            
+            System.out.println(sum);
+            }
+            a++;
+        }
+        System.out.println("Sum : "+sum);
+
+    }
+}
+
+
+55.Write a C program to find sum of all odd numbers between 1 to n.
+
+Ans)
+public class Main{
+    public static void main(String [] args)
+    {
+        int a=1;
+        int n=10;
+        int sum=0;
+        while (a<=n) {
+            if(a%2!=0)
+            {
+                sum=+a;
+                System.out.println(sum);
+
+            }
+            a++;
+        }
+        System.out.println("Totel odd sum : "+sum);
+    }
+}
+
+
+56.Write a C program to print multiplication table of any number.
+
+Ans)
+import java.util.Scanner;
+public class Main{
+    public static void main(String [] args)
+    {
+        Scanner input=new Scanner(System.in);
+        int num=input.nextInt();
+        for(int i=1;i<=10;i++)
+        {
+            System.out.println(num+" * "+i+" = "+(num*i));
+        }
+    }
+}
+
+
+57.Write a C program to count number of digits in a number.
+
+Ans)
+public class Main{
+    public static void main(String [] args)
+    {
+        int num=12435;
+        int count=0;
+        int rem=0;
+        while(num!=0)
+        {
+            rem=num%10;
+            count++;
+            num=num/10;
+        }
+        System.out.println("This is digite : "+count);
+    }
+}
+
+
+58.Write a C program to find first and last digit of a number.
+
+Ans)
+import java.util.*;
+public class Main{
+    public static void main(String [] args)
+    {
+        int num=12133333;
+        int rem=0;
+       while (num!=0) {
+        rem=num%10;
+        if(rem==num)
+        {
+            System.out.println("First digit of number is : "+rem);
+        }
+            num=num/10;
+        }
+
+        int nu=1213335;
+        int re=0;
+        while (nu!=0) {
+            re=nu%10;
+            if(nu==num)
+            {
+            }
+            else{
+                System.out.println("This is last number : "+re);
+                break;
+            }
+            
+            nu=nu/10;
+       }
+    }
+}
+
+
+59.Write a C program to find sum of first and last digit of a number.
+
+Ans)
+public class Main{
+    public static void main(String [] args)
+    {
+        int num=102;
+        int rem=0;
+        int first=0;
+        while (num!=0) {
+            rem=num%10;
+            if(rem==num)
+            {
+                first=rem;
+            }
+            num=num/10;
+        }
+        int nu=102;
+        int re=0;
+        int second=0;
+        while (nu!=0) {
+            re=nu%10;
+            if(nu==num)
+            {
+               
+                }
+                else{
+                    second=re;
+                    break;
+                    }
+                    nu=nu/10;
+                    }
+                    System.out.println("This is first number : "+first);
+                    System.out.println("This is second number : "+second);
+                    System.out.println("The sum of first and second number : "+(first+second));
+    }
+}
+
+
+60.Write a C program to swap first and last digits of a number.
+
+Ans)
+public class Main{
+   
+    public static void main(String [] args)
+    {
+       int a[]={1,2,3,4,5};
+    
+           int temp=a[0];
+            a[0]=a[a.length-1];
+            a[a.length-1]=temp;
+           
+        
+        for(int i=0;i<a.length;i++)
+        {
+            System.out.print(a[i]+" ");
+        }
+    }
+}
+
+
+61.Write a C program to calculate sum of digits of a number.
+
+Ans)
+public class Main{
+    public static void main(String [] args)
+    {
+        int num=1234;
+        int rem=0;
+        int sum=0;
+        while (num!=0) {
+            rem=num%10;
+            sum=sum+rem;
+            num=num/10;
+            
+        }
+        System.out.println("Totel sum number : "+sum);
+        
+    }
+}
+
+
+
+62.Write a C program to calculate product of digits of a number.
+
+Ans)
+public class Main{
+    public static void main(String [] arg)
+    {
+        int number = 123;
+       int product=1;
+        int rem=0;
+        while(number!=0)
+        {
+            rem=number%10;
+            product=product*rem;
+            number=number/10;
+        }
+        System.out.println("product : "+product);
+    }
+}
+
+
+63.Write a C program to enter a number and print its reverse.
+
+Ans)
+public class Main{
+    public static void main(String [] args)
+    {
+        int num=102;
+        int rem=0;
+        while (num!=0) {
+            rem=num%10;
+            num=num/10;
+            System.out.print(rem);
+        }
+    }
+}
+
+
+
+
+
+
+
+
+64.Write a C program to check whether a number is palindrome or not.
+
+Ans)
+public class Main{
+    public static void main(String [] agrs)
+    {
+        int num=101;
+        int rem=0;
+        int temp=num;
+        int sum=0;
+
+        while (num!=0) {
+            rem=num%10;
+            sum=sum*10+rem;
+            num=num/10;
+        }
+        if(sum==temp)
+        {
+            System.out.println("This is palindrom number : "+sum);
+        }
+        else 
+        {
+            System.out.println("This is not palindrom number : "+sum);
+        }
+    }
+}
+
+
+
+
+
+65.Write a C program to find frequency of each digit in a given integer.
+
+
+Ans)
+
+
+
+
+
+
+
+
+
+66.Write a C program to enter a number and print it in words.
+Ans)
+
+import java.util.Scanner;
+public class Main{
+    public static void main(String [] args)
+    {
+        Scanner input=new Scanner(System.in);
+        int num=input.nextInt();
+        switch (num) {
+            case 0:
+                System.out.println("Zero");
+                break;
+            case 1:
+            System.out.println("one");
+                break;
+                case 2:
+                System.out.println("Two");
+                break;
+                case 3:
+                System.out.println("Three");
+                break;
+                case 4:
+                System.out.println("Four");
+                break;
+                case 5:
+                System.out.println("Five");
+                break;
+                case 6:
+                System.out.println("Six");
+                break;
+                case 7:
+                System.out.println("Seven");
+                break;
+                case 8:
+                System.out.println("Eight");
+                break;
+                case 9:
+                System.out.println("Nine");
+                break;
+                default:
+                System.out.println("Invalid number");
+                break;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+67.Write a C program to print all ASCII character with their values.
+Ans)
+public class Main{
+    public static void main(String [] args)
+    {
+       
+        for(int num=0;num<=127;num++)
+        {
+            char a=(char)num;
+        
+            System.out.println(a);
+            
+        }
+    }
+}
+
+
+
+
+
+68.Write a C program to find power of a number using for loop.
+
+Ans)
+public class Main{
+    public static void main(String [] args)
+    {
+        int base=2;
+        int last=3;
+        long power=1;
+    
+        for(int i=1;i<=last;i++)
+        {
+            power*=base;
+        }
+        System.out.println("power : "+power);
+    }
+}
+
+
+
+
+
+69.Write a C program to find all factors of a number.
+Ans)
+public class Main{
+    public static void main(String [] args)
+    {
+        int number=12;
+        for(int i=1;i<=number;i++)
+        {
+            if(number%i==0)
+            {
+                System.out.println("This is factors : "+ i);
+            }
+        }
+    }
+}
+
+
+
+
+70.Write a C program to calculate factorial of a number.
+Ans)
+public class Main{
+    public static void main(String [] args)
+    {
+        int num=5;
+        int fact=1;
+        for(int i=1;i<=num;i++)
+        {
+            fact=fact*i;
+        }
+        System.out.println(fact);
+    }
+}
+
+
+
+
+71.Write a C program to find HCF (GCD) of two numbers.
+Ans)
+
+
+
+
+72.Write a C program to find LCM of two numbers.
+Ans)
+
+
+
+
+
+73.Write a C program to check whether a number is Prime number or not.
+Ans)
+
+
+
+
+
+74.Write a C program to print all Prime numbers between 1 to n.
+Ans)
+
+
+
+
+
+
+
+75.Write a C program to find sum of all prime numbers between 1 to n.
+Ans)
+
+
+
+
+76.Write a C program to find all prime factors of a number.
+Ans)
+
+
+
+
+
+
+
+77.Write a C program to check whether a number is Armstrong number or not.
+Ans)
+
+
+
+
+78.Write a C program to print all Armstrong numbers between 1 to n.
+Ans)
+
+
+
+
+79.Write a C program to check whether a number is Perfect number or not.
+Ans)
+
+
+
+
+
+
+80.Write a C program to print all Perfect numbers between 1 to n.
+81.Write a C program to check whether a number is Strong number or not.
+82.Write a C program to print all Strong numbers between 1 to n.
+83.Write a C program to print Fibonacci series up to n terms.
+84.Write a C program to find one's complement of a binary number.
+85.Write a C program to find two's complement of a binary number.
+86.Write a C program to convert Binary to Octal number system.
+87.Write a C program to convert Binary to Decimal number system.
+88.Write a C program to convert Binary to Hexadecimal number system.
+89.Write a C program to convert Octal to Binary number system.
+90.Write a C program to convert Octal to Decimal number system.
+91.Write a C program to convert Octal to Hexadecimal number system.
+92.Write a C program to convert Decimal to Binary number system.
+93.Write a C program to convert Decimal to Octal number system.
+94.Write a C program to convert Decimal to Hexadecimal number system.
+95.Write a C program to convert Hexadecimal to Binary number system.
+96.Write a C program to convert Hexadecimal to Octal number system.
+97.Write a C program to convert Hexadecimal to Decimal number system.
+98.Write a C program to print Pascal triangle upto n rows.
+99.Write a C program to find length of a string without using predefine function too
+all below quistions.
+100. Write a C program to copy one string to another string.
+101. Write a C program to concatenate two strings.
+102. Write a C program to compare two strings.
+103. Write a C program to convert lowercase string to uppercase.
+104. Write a C program to convert uppercase string to lowercase.
+105. Write a C program to toggle case of each character of a string.
+106. Write a C program to find total number of alphabets, digits or special
+character in a string.
+107. Write a C program to count total number of vowels and consonants in a string.
+108. Write a C program to count total number of words in a string.
+109. Write a C program to find reverse of a string.
+110. Write a C program to check whether a string is palindrome or not.
+111. Write a C program to reverse order of words in a given string.
+112. Write a C program to find first occurrence of a character in a given string.
+113. Write a C program to find last occurrence of a character in a given string.
+114. Write a C program to search all occurrences of a character in given string.
+
+115. Write a C program to count occurrences of a character in given string.
+116. Write a C program to find highest frequency character in a string.
+117. Write a C program to find lowest frequency character in a string.
+118. Write a C program to count frequency of each character in a string.
+119. Write a C program to remove first occurrence of a character from string.
+120. Write a C program to remove last occurrence of a character from string.
+121. Write a C program to remove all occurrences of a character from string.
+122. Write a C program to remove all repeated characters from a given string.
+123. Write a C program to replace first occurrence of a character with another in a
+string.
+124. Write a C program to replace last occurrence of a character with another in a
+string.
+125. Write a C program to replace all occurrences of a character with another in a
+string.
+126. Write a C program to find first occurrence of a word in a given string.
+127. Write a C program to find last occurrence of a word in a given string.
+128. Write a C program to search all occurrences of a word in given string.
+129. Write a C program to count occurrences of a word in a given string.
+130. Write a C program to remove first occurrence of a word from string.
+131. Write a C program to remove last occurrence of a word in given string.
+132. Write a C program to remove all occurrence of a word in given string.
+133. Write a C program to trim leading white space characters from given string.
+134. Write a C program to trim trailing white space characters from given string.
+135. Write a C program to trim both leading and trailing white space characters
+from given string.
+136. Write a C program to remove all extra blank spaces from given string.
+137. Write a C program to read and print elements of array. - using recursion.
+138. Write a C program to print all negative elements in an array.
+139. Write a C program to find sum of all array elements. - using recursion.
+140. Write a C program to find maximum and minimum element in an array. - using
+recursion.
+141. Write a C program to find second largest element in an array.
+142. Write a C program to count total number of even and odd elements in an
+array.
+143. Write a C program to count total number of negative elements in an array.
+144. Write a C program to copy all elements from an array to another array.
+145. Write a C program to insert an element in an array.
+146. Write a C program to delete an element from an array at specified position.
+147. Write a C program to count frequency of each element in an array.
+
+148. Write a C program to print all unique elements in the array.
+149. Write a C program to count total number of duplicate elements in an array.
+150. Write a C program to delete all duplicate elements from an array.
+151. Write a C program to merge two array to third array.
+152. Write a C program to find reverse of an array.
+153. Write a C program to put even and odd elements of array in two separate
+array.
+154. Write a C program to search an element in an array.
+155. Write a C program to sort array elements in ascending or descending order.
+156. Write a C program to sort even and odd elements of array separately.
+157. Write a C program to left rotate an array.
+158. Write a C program to right rotate an array.
+159. Write a C program to add two matrices.
+160. Write a C program to subtract two matrices.
+161. Write a C program to perform Scalar matrix multiplication.
+162. Write a C program to multiply two matrices.
+163. Write a C program to check whether two matrices are equal or not.
+164. Write a C program to find sum of main diagonal elements of a matrix.
+165. Write a C program to find sum of minor diagonal elements of a matrix.
+166. Write a C program to find sum of each row and column of a matrix.
+167. Write a C program to interchange diagonals of a matrix.
+168. Write a C program to find upper triangular matrix.
+169. Write a C program to find lower triangular matrix.
+170. Write a C program to find sum of upper triangular matrix.
+171. Write a C program to find sum of lower triangular matrix.
+172. Write a C program to find transpose of a matrix.
+173. Write a C program to find determinant of a matrix.
+174. Write a C program to check Identity matrix.
+175. Write a C program to check Sparse matrix.
+176. Write a C program to check Symmetric matrix.
+177. Write a C program to find cube of any number using function.
+178. Write a C program to find diameter, circumference and area of circle using
+functions.
+179. Write a C program to find maximum and minimum between two numbers
+using functions.
+180. Write a C program to check whether a number is even or odd using functions.
+181. Write a C program to check whether a number is prime, Armstrong or perfect
+number using functions.
+
+182. Write a C program to find all prime numbers between given interval using
+functions.
+183. Write a C program to print all strong numbers between given interval using
+functions.
+184. Write a C program to print all Armstrong numbers between given interval
+using functions.
+185. Write a C program to print all perfect numbers between given interval using
+functions.
+186. Write a C program to find power of any number using recursion.
+187. Write a C program to print all natural numbers between 1 to n using recursion.
+188. Write a C program to print all even or odd numbers in given range using
+recursion.
+189. Write a C program to find sum of all natural numbers between 1 to n using
+recursion.
+190. Write a C program to find sum of all even or odd numbers in given range
+using recursion.
+191. Write a C program to find reverse of any number using recursion.
+192. Write a C program to check whether a number is palindrome or not using
+recursion.
+193. Write a C program to find sum of digits of a given number using recursion.
+194. Write a C program to find factorial of any number using recursion.
+195. Write a C program to generate nth Fibonacci term using recursion.
+196. Write a C program to find GCD (HCF) of two numbers using recursion.
+197. Write a C program to find LCM of two numbers using recursion.
+198. Write a C program to display all array elements using recursion.
+199. Write a C program to find sum of elements of array using recursion.
+200. Write a C program to find maximum and minimum elements in array using
+recursion.
+201. Link for pattern :https://www.techgeekbuzz.com/blog/pattern-programs-in-c/ ,
+https://www.csinfo360.com/p/pattern-programming-questions-and.html

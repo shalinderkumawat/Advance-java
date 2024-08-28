@@ -1,0 +1,91 @@
+1)intersection of two linedkList
+
+
+2)middle of the linkedlist through loop and node 
+public class Main{
+    static class Node{
+        int data;
+        Node next;
+        Node(int data)
+        {
+            this.data=data;
+        }
+    }
+        static void get(Node head)
+     {
+        Node temp=head;
+        int count=0;
+        while(temp!=null)
+        {
+            count++;
+            temp=temp.next;
+        }
+        int size=count/2;
+        Node d=head;
+        for(int i=0;i<size;i++)
+        {
+            
+            d=d.next;
+        }
+        System.out.println(d.data);
+     }
+    
+    public static void main(String [] args)
+    {
+        Node head=new Node(1);
+        Node a=new Node(2);
+        Node b=new Node(3);
+        Node c=new Node(4);
+        Node d=new Node(5);
+        Node tail=new Node(6);
+        head.next=a;
+        a.next=b;
+        b.next=c;
+        c.next=d;
+        d.next=tail;
+        tail.next=null;
+        get(head);
+    }   
+}
+
+3)middle of the linked list through one traversal 	
+public class Main{
+    
+    static class Node{
+            int data;
+            Node next;
+            Node(int data){
+                this.data = data;
+            }
+
+        }
+        public static void get(Node head)
+        {
+            Node temp=head;
+            Node first=head;
+            Node slow=head;
+            while(first!=null&&slow!=null)
+            {
+                first=first.next.next;
+                slow=slow.next;
+            }
+            System.out.println(slow.data);
+        }
+    public static void main(String [] args)
+    {
+       Node head=new Node(1);
+       Node a=new Node(2);
+       Node b=new Node(3);
+       Node c=new Node(4);
+       Node d=new Node(5);
+       Node tail=new Node(6);
+       head.next=a;
+       a.next=b;
+       b.next=c;
+       c.next=d;
+        d.next=tail;
+        tail.next=null;
+        get(head);
+        
+    }
+}

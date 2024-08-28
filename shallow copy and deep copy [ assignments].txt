@@ -1,0 +1,324 @@
+Q1. shallow copy 
+a[] ={1,2,3,4,5,6,7,8,9};
+b[]=a;
+
+a[2]=98;
+a[4]=56;
+a
+b
+
+Ans)
+import java.util.Scanner;
+
+public class Main{
+  public static void main(String [] args)
+  {
+    Scanner input=new Scanner (System.in);
+    System.out.print("Enter the array length : ");
+    int size=input.nextInt();
+    int a[]=new int[size];
+
+    for(int i=0;i<a.length;i++)
+    {
+      System.out.print("Enter the array value of : "+i+" this value is : ");
+      a[i]=input.nextInt();
+    }
+
+    a[2]=98;
+    a[3]=988;
+
+    int b[]=a;
+
+    for(int i=0;i<b.length;i++)
+    {
+      System.out.print("This value is  b array : "+b[i]+" ");
+    }
+  }
+}
+
+deep copy
+import java.util.Scanner;
+
+public class Main{
+  public static void main(String [] args)
+  {
+    Scanner input=new Scanner (System.in);
+    System.out.print("Enter the array length : ");
+    int size=input.nextInt();
+    int a[]=new int[size];
+
+    for(int i=0;i<a.length;i++)
+    {
+      System.out.print("Enter the array value of : "+i+" this value is : ");
+      a[i]=input.nextInt();
+    }
+
+    a[2]=98;
+    a[3]=988;
+
+    int b[]=a.clone();
+
+    for(int i=0;i<b.length-1;i++)
+    {
+      System.out.print("This value is  b array : "+b[i]+" ");
+    }
+  }
+}
+
+
+
+Q2. a[]={1,2,3,4,5,6,7,8,9};
+b=a
+c=b
+c[2]=98;
+c[4]=56;
+d=c
+a,b,c,d
+
+Ans.
+
+import java.util.Scanner;
+
+public class Main{
+  public static void main(String [] args)
+  {
+    Scanner input=new Scanner (System.in);
+    System.out.print("Enter the array length : ");
+    int size=input.nextInt();
+    int a[]=new int[size];
+
+    for(int i=0;i<a.length;i++)
+    {
+      System.out.print("Enter the array value of : "+i+" this value is : ");
+      a[i]=input.nextInt();
+    }
+
+//     a[]={1,2,3,4,5,6,7,8,9};
+// b=a
+// c=b
+// c[2]=98;
+// c[4]=56;
+// d=c
+// a,b,c,d
+
+   int b[]=a;
+   int c[]=b;
+   c[2]=98;
+   c[4]=56;
+   int d[]=c;
+
+   for(int i=0;i<=d.length-1;i++)
+   {
+    System.out.print(d[i]+" ");
+   }
+  }
+}
+
+deep copy
+
+import java.util.Scanner;
+
+public class Main{
+  public static void main(String [] args)
+  {
+    Scanner input=new Scanner (System.in);
+    System.out.print("Enter the array length : ");
+    int size=input.nextInt();
+    int a[]=new int[size];
+
+    for(int i=0;i<a.length;i++)
+    {
+      System.out.print("Enter the array value of : "+i+" this value is : ");
+      a[i]=input.nextInt();
+    }
+
+//     a[]={1,2,3,4,5,6,7,8,9};
+// b=a
+// c=b
+// c[2]=98;
+// c[4]=56;
+// d=c
+// a,b,c,d
+
+   int b[]=a.clone();
+   int c[]=b.clone();
+   c[2]=98;
+   c[4]=56;
+   int d[]=c.clone();
+
+   for(int i=0;i<=d.length-1;i++)
+   {
+    System.out.print(d[i]+" ");
+   }
+  }
+}
+
+Q3. a[]={1,2,3,4,5,6,7,8,9};
+b=a
+c=b
+d=c
+c[2]=98;
+c[4]=56;
+
+a,b,c,d
+
+
+Ans)
+
+import java.util.Scanner;
+
+public class Main{
+  public static void main(String [] args)
+  {
+    Scanner input=new Scanner (System.in);
+    System.out.print("Enter the array length : ");
+    int size=input.nextInt();
+    int a[]=new int[size];
+
+    for(int i=0;i<a.length;i++)
+    {
+      System.out.print("Enter the array value of : "+i+" this value is : ");
+      a[i]=input.nextInt();
+    }
+
+    // a[]={1,2,3,4,5,6,7,8,9};
+    // b=a
+    // c=b
+    // d=c
+    // c[2]=98;
+    // c[4]=56;
+    
+    // a,b,c,d
+    
+
+ int b[]=a;
+ int c[]=b;
+ int d[]=c;
+ c[2]=98;
+ c[4]=56;
+ 
+
+   for(int i=0;i<=d.length-1;i++)
+   {
+    System.out.print(d[i]+" ");
+   }
+  }
+}
+
+
+deep copy
+
+import java.util.Scanner;
+
+public class Main{
+  public static void main(String [] args)
+  {
+    Scanner input=new Scanner (System.in);
+    System.out.print("Enter the array length : ");
+    int size=input.nextInt();
+    int a[]=new int[size];
+
+    for(int i=0;i<a.length;i++)
+    {
+      System.out.print("Enter the array value of : "+i+" this value is : ");
+      a[i]=input.nextInt();
+    }
+
+    // a[]={1,2,3,4,5,6,7,8,9};
+    // b=a
+    // c=b
+    // d=c
+    // c[2]=98;
+    // c[4]=56;
+    
+    // a,b,c,d
+    
+
+ int b[]=a.clone();
+ int c[]=b.clone();
+ int d[]=c.clone();
+ c[2]=98;
+ c[4]=56;
+ 
+
+   for(int i=0;i<=d.length-1;i++)
+   {
+    System.out.print(d[i]+" ");
+   }
+  }
+}
+
+
+Q.  ---------------------------------------------------------
+12,34, 67, 54, 34, 23, 89,34, 76, 45, 34 
+
+target :34 
+count :how many times 
+index :which 
+
+------------------
+
+Ans)
+
+public class Main
+{
+  public static void main(String[] args)
+  {
+    int a[]={12,34, 67, 54, 34, 23, 89,34, 76, 45, 34};
+    int target=34;
+    int count=0;
+    for(int i=0;i<a.length;i++)
+    {
+      if(a[i]==target)
+      {
+        System.out.println("index number is : "+i);
+        count++;
+      }
+    }
+    System.out.println("The number of times "+target+" appears in the array is : "+count);
+  }
+}
+
+Q 12,34, 67, 54, 34, 23, 89,34, 76, 45, 34 
+
+sort : 
+target :34 
+index :which 
+
+
+Ans)
+public class Main{
+  public static void swap(int a[],int i)
+  {
+    int temp=a[i];
+    a[i]=a[i+1];
+    a[i+1]=temp;
+  }
+  public static void print(int a[])
+  {
+    for(int i=0;i<=a.length-1;i++)
+    {
+      if(a[i]<=a[i+1])
+      {
+        swap(a, i);
+      }
+    }
+
+  }
+  public static void prints(int a[])
+  {
+    print(a);
+    for(int i=0;i<=a.length-1;i++)
+    {
+      System.out.print(a[i]+" ");
+    }
+  }
+  public static void main(String [] args)
+  {
+    int a[]={5,4,3,2,1};
+    prints(a);
+  }
+}
+
+
+

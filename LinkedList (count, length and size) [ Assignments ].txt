@@ -1,0 +1,196 @@
+1)12 67 89 24 182 67 121 784
+
+Ans
+public class Main{
+    public static class Node {
+        int data;
+        Node next;
+        Node(int data){
+            this.data=data;
+
+        }
+    }
+    public static void main(String [] args)
+    {
+        Node a=new Node(12);
+        Node b=new Node(67);
+        Node c=new Node(89);
+        Node d=new Node(34);
+        Node e=new Node(56);
+        Node f=new Node(78);
+        Node g=new Node(90);
+        
+        a.next=b;
+        b.next=c;
+        c.next=d;
+        d.next=e;
+        e.next=f;
+        f.next=g;
+        g.next=null;
+
+        System.out.println(a.data);
+        System.out.println(b.data);
+        System.out.println(c.data);
+        System.out.println(d.data);
+        System.out.println(e.data);
+        System.out.println(f.data);
+        System.out.println(g.data);
+    }
+}
+
+2)12 67 89 24 182 67 121 784 through for loop 
+Ans
+public class Main{
+    public static class Node {
+        int data;
+        Node next;
+        Node(int data){
+            this.data=data;
+
+        }
+    }
+    public static void main(String [] args)
+    {
+        Node a=new Node(12);
+        Node b=new Node(67);
+        Node c=new Node(89);
+        Node d=new Node(34);
+        Node e=new Node(56);
+        Node f=new Node(78);
+        Node g=new Node(90);
+        
+        a.next=b;
+        b.next=c;
+        c.next=d;
+        d.next=e;
+        e.next=f;
+        f.next=g;
+        g.next=null;
+
+
+       for(int i=0;i<=7-1;i++)
+       {
+        System.out.print(a.data+" ");
+         a=a.next;
+       }
+    }
+}
+
+3)12 67 89 24 182 67 121 784 through while loop 
+
+Ans
+public class Main{
+    public static class Node {
+        int data;
+        Node next;
+        Node(int data){
+            this.data=data;
+
+        }
+    }
+    public static void main(String [] args)
+    {
+        Node a=new Node(12);
+        Node b=new Node(67);
+        Node c=new Node(89);
+        Node d=new Node(34);
+        Node e=new Node(56);
+        Node f=new Node(78);
+        Node g=new Node(90);
+        
+        a.next=b;
+        b.next=c;
+        c.next=d;
+        d.next=e;
+        e.next=f;
+        f.next=g;
+        g.next=null;
+
+        Node temp=a;
+       while (temp!=null) {
+        System.out.print(temp.data+" ");
+       temp=temp.next;
+       }
+    }
+}
+
+4)12 67 89 24 182 67 121 784 length 
+
+Ans
+public class Main{
+    public static class Node {
+        int data;
+        Node next;
+        Node(int data){
+            this.data=data;
+
+        }
+    }
+    public static void main(String [] args)
+    {
+        Node a=new Node(12);
+        Node b=new Node(67);
+        Node c=new Node(89);
+        Node d=new Node(34);
+        Node e=new Node(56);
+        Node f=new Node(78);
+        Node g=new Node(90);
+        
+        a.next=b;
+        b.next=c;
+        c.next=d;
+        d.next=e;
+        e.next=f;
+        f.next=g;
+        g.next=null;
+
+        int count=0;
+        Node temp=a;
+       while (temp!=null) {
+       count++;
+       temp=temp.next;
+       }
+       System.out.println(count+" This is size this Node");
+    }
+}
+
+5)12 67 89 24 182 67 121 784 count and size 
+
+Ans
+public class Main{
+    public static class Node {
+        int data;
+        Node next;
+        Node(int data){
+            this.data=data;
+
+        }
+    }
+    public static void main(String [] args)
+    {
+        Node a=new Node(12);
+        Node b=new Node(67);
+        Node c=new Node(89);
+        Node d=new Node(34);
+        Node e=new Node(56);
+        Node f=new Node(78);
+        Node g=new Node(90);
+        
+        a.next=b;
+        b.next=c;
+        c.next=d;
+        d.next=e;
+        e.next=f;
+        f.next=g;
+        g.next=null;
+
+        int count=0;
+        Node temp=a;
+       while (temp!=null) {
+       count++;
+       System.out.print(temp+" ");
+       temp=temp.next;
+       }
+       System.out.println(count+" This is size this Node");
+    }
+}

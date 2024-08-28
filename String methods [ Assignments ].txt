@@ -1,0 +1,179 @@
+contains :
+
+Ans)
+public class Main{
+  public static void main(String [] args)
+  {
+    String name="This is ";
+    System.out.println(name.concat("String "));
+  }
+}
+
+endswith :
+
+Ans)
+public class Main{
+  public static void main(String [] args)
+  {
+    String name="This is ";
+    System.out.println(name.endsWith(" "));
+  }
+}
+
+.equals 
+
+Ans)
+public class Main{
+  public static void main(String [] args)
+  {
+    String name="This is ";
+    System.out.println(name.equals("is"));
+  }
+}
+
+
+getchars : 
+
+Ans)
+public class Main{
+  public static void main(String [] args)
+  {
+    String name="This is ";
+    
+    char a[]=new char[10];
+    try{
+      name.getChars(0, 4, a, 0);
+      System.out.println(a);
+    }
+    catch(Exception sc)
+    {
+      System.out.println(sc);
+    }
+  }
+}
+
+equalsIgnoreCase
+
+Ans)
+
+public class Main{
+  public static void main(String [] args)
+  {
+    String name="This is String ";
+    System.out.println(name.equalsIgnoreCase("this"));
+  }
+}
+
+getchars : 
+
+Ans)
+public class Main{
+  public static void main(String [] args)
+  {
+    String name="This is String ";
+    char a[]=new char[10];
+    try{
+      name.getChars(1, 02, a, 0);
+      System.out.println(a);
+    }
+    catch(Exception sc)
+    {
+      System.out.println(sc);
+    }
+  }
+}
+
+indexOf() :
+
+Ans)
+public class Main{
+  public static void main(String [] args)
+  {
+    String name="this is String";
+    System.out.println(name.indexOf("h"));
+  }
+}
+
+
+isEmpty() :
+
+Ans)
+public class Main{
+  public static void main(String [] args)
+  {
+    String name="this is String";
+    if(name.isEmpty())
+    {
+      System.out.println("Yes");
+    }
+    else {
+      System.out.println("not");
+    }
+  }
+}
+
+join : 
+
+Ans)
+public class Main{
+  public static void main(String [] args)
+  {
+    String name="This is Stirng ";
+    String name1=String.join("name"," args" );
+    System.out.println(name1);
+  }
+}
+
+last index of 
+
+Ans)
+public class Main{
+  public static void main(String [] args)
+  {
+    String name="This is Stirng ";
+    System.out.println(name.lastIndexOf("g"));
+  }
+}
+
+substring
+
+Ans)
+public class Main{
+  public static void main(String [] args)
+  {
+    String name="This is Stirng ";
+    System.out.println(name.substring(1, 3));
+  }
+}
+startsWith
+
+public class Main{
+  public static void main(String [] args)
+  {
+    String name="This is Stirng ";
+    System.out.println(name.startsWith("T"));
+  }
+}
+
+replaceAll
+
+Ans)
+
+public class Main{
+  public static void main(String [] args)
+  {
+    String name="This is Stirng ";
+    System.out.println(name.replaceAll("s","as"));
+  }
+}
+
+replace
+
+Ans)
+public class Main{
+  public static void main(String [] args)
+  {
+    String name="This is Stirng ";
+    System.out.println(name.replace("This ", "This is "));
+  }
+}

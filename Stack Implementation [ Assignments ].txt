@@ -1,0 +1,139 @@
+stack implementation 
+-----------------------------------------------
+
+Ans
+
+import java.util.*;
+
+public class Main {
+    public static class Stack {
+        int a[] = new int[10];
+        int index = 0;
+
+        void push(int val) {
+            a[index] = val;
+            index++;
+        }
+
+        // size
+        int size() {
+            return index;
+        }
+
+        // print data
+        void display() {
+            for (int i = 0; i < index; i++) {
+                System.out.print(a[i] + " ");
+            }
+            System.out.println();
+        }
+
+        // peek element
+        void peek() {
+            System.out.println(a[index - 1]);
+        }
+    }
+
+    public static void main(String[] args) {
+        Stack st = new Stack();
+        st.push(1);
+        st.push(2);
+        st.push(3);
+        st.push(4);
+        st.push(5);
+        st.display();
+        System.out.println("size" + st.size());
+        System.out.print("peek");
+        st.peek();
+    }
+}
+
+
+
+
+other 
+
+import java.util.*;
+class Stack{
+    int a[]=new int[10];
+    int index;
+    void push(int val)
+    {
+        a[index]=val;
+        index++;
+    }
+    int getindex(){
+        return index;
+    }
+    void peek(){
+        System.out.println(a[index-1]);
+    }
+
+    void print(){
+        for(int i=0;i<index;i++){
+            System.out.println(a[i]);
+        }
+    }
+}
+public class Main{
+    public static void main(String [] args)
+    {
+        Stack sc=new Stack();
+        sc.push(1);
+        sc.push(2);
+
+        // get index this array
+
+        System.out.println("this is index"+sc.getindex());
+
+        // peek element get throw the method
+        System.out.println("This is peek element ");
+
+       sc.peek();
+
+       System.out.println("print the all element ");
+       sc.print();
+
+    }
+}
+
+bracket matched 
+
+-----------------------------------------------
+
+
+import java.util.*;
+import java.util.Stack;
+
+public class Main {
+    public static boolean isBalanced(String str) {
+        Stack<Character> st = new Stack<>();
+        int n = str.length();
+        for (int i = 0; i < n; i++) {
+            char ch = str.charAt(i);
+            if (ch == '(') {
+                st.push(ch);
+            } else {
+                // when bracket will be closing
+                if (st.size() == 0) {
+                    return false;
+                }
+                if (st.peek() == '(') {
+                    st.pop();
+                }
+            }
+
+        }
+        if (st.size() > 0) {
+            return false;
+        } else
+            return true;
+    }
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        String name = sc.nextLine();
+        System.out.println(name);
+        System.out.println(isBalanced(name));
+    }
+}

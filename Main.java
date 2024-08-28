@@ -3697,19 +3697,149 @@
 
 // 71.Write a C program to find HCF (GCD) of two numbers.
 
-public class Main{
-    public static void main(String [] args)
-    {
-        int num=1234;
-        int rem=0;
-        int sum=0;
-        while (num!=0) {
-            rem=num%10;
-            sum=sum+rem;
-            num=num/10;
+// public class Main{
+//     public static void main(String [] args)
+//     {
+//         int num=1234;
+//         int rem=0;
+//         int sum=0;
+//         while (num!=0) {
+//             rem=num%10;
+//             sum=sum+rem;
+//             num=num/10;
             
-        }
-        System.out.println("Totel sum number : "+sum);
+//         }
+//         System.out.println("Totel sum number : "+sum);
         
+//     }
+// }
+
+// import java.util.Scanner;
+// public class Main{
+//     public static void main(String [] args)
+//     {
+//         Scanner input=new Scanner(System.in);
+//         int a= input.nextInt();
+//         int ac=0;
+       
+//     }
+// }
+// public class Main {
+
+//     public static void main(String[] args) {
+//         int num=123;
+//         int rem=0;
+//         int sum=0;
+//         while (num!=0) {
+//             sale
+//         }
+//     }
+// }
+
+// public class Main{
+//    static void swap(int a[] ,int i ,int j)
+//    {
+//     int temp=a[i];
+//     a[i]=a[j];
+//     a[j]=temp;
+
+
+    
+//    }
+//    static void print(int a[])
+//    {
+//     for(int i=0;i<=a.length-1;i++)
+//     {
+//       System.out.print(a[i]+" ");
+//     }
+//    }
+//     public static void main(String [] args)
+//     {
+//       int a[]={1,0,1,0,1,0};
+//       for(int i=0;i<a.length-1;i++)
+//       {
+//         for(int j=i+1;j<a.length;j++)
+//         {
+//             if(a[i]>a[j])
+//             {
+//                 swap(a, i ,j);
+//             }
+//         }
+       
+//       }  
+//      print(a); 
+    
+//     }
+// }
+// import java.util.Scanner;
+// public class Main {
+
+      
+//         public static void main(String args[]){    
+//          int i,m=0,flag=0; 
+//          Scanner input=new Scanner(System.in);     
+//          int n=input.nextInt();   
+//          m=n/2;      
+         
+//          if(n==0||n==1){  
+//           System.out.println(n+" is not prime number");      
+//          }
+         
+//          else{  
+          
+//             for(i=2;i<=m;i++){      
+         
+//                 if(n%i==0){      
+           
+//                     System.out.println(n+" is not prime number");      
+           
+//                     flag=1;      
+            
+//                     break;      
+         
+//                 }      
+          
+//             }      
+         
+//             if(flag==0)  { System.out.println(n+" is prime number"); }  
+         
+//         }
+      
+//     }    
+    
+ 
+// }
+// abstract class A {
+
+//     abstract void show();
+// }
+// public class Main extends A{
+//     public static void main(String[] args) {
+//         A sc=new Main();
+//         sc.show();
+//         System.out.println("This is");
+//     }
+// }
+class A {
+    
+    private A() {
+        System.out.println("Private constructor called");
+    }
+    
+    
+    static void show() {
+        
+        A sc = new A();
+    }
+}
+
+public class Main  extends A{
+    
+    public static void main(String[] args) {
+       
+        Main sc = new Main();
+        
+        
+        sc.show();
     }
 }

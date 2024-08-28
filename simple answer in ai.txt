@@ -1,0 +1,90 @@
+What are the challenges in NLP?
+
+Challenges include dealing with vagueness, idiomatic expressions, sarcasm, syntax and semantics, multiple languages, language translation, and inadequate training data.
+What is an informed and uninformed search?
+
+Informed search uses heuristic functions to guide the search process, while uninformed search does not use any additional information other than the problem definition.
+What is a frame in A.I.?
+
+A frame is a data structure used for representing knowledge in an organized way. It consists of a set of slots that can hold values, and it is used for representing objects, concepts, or situations.
+Name two programming languages used in A.I.?
+
+Python and R are commonly used for AI, but languages like Java, Prolog, Lisp, and C++ are also used.
+Name two hill-climbing algorithms.
+
+Two hill-climbing algorithms are Simple Hill Climbing and Steepest-Ascent Hill Climbing.
+What are the components of a production system?
+
+The components are the working memory, production memory, and control system.
+What is propositional logic?
+
+Propositional logic is a branch of logic that deals with propositions as units and the relationships between them.
+What is predicate logic (FOL)?
+
+First-order logic (FOL) is a formal system in which statements can be made about objects and their properties.
+What is a script and its use in knowledge representation?
+
+A script is a structured representation of stereotypical knowledge about a situation, event, or action sequence.
+What is the difference between A and AO algorithms?
+
+A* is a search algorithm that uses heuristic methods to find the shortest path, while AO* is an extension of A* that uses fuzzy logic to deal with uncertainty in the heuristic estimates.
+Which data structures are used in BFS and DFS?
+
+BFS uses a queue data structure, while DFS uses a stack data structure (or recursion).
+What is state space search?
+
+State space search is a process used in AI to find a sequence of actions that lead from the initial state to the goal state.
+Explain BFS (Breadth First Search).
+
+BFS is a graph traversal algorithm that explores all the neighbor nodes at the present depth prior to moving on to the nodes at the next depth level.
+Explain inference rules.
+
+Inference rules are logical rules used to derive new knowledge from existing knowledge.
+What are the advantages and disadvantages of expert systems?
+
+Advantages include fast and consistent decision-making, while disadvantages include the inability to handle new or unusual situations and the need for a large knowledge base.
+What is a script? Explain with an example.
+
+A restaurant script would include actions like entering the restaurant, being seated, ordering food, eating, and paying the bill.
+Explain constraint satisfaction problems.
+
+These are problems where the goal is to find a solution that satisfies a set of constraints that limit the possible solutions.
+Explain knowledge representation issues.
+
+Issues include how to represent concepts, relationships, and rules in a way that is suitable for computational manipulation.
+Explain DFS and best-first search with examples.
+
+DFS explores as far as possible along each branch before backtracking, while best-first search selects the most promising node according to a heuristic.
+What is NLP? Explain syntactic and semantic processing.
+
+NLP (Natural Language Processing) is a field of AI that focuses on the interaction between computers and humans using natural language.
+Explain with a diagram the components of an expert system.
+
+Components include a knowledge base, inference engine, and user interface.
+What is knowledge acquisition in expert systems?
+
+Knowledge acquisition is the process of extracting and encoding knowledge from human experts into an expert system.
+Explain AO algorithm with an example.
+
+AO* is a search algorithm that extends the A* algorithm to deal with uncertain heuristic estimates.
+Explain A algorithm with an example.
+
+A* is a search algorithm that finds the shortest path between nodes in a graph, taking into account the cost of the path and a heuristic estimate of the remaining cost.
+What is stemming?
+
+Stemming is the process of reducing words to their word stem, base, or root form.
+What is lemmatization?
+
+Lemmatization is the process of grouping together the inflected forms of a word to be analyzed as a single item, identified by the word's lemma or dictionary form.
+What is part-of-speech tagging?
+
+Part-of-speech tagging is the process of assigning a part of speech to each word in a sentence.
+What are morphemes?
+
+Morphemes are the smallest units of language that carry meaning.
+What is membership degree in fuzzy logic?
+
+Membership degree in fuzzy logic is a measure of how much a particular element belongs to a fuzzy set.
+What is the difference between forward and backward chaining?
+
+Forward chaining starts with the known facts and uses inference rules to derive new facts, while backward chaining starts with the goal and works backward to find the facts that support the goal.

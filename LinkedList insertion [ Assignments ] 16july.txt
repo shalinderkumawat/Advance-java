@@ -1,0 +1,248 @@
+insertion of the element at the end of the linkedlist : 
+import org.w3c.dom.Node;
+
+public class Main{
+    static class Node {
+        int data;
+        Node next;
+        Node(int data){
+        this.data=data;
+        }
+    }
+    static class Link{
+        Node head=null;
+        Node tail=null;
+        public void add(int data){
+            Node temp=new Node(data);
+            if(head==null)
+            {
+                head=temp;
+            }
+            else {
+                tail.next=temp;
+            }
+            tail=temp;
+        }
+        
+        public void print(){
+            Node temp=head;
+            while(temp!=null)
+            {
+                System.out.println(temp.data);
+                temp=temp.next;
+            }
+        }
+    }
+    public static void main(String [] args)
+    {
+        Link scc=new Link();
+        scc.add(1);
+        scc.add(2);
+        scc.add(3);
+        scc.add(4);
+
+        
+        scc.print();
+    }
+}
+
+size method in linked list :
+
+public class Main{
+    static class Node{
+        int data;
+        Node  next;
+        Node(int data)
+        {
+            this.data=data;
+        }
+    }
+    static class Link{
+          Node head=null;
+          Node tail=null;
+          public void add(int datat)
+          {
+            Node temp=new Node(datat);
+            if(head==null)
+            {
+                head=temp;
+            }
+            else 
+            {
+                tail.next=temp;
+            }
+            tail=temp;
+          }
+          public void size(){
+            Node temp=head;
+            int size=0;
+            while (head!=null) {
+                
+               System.out.println(temp.data);
+                temp=temp.next;
+                
+                 size++;
+            }
+            System.out.println(size);
+          }
+    }
+    public static void main(String [] args)
+    {
+        Link s=new Link();
+        s.add(1);
+        s.add(2);
+        s.add(3);
+        s.add(4);
+
+        s.size();
+    }
+}
+
+insertion of the element at the head of the linkedlist : 
+
+public class Main{
+    static class Node {
+        int data;
+        Node next;
+        Node (int data)
+        {
+            this.data=data;
+        }
+
+    }
+    static class Link{
+        Node head=null;
+        Node tail=null;
+        public void add(int val)
+        {
+            Node temp=new Node(val);
+            if(head==null)
+            {
+                head=temp;
+            }
+            else{
+                tail.next=temp;
+            }
+            tail=temp;
+        }
+        public void addfirst(int first)
+        {
+            
+            Node temp=new Node(first);
+            if(head==null)
+            {
+                head=temp;
+            }
+            else 
+            {
+                temp.next=head;
+                head=temp;
+            }
+            tail=temp;
+        }
+        public void display()
+        {
+            Node temp=head;
+            while(temp!=null)
+            {
+                System.out.println(temp.data);
+                temp=temp.next;
+            }
+        }
+    }
+    public static void main(String [] args)
+    {
+        Link sc=new Link();
+        sc.add(1);
+        sc.add(2);
+        sc.add(3);
+        sc.add(4);
+        sc.add(5);
+        // sc.display();
+        sc.addfirst(7);
+        sc.display();
+    }
+}
+
+
+insert element at any index : 
+
+public class Main{
+    static class Node {
+        int data;
+        Node next;
+        Node (int data)
+        {
+            this.data=data;
+        }
+
+    }
+    static class Link{
+        Node head=null;
+        Node tail=null;
+        public void add(int val)
+        {
+            Node temp=new Node(val);
+            if(head==null)
+            {
+                head=temp;
+            }
+            else{
+                tail.next=temp;
+            }
+            tail=temp;
+        }
+        public void addfirst(int first)
+        {
+            
+            Node temp=new Node(first);
+            if(head==null)
+            {
+                head=temp;
+            }
+            else 
+            {
+                temp.next=head;
+                head=temp;
+               
+            }
+            tail=temp;
+        }
+         void addindex(int index,int val){
+            Node temp=new Node(val);
+            Node temp1=head;
+            for(int i=1;i<index-1;i++)
+            {
+                temp1=temp1.next;
+
+            }
+            temp.next=temp1.next;
+            temp1.next=temp;
+
+         }
+        public void display()
+        {
+            Node temp=head;
+            while(temp!=null)
+            {
+                System.out.println(temp.data);
+                temp=temp.next;
+            }
+        }
+    }
+    public static void main(String [] args)
+    {
+        Link sc=new Link();
+        sc.add(1);
+        sc.add(2);
+        sc.add(3);
+        sc.add(4);
+        sc.add(5);
+        // sc.display();
+        sc.addfirst(7);
+        // sc.display();
+
+        sc.addindex(3, 45);
+        sc.display();
+    }
+}

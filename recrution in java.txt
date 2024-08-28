@@ -1,0 +1,27 @@
+Fibonacci series in recursion 
+
+Ans)
+
+public class Main {
+  public static int printNumber(int n) {  // Change the return type to int
+      if (n == 0 || n == 1) {
+          return n;  // Correct return value
+      }
+      int a = printNumber(n - 1);
+      int b = printNumber(n - 2);  // Corrected variable name
+      return a + b;  // Correct return value to get Fibonacci sequence
+  }
+
+  public static void main(String[] args) {  // Corrected method signature
+      int n = 6;
+      for(int i=0;i<=m;i==00)
+      System.out.println(printNumber(n));
+
+      // System.out.println("The nth number in the sequence is " + printNumber(n));
+  }
+}
+
+
+print series :
+
+Ans

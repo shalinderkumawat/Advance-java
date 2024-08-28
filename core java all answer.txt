@@ -1,0 +1,184 @@
+1)
+Create a Java program that simulates a game of Rock, Paper, Scissors between two players. Take the choices as input and determine the winner using "if-else if" statements. If it's a tie, print "Tie.
+--------------
+Ans)
+
+import java.util.Scanner;
+
+public class Main{
+    public static void main(String[] args) {
+
+        Scanner input=new Scanner (System.in);
+        System.out.println("Enter the player1 your choice ");
+        String player1=input.nextLine();
+        System.out.println("Enter  the palyer2 your choice");
+        Stirng player2=input.nextLine();
+
+        if(player1=="Rock"&&player2=="Rock")
+        {
+            System.out.println("This match is tie");
+        }
+        else if(player1=="paper"&&player2=="paper")
+        {
+            System.out.println("This match is tie");
+        }
+        else if(player1=="scissor"&&player2=="scissor")
+        {
+            System.out.println("This match is tie");
+        }
+        else if(player1=="rock"&&player2=="paper")
+        {
+            System.out.println("player 2 is win");
+        }
+        else if(player1=="rock"&&player2=="scissor")
+        {
+            System.out.println("player 1 is win");
+        }
+        else if(player1=="paper"&&player2=="rock")
+        {
+            System.out.println("player1 is win");
+        }
+        else if(player1=="paper"&&player2=="scissor")
+        {
+            System.out.println("player2 is win");
+        }
+        else if(player1=="scissor"&&player2=="paper")
+        {
+            System.out.println("player1 is win");
+        }
+        else if(player1=="scissor"&&player2=="rock")
+        {
+            System.out.println("player is win");
+        }
+
+    }
+}
+
+2
+Create a Java program to determine whether a year is a leap year, but with additional conditions: if it's divisible by 4, it's a leap year, unless it's divisible by 100, except when it's also divisible by 400.
+
+
+Ans)public class Main {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.println("Enter a year: ");
+        int year = input.nextInt();
+
+        if (isLeapYear(year)) {
+            System.out.println(year + " is a leap year.");
+        } else {
+            System.out.println(year + " is not a leap year.");
+        }
+    }
+
+    public static boolean isLeapYear(int year) {
+        if (year % 4 == 0) {
+            if (year % 100 == 0) {
+                if (year % 400 == 0) {
+                    return true;
+                } else {
+                    return false;
+                }
+            } else {
+                return true;
+            }
+        } else {
+            return false;
+        }
+    }
+}
+
+
+3)
+Write a Java program that accepts a number as input and determines if it's positive, negative, or zero.
+
+Ans)
+import java.util.Scanner;
+
+public class Main{
+    public static void main(String [] args)
+    {
+        Scanner input=new Scanner (System.in);
+        System.out.println("Enter the number : ");
+        int a=input.nextInt();
+        if(a<0)
+        {
+            System.out.println("This number is negative ");
+        }
+        else if(a>0)
+        {
+            System.out.println("this number is positive number ");
+
+        }
+        else if(a==0)
+        {
+            System.out.println("this number is null");
+        }
+    }
+}
+
+4)
+Implement a program that takes a string as input and checks if it's a valid email address according to a specific format.
+
+
+
+
+
+
+
+
+
+
+5)
+Write a Java program to simulate a basic calculator that can perform addition, subtraction, multiplication, and division operations.
+
+import java.Scanner;
+public class Main{
+    public static void main(String[] args) {
+        System.out.println("Enter the symbol");
+        String s=input.nextLine();
+        if(s=="+")
+        {
+            int a=2;
+            System.out.println("Sum is : "+(s+s));
+        }
+        String s=input.nextLine();
+       else if(s=="-")
+        {
+            int a=2;
+            System.out.println("sub is : "+(s-s));
+        }
+        String s=input.nextLine();
+       else if(s=="*")
+        {
+            int a=2;
+            System.out.println("mul is : "+(s*s));
+        }
+        String s=input.nextLine();
+       else if(s=="/")
+        {
+            int a=2;
+            System.out.println("div is : "+(s/s));
+        }
+        String s=input.nextLine();
+       else if(s=="%")
+        {
+            int a=2;
+            System.out.println("mod is : "+(s%s));
+        }
+        
+}
+}
+
+
+6)
+Create a program that reads a year and a month as input and prints the number of days in that month, considering leap years for February.
+
+
+
+7)
+Write a Java program that checks if a given number is a perfect square and, if it is, finds its square root.
+
+
+
+

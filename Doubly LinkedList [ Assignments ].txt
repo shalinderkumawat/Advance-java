@@ -1,0 +1,249 @@
+1)create doubly linked list 
+Ans)
+
+public class Main{
+    static class Node{
+        int data;
+        Node pervious;
+        Node next;
+        Node (int data)
+        {
+            this.data=data;
+        }
+    }
+    public static void prin(Node head)
+    {
+        Node temp=head;
+        while(temp!=null)
+        {
+            System.out.print(temp.data+" ");
+            temp=temp.next;
+        }
+    }
+    public static void main(String [] args)
+    {
+        Node a=new Node(1);
+        Node b=new Node(2);
+        Node c=new Node(3);
+        Node d=new Node(4);
+        
+        a.next=b;
+        a.pervious=null;
+        
+        b.next=c;
+        b.pervious=a;
+        
+        c.next=d;
+        c.pervious=b;
+        
+        d.next=null;
+        d.pervious=c;
+        
+        prin(a);
+    }
+}
+
+
+
+2)print through head 
+
+Ans)
+
+public class Main{
+    static class Node{
+        int data;
+        Node pervious;
+        Node next;
+        Node (int data)
+        {
+            this.data=data;
+        }
+    }
+    public static void prin(Node head)
+    {
+        Node temp=head;
+        while(temp!=null)
+        {
+            System.out.print(temp.data+" ");
+            temp=temp.next;
+        }
+    }
+    public static void main(String [] args)
+    {
+        Node a=new Node(1);
+        Node b=new Node(2);
+        Node c=new Node(3);
+        Node d=new Node(4);
+        
+        a.next=b;
+        a.pervious=null;
+        
+        b.next=c;
+        b.pervious=a;
+        
+        c.next=d;
+        c.pervious=b;
+        
+        d.next=null;
+        d.pervious=c;
+        
+        prin(a);
+    }
+}
+
+
+3)print through tail
+
+Ans)
+public class Main{
+    static class Node{
+        int data;
+        Node pervious;
+        Node next;
+        Node (int data)
+        {
+            this.data=data;
+        }
+    }
+    public static void prin(Node tail)
+    {
+        Node temp=tail;
+        while(temp!=null)
+        {
+            System.out.print(temp.data+" ");
+            temp=temp.pervious;
+        }
+    }
+    public static void main(String [] args)
+    {
+        Node a=new Node(1);
+        Node b=new Node(2);
+        Node c=new Node(3);
+        Node d=new Node(4);
+        
+        a.next=b;
+        a.pervious=null;
+        
+        b.next=c;
+        b.pervious=a;
+        
+        c.next=d;
+        c.pervious=b;
+        
+        d.next=null;
+        d.pervious=c;
+        
+        prin(d);
+    }
+}
+
+
+
+4)print through random
+
+Ans)
+
+public class Main{
+    static class Node {
+        int data;
+        Node pervious;
+        Node next;
+        Node (int data)
+        {
+            this.data=data;
+        }
+    }
+    public static void random(Node Random)
+    {
+        Node temp=Random;
+        while (temp.pervious!=null)
+        {
+            temp=temp.pervious;
+        }
+        while(temp!=null)
+        {
+            System.out.print(temp.data+" ");
+            temp=temp.next;
+        }
+    }
+    public static void main(String [] args)
+    {
+        Node a=new Node(1);
+        Node b=new Node(2);
+        Node c=new Node(3);
+        Node d=new Node(4);
+        
+        a.next=b;
+        a.pervious=null;
+        
+        b.next=c;
+        b.pervious=a;
+        
+        c.next=d;
+        c.pervious=b;
+        
+        d.next=null;
+        d.pervious=c;
+        
+        random(c);
+    }
+}
+
+
+5)insertion at head 
+
+public class Main{
+    static class Node {
+        int data;
+        Node pervious;
+        Node next;
+        Node (int data)
+        {
+            this.data=data;
+        }
+    }
+    public static Node random(Node Random)
+    {
+       Node temp=new Node(32);
+      temp.next=Random;
+      temp.pervious=null;
+    Random.pervious=temp;
+       Random=temp;
+       return Random;
+    }
+    public static void pr(Node head)
+    {
+        Node temp=head;
+        while (temp!=null)
+        {
+            System.out.print(temp.data+" ");
+            temp=temp.next;
+        }
+    }
+    public static void main(String [] args)
+    {
+        Node a=new Node(1);
+        Node b=new Node(2);
+        Node c=new Node(3);
+        Node d=new Node(4);
+        
+        a.next=b;
+        a.pervious=null;
+        
+        b.next=c;
+        b.pervious=a;
+        
+        c.next=d;
+        c.pervious=b;
+        
+        d.next=null;
+        d.pervious=c;
+            
+        Node add=random(a);
+        
+            
+            pr(add);
+    }
+}
+
+6)insertion element at the tail of the doubly linkedlist : 

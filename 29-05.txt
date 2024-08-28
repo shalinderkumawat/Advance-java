@@ -1,0 +1,19 @@
+Q1)  aggregation :
+Mobile :oppo realme oneplus apple 
+
+Amazon :shirt jeans shoes watch 
+
+flipcart :agarbati mombati phoolbatti chawal 
+
+JioMart :rice aata daal oil 
+
+Blinkit :choclate softdrink icecream chips 
+
+Main class :
+TreeSet | PriorityQeueue  
+al1
+al2
+al3
+al4
+
+

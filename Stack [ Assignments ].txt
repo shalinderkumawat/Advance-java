@@ -1,0 +1,44 @@
+circular linked list 
+
+
+stack
+12345
+
+54321
+
+12345
+
+
+54321
+
+Ans)
+
+import java.util.Stack;
+public class Main {
+    public static void main(String [] args)
+    {
+        Stack <Integer> sc=new Stack<>();
+        sc.push(10);
+        sc.push(20);
+        sc.push(30);
+        sc.push(40);
+        sc.push(50);
+
+        System.out.println(sc);
+        // 10,20,30,40,50
+        Stack <Integer> rt=new Stack<>();
+        while (sc.size()>0) {
+            int a=sc.pop();
+            rt.push(a);
+        }
+        // 50,40,30,20,10
+        System.out.println(rt);
+        Stack <Integer> si=new Stack<>();
+        while (rt.size()>0) {
+            int a=rt.pop();
+            si.push(a);
+        }
+        // 10,20,30,40,50
+        System.out.println(si);
+    }
+}
