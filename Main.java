@@ -3820,26 +3820,176 @@
 //         System.out.println("This is");
 //     }
 // }
-class A {
+// class A {
     
-    private A() {
-        System.out.println("Private constructor called");
-    }
+//     private A() {
+//         System.out.println("Private constructor called");
+//     }
     
     
-    static void show() {
+//     static void show() {
         
-        A sc = new A();
-    }
-}
+//         A sc = new A();
+//     }
+// }
 
-public class Main  extends A{
+// public class Main  extends A{
     
-    public static void main(String[] args) {
+//     public static void main(String[] args) {
        
-        Main sc = new Main();
+//         Main sc = new Main();
         
         
-        sc.show();
+//         sc.show();
+//     }
+// }
+
+// this is question for mam
+
+// public class Main{
+//     static void show(int a,long b)
+//     {
+//         System.out.println(a+" "+b);
+//     }
+//     static void show(long c,int d)
+//     {
+//         System.out.println(a+" "+b);
+//     }
+//     public static void main(String [] args)
+//     {
+//         Main.show(1, 90);
+//     }
+// }
+
+// public class Main{
+//     static int show(long n){
+//         return 10;
+//     }
+//     static long show(int n){
+//         return 20L;
+//     }
+//     public static void main(String [] args)
+//     {
+//         System.out.println(Main.show(3));
+//     }
+// }
+
+
+
+// class A {
+//     void show(long a)
+//     {
+//         System.out.println("This is A class method");
+//     }
+// }
+// public class Main extends A{
+//     void show(int y)
+//     {
+//     //    super.show();
+//         System.out.println("This is Main class method");
+//         super.show(999999999);
+//     }
+//     public static void main(String [] args)
+//     {
+//         Main sc=new Main();
+//         sc.show(89);
+//     }
+// }
+// import java.util.*;
+// public class Main{
+//     public static void main(String [] args)
+//     {
+//         Scanner input=new Scanner(System.in);
+//        ArrayList <Integer> sc=new ArrayList<>();
+//         for(int i=0;i<=1;i++)
+//         {
+//             int a=input.nextInt();
+//             sc.add(a);
+//         }
+//         System.out.println("this is your");
+//         for(int a: sc)
+//         {
+//             int num=a;
+//             int rem,sum=0;
+//             int temp=num;
+//             while (num!=0) {
+//                 rem=num%10;
+//                 sum=sum*10+rem+rem+rem;
+//                 num=num/10;
+//             }
+//             System.out.println(sum);
+//             // System.out.println(a);
+//         }
+//     }
+
+// }
+// import java.util.*;
+// import java.util.ArrayList;
+// public class Main{
+//     public static void main(String [] args)
+//     {
+//        Arraylist <Integer> sc=new Arraylist();
+//         sc.add(153);
+//         sc.add(152);
+//         sc.add(151);
+
+//         for(int i=0;i<=sc.length;i++)
+//         {
+//             System.out.println(sc.get(i));
+//         }
+//     }
+// }
+
+
+// public class Main{
+//     public static void main(String [] args)
+//     {
+//         int num=598;
+//         int rem,sum=0;
+//         while (num!=0) {
+//             rem=num%10;
+//             sum=rem;
+//             num=num/10;
+//             // for(int i=1;i<=sum;i++)
+//             // {
+//             //     for(int s=0;s<=i;s++)
+//             //     {
+//             //         System.out.print(" ");
+//             //     }
+//             //     for(int j=i;j<=sum;j++)
+//             //     {
+//             //         System.out.print("*");
+//             //     }
+//             //     // System.out.println();
+//             // }
+//             System.out.println(sum);
+        
+//         for(int i=1;i<=sum;i++)
+//         {
+//             // for(int s=0;s<=i;s++)
+//             //     {
+//             //         System.out.print(" ");
+//             //     }
+                
+//            for(int j=0;j<=sum;j++)
+//            {
+//             System.out.print("  "+"*");
+//             break;
+//            }
+//         //    System.out.println();
+//         }
+//         // System.out.println();
+//     }
+//     }
+// }
+
+import java.util.*;
+public class Main {
+    public static void main(String [] args)
+    {
+      String a="String new";
+      char b[]=a.toCharArray();
+      System.out.println(b);
+      
     }
 }
