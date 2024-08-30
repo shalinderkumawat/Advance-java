@@ -3983,13 +3983,37 @@
 //     }
 // }
 
-import java.util.*;
-public class Main {
-    public static void main(String [] args)
-    {
-      String a="String new";
-      char b[]=a.toCharArray();
-      System.out.println(b);
-      
-    }
-}
+// import java.util.Scanner;
+
+// public class Main {
+//     public static void main(String[] args) {
+//         Scanner scanner = new Scanner(System.in);
+//         System.out.print("Enter a string: ");
+//         String input = scanner.nextLine();
+
+        
+//         String processedString = input.replaceAll("\\s+", "").toLowerCase();
+
+       
+//         if (isPalindrome(processedString)) {
+//             System.out.println("'" + input + "' is a palindrome.");
+//         }
+//          else {
+//             System.out.println("'" + input + "' is not a palindrome.");
+//         }
+//     }
+
+//     public static boolean isPalindrome(String str) {
+//         int left = 0;
+//         int right = str.length() - 1;
+
+//         while (left < right) {
+//             if (str.charAt(left) != str.charAt(right)) {
+//                 return false; // Characters at the current positions do not match
+//             }
+//             left++;
+//             right--;
+//         }
+//         return true; // All characters match in reverse order
+//     }
+// }
