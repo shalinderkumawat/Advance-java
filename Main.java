@@ -4017,3 +4017,223 @@
 //         return true; // All characters match in reverse order
 //     }
 // }
+// public class Main{
+//     public static void main(String [] args)
+//     {
+//         int a=14;
+//         boolean count=true;
+    
+//         if(a<=1)
+//         {
+//             count=false;
+//         }
+//         else{
+//             for(int i=2;i<=a/2;i++)
+//             {
+//                 if(a%i==0)
+//                 {
+//                     count=false;
+
+//                 }
+//             }
+//         }
+//         if(count)
+//         {
+//             System.out.println(count);
+//         }
+//         else{
+//             System.out.println(count);
+//         }
+//     }
+// }
+
+// public class Main{
+
+//     public static void main(String [] args)
+//     {
+//         int a=0;
+//         int b=1;
+//         System.out.print(a+" ");
+//         System.out.print(b+" ");
+//         for(int i=1; i<=10;i++)
+//         {
+//             int c=a+b;
+//             a=b;
+//             b=c;
+
+//             System.out.print(c+" ");
+//         }
+//     }
+// }
+
+// import java.util.LinkedList;
+// import java.util.List;
+
+// public class Main{
+//     public static void main(String [] args)
+//     {
+//         LinkedList <Integer> sc=new LinkedList<>();
+//         for(int i=1;i<=5;i++)
+//         {
+//             sc.add(i);
+//         }
+//         for(int i=0;i<=sc.size()-1;i++)
+//         {
+//             if(sc.get(i)%2!=0)
+//             {
+//                 System.out.println("This is odd number");
+//             }
+//         }
+//     }
+// }
+
+// public class Main{
+//     public static void main(String[] args) {
+//         String a="s h a";
+//         char sc[]=a.toCharArray();
+//         for(int i=0;i<sc.length;i++)
+//         { 
+//             if(sc[i]==' ')
+//             {
+//                 sc[i]='0';
+//             }
+            
+//         }
+//         for(int i=0;i<sc.length;i++)
+//         { 
+//            System.out.print(sc[i]);
+//         }
+//     }
+// }
+
+// import java.util.*;
+// public class Main{
+//     public static void main(String [] args)
+//     {
+//         int a[]={1,2,3,89,12,0,23};
+        
+//         Arrays.sort(a);
+//         for(int i=0;i<a.length;i++)
+//         {
+//             System.out.print(a[i]+" ");
+//         }
+//         System.out.println();
+//         for(int i=a.length-2;i>=0;i--)
+//         {
+//             System.out.println(a[i]+" ");
+//             break;
+//         }
+
+//         int max=0;
+//         System.out.println();
+//         for(int i=0;i<a.length;i++)
+//         {
+//             for(int j=i+1;j<=a.length-1;j++)
+//             {
+//                 if(a[i]>a[j])
+//                 {
+//                     System.out.print(a[i]);
+//                 }
+//             }
+//         }
+//     }
+// }
+
+
+// public class Main{
+//     public static void swap(int a[],int i)
+//     {
+//         int temp=a[i];
+//         a[i]=a[i+1];
+//         a[i+1]=temp;
+//     }
+//     public static void main(String [] args)
+//     {
+//         int a[]={1,3,4,2,2};
+//         for(int i=0;i<a.length-1;i++)
+
+//         {
+//             if(a[i]<a[i+1])
+//             {
+//                 swap(a, i);
+//             }
+//         }
+//     }
+// }
+
+// public class Main{
+//     public static void main(String [] args)
+//     {
+//         int num=1545;
+//         int rem,sum=0;
+//         int temp=num;
+//         while (num!=0) {
+//             rem=num%10;
+//             sum=sum+rem*rem*rem;
+//             num=num/10;
+        
+//         }
+//         if(sum==temp)
+//         {
+//             System.out.println("yes");
+//         }
+//         else 
+//         {
+//             System.out.println("not");
+//         }
+//     }
+// }
+
+// public class Main{
+//     public static void main(String [] args)
+//     {
+//         String a="sskkskhe";
+//         // int count=0;
+//         char array[]=a.toCharArray();
+//         for(int i=0;i<array.length;i++)
+//         {int count=1;
+//             for(int j=i+1;j<array.length;j++)
+//             {
+//                 if(array[i]!=array[j])
+//                 {
+//                     // coutn++;
+//                     // System.out.println("Number of character in string : "+ array[i]+" Number : "+count);
+//                     count++;
+//                 }
+//                 else 
+//                 {
+//                     break;
+//                 }
+//             }
+            
+//             System.out.println("Number of character in string : "+ array[i]+" Number : "+count);
+            
+//         }
+//         char prin[]= 
+//     }
+// }
+
+// public class Main{
+//     public static void main(String [] args)
+//     {
+//         int a=5;
+//         for(int i=1;i<=a;i++)
+//         {
+//             for(int s=a;s>=i;s--)
+//             {
+//                 System.out.print(" ");
+//             }
+//             for(int j=1;j<=i;j++)
+//             {
+//                 if(i+j==a )
+//                 {
+//                 System.out.print("* ");
+//                 }
+//                 else{
+//                     System.out.print(" ");
+//                 }
+//             }
+//             System.out.println();
+//         }
+//     }
+// }
