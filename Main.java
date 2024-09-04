@@ -4237,3 +4237,482 @@
 //         }
 //     }
 // }
+
+// public class Main{
+//     public static void main(String [] args)
+//     {
+//         String a="Shalendra";
+//         StringBuffer sc=new StringBuffer();
+//         sc.append(a);
+      
+//         System.out.println(sc.reverse());
+
+//         sc.delete(2, 5);
+//         System.out.println(sc);
+//         System.out.println(sc.reverse());
+       
+//         StringBuffer scc=new StringBuffer("This is my String buffer");
+//         // i make a new StringBuffer in this String 
+//         System.out.println(scc);
+//         // print the Stringbuffer 
+//         // not need the for loop and other printing functions 
+//         System.out.println("-------------------------------------------");
+//         // add a Stirng / StringBuffer in scc String Buffer this is the last in 
+//         scc.append(a);
+//         // print the scc String Buffer 
+//         System.out.println("This is my Stringbuffer 1+2 : "+scc);
+
+//         // append inside the scc String a 
+//         System.out.println("------------------------------------");
+//         // remove the characters throw the delete(int start, int end)
+//         scc.delete(2, 15);
+//         System.out.println("This is delete String Buffer : "+scc);
+//         // reverse() in  String Buffer in Simple 
+//         System.out.println("--------------------------------");
+        
+//         System.out.println(scc.reverse());
+        
+//     }
+// }
+
+// public class Main{
+//     public static void main(String [] args)
+//     {
+//         // make the String
+//         String sc="this is my new Stirng ";
+//         // print the simple string 
+//         System.out.println(sc);
+        
+//     }
+// }
+
+// public class Main{
+//     public static void main(String [] args)
+//     {
+//         // make the String
+//         String sc="this is my new Stirng ";
+//         // print the simple string 
+//         System.out.println(sc);
+//         // to char array
+//         char [] ch=sc.toCharArray();
+//         // print the char array
+//         for(int i=0;i<ch.length;i++)
+//         {
+//             System.out.print(ch[i]+" ");
+//         }
+//         // odd index
+//         System.out.println(); 
+//         System.out.println("This is odd index value ");
+//         System.out.println();
+//         for(int i=0;i<ch.length;i++)
+//         {
+//              if(i%2==0)
+//             {
+               
+//                 System.out.print(ch[i]+" ");
+//             }
+//         }
+//         System.out.println();
+//         System.out.println("------------------------------");
+//         // even index
+//         System.out.println("This is even index value ");
+//         System.out.println();
+//         for(int i=0;i<ch.length;i++)
+//         {
+//             if(i%2!=0)
+//             {
+//                 System.out.print(ch[i]+" ");
+//             }
+//         }
+//         System.out.println();
+//         System.out.println("-------------------------------");
+//         System.out.println();
+//         for(int i=0;i<ch.length;i++)
+//         {
+//             if(ch[i]==' ')
+//             {
+//                 System.out.println("This is index value of  "+i);
+//             }
+//         }
+//     }
+// }
+
+// import java.util.Arrays;
+
+// public class Main {
+//     public static void main(String[] args) {
+//         String sc = "abc s g abc abc";
+//         sc=sc.replaceAll("\\s", "");
+//         // System.out.println(sc);
+//         // System.out.println(sc);
+//         char[] a = sc.toCharArray(); 
+//         char v='A';
+//        for(int i=0;i<a.length;i++)
+//        {
+//         int count=0;
+//         if(a[i]!='0')
+        
+//         for(int j=i+1;j<a.length;j++)
+//         {
+//             if(a[i]==a[j])
+//             {
+                
+//                 count++;
+//                 a[j]='0';
+                
+//             }
+            
+//         }
+        
+//             if(a[i]!='0')
+//             {      
+//         System.out.println(a[i]+" this : "+count);
+        
+//        }
+//     }
+//     }
+      
+//     }
+
+
+// public class Main{
+//     public static int n()
+//     {
+//         int a[]={1,2,34,0,3,4};
+//         int target=3;
+//         int val=0;
+//         for(int i=0;i<a.length;i++)
+//         {
+//             if(a[i]==target)
+//             {
+//                 return i;
+//             }
+            
+               
+           
+
+//         }
+//         return -1;
+//     }
+//     public static void main(String [] args)
+//     {
+//         System.out.println(n());
+        
+//     }
+// }
+
+// public class Main {
+//     public static void main(String[] args) {
+//         // Print a double quote
+//         System.out.println("Here is a double quote: \"");
+        
+//         // Print double quotes around a word
+//         System.out.println("Here is a double quoted word: \"example\"");
+        
+//         // Print double quotes with text
+//         System.out.println("This is a \"quoted\" text.");
+//     }
+// }
+
+
+// import java.util.Scanner;
+
+// class Node {
+//     int data;
+//     Node left, right;
+
+//     Node(int data) {
+//         this.data = data;
+//         this.left = null;
+//         this.right = null;
+//     }
+// }
+
+// public class Main {
+//     static Scanner sc;
+
+//     // Method to create the binary tree
+//     static Node createTree() {
+//         Node root = null;
+//         System.out.println("Enter node data (-1 for no node):");
+//         int data = sc.nextInt();
+
+//         if (data == -1) {
+//             return null; // Return null if no node should be created
+//         }
+//         root = new Node(data);
+
+//         System.out.println("Enter left child of " + data + ":");
+//         root.left = createTree(); // Recursively create left subtree
+
+//         System.out.println("Enter right child of " + data + ":");
+//         root.right = createTree(); // Recursively create right subtree
+
+//         return root;
+//     }
+
+//     // Method to calculate the height of the binary tree
+//     static int height(Node root) {
+//         if (root == null) {
+//             return 0; // Height of an empty tree is 0
+//         }
+//         int leftHeight = height(root.left); // Height of left subtree
+//         int rightHeight = height(root.right); // Height of right subtree
+
+//         // Height of the current node is max of left and right heights + 1
+//         return Math.max(leftHeight, rightHeight) + 1;
+//     }
+
+//     public static void main(String[] args) {
+//         sc = new Scanner(System.in);
+//         Node root = createTree(); // Create the tree based on user input
+//         int result = height(root); // Calculate the height of the tree
+//         System.out.println("Height of the tree: " + result); // Print the height
+//     }
+// }
+
+// size
+
+// import java.util.Scanner;
+
+// class Node {
+//     int data;
+//     Node left, right;
+
+//     Node(int data) {
+//         this.data = data;
+//         this.left = null;
+//         this.right = null;
+//     }
+// }
+
+// public class Main {
+//     static Scanner sc;
+
+//     // Method to create the binary tree
+//     static Node createTree() {
+//         Node root = null;
+//         System.out.println("Enter node data (-1 for no node):");
+//         int data = sc.nextInt();
+
+//         if (data == -1) {
+//             return null; // Return null if no node should be created
+//         }
+//         root = new Node(data);
+
+//         System.out.println("Enter left child of " + data + ":");
+//         root.left = createTree(); // Recursively create left subtree
+
+//         System.out.println("Enter right child of " + data + ":");
+//         root.right = createTree(); // Recursively create right subtree
+
+//         return root;
+//     }
+
+//     // Method to calculate the height of the binary tree
+//     static int size(Node root)
+//     {
+//         if(root == null)
+//         {
+//             return 0;
+//         }
+//         return 1+size(root.left)+size(root.right);
+//     }
+
+//     public static void main(String[] args) {
+//         sc = new Scanner(System.in);
+//         Node root = createTree(); // Create the tree based on user input
+//         int result = size(root); // Calculate the height of the tree
+//         System.out.println("Height of the tree: " + result); // Print the height
+//     }
+// }
+
+
+// import java.util.Scanner;
+
+// class Node {
+//     int data;
+//     Node left, right;
+
+//     Node(int data) {
+//         this.data = data;
+//         this.left = null;
+//         this.right = null;
+//     }
+// }
+
+// public class Main {
+//     static Scanner sc;
+
+//     // Method to create the binary tree
+//     static Node createTree() {
+//         Node root = null;
+//         System.out.println("Enter node data (-1 for no node):");
+//         int data = sc.nextInt();
+
+//         if (data == -1) {
+//             return null; // Return null if no node should be created
+//         }
+//         root = new Node(data);
+
+//         System.out.println("Enter left child of " + data + ":");
+//         root.left = createTree(); // Recursively create left subtree
+
+//         System.out.println("Enter right child of " + data + ":");
+//         root.right = createTree(); // Recursively create right subtree
+
+//         return root;
+//     }
+
+//     // Method to calculate the height of the binary tree
+//     static int maximum(Node root)
+//     {
+//         if(root==null)
+//         {
+//         return Integer.MIN_VALUE;
+//         }
+//         return Math.max(root.data, Math.max(maximum(root.left), maximum(root.right)));
+//     }
+
+//     public static void main(String[] args) {
+//         sc = new Scanner(System.in);
+//         Node root = createTree(); // Create the tree based on user input
+//         int result = maximum(root); // Calculate the maximum of the tree
+//         System.out.println("maximum of the tree: " + result); // Print the maximum
+//     }
+// }
+
+
+// public class Main{
+//     static void swap(int a[],int i,int j)
+//     {
+//         int temp=a[i];
+//         a[i]=a[j];
+//         a[j]=temp;
+//     }
+//     public static void main(String [] args)
+//     {
+//         int a[]={1,23,4,50,2,23};
+//         for(int i=0;i<a.length-1;i++)
+//         {
+//            for(int j=i+1;j<a.length;j++)
+//            {
+//             if(a[i]>a[j])
+//             {
+//             swap(a, i,j);
+//             }
+//            }
+//         }
+//         for(int i=0;i<a.length;i++)
+//         {
+//            System.out.print(a[i]+" ");
+//         }
+//     }
+// }
+
+// public class Main{
+//     public static void main(String [] args)
+// {
+    // for(int i=5;i>=1;i--)
+    // {
+    //       for(int j=i;j>=1;j--)
+    //     {
+    //         System.out.print(j);
+    //     }
+    //     System.out.println();
+    //     for(int s=i;s<=5;s++)
+    //     {
+    //         if()
+    //         System.out.print("*");
+    //     }
+        
+    //     // for(int j=i;j>=1;j--)
+    //     // {
+    //     //     System.out.print(j);
+    //     // }
+       
+    // }
+
+//     for(int i=1;i<=5;i++)
+//     {
+//         for(int s=0;s<=i;s++)
+//         {
+//             System.out.print(" ");
+//         }
+//         for(int j=5;j>=i;j--)
+//         {
+//             System.out.print(j);
+//         }
+//         for(int s=0;s<=i;s++)
+//         {
+//             System.out.print(" ");
+//         }
+//         for(int j=5;j>=i;j--)
+//         {
+//             System.out.print(j);
+//         }
+//         System.out.println();
+//     }
+   
+// }
+// }
+
+// question. how are you print this Ans you are how 
+
+
+
+// public class Main{
+//     public static void main(String [] args)
+//     {
+        
+//        String s="fg      how are you";
+//         int a=0;
+//         int last=s.length()-1;
+//         String sum="";
+//        for(int i=s.length()-1;i>=0;i--)
+//        {
+//          if(s.charAt(i)==' ')
+//          {
+//             a=i+1;
+//             for(int j=a;j<=last;j++)
+//             {
+//                 sum=sum+s.charAt(j);
+//             }
+//             sum+=" ";
+//             last=a-2;
+//          }
+//          else {
+//             continue;
+//          }
+//        }
+      
+      
+//        for(int k=0;k<=last;k++)
+//          {
+//             sum=sum+s.charAt(k);
+//          }
+//          System.out.println(sum);
+        
+//         char scc[]=sum.toCharArray();
+        
+//         for(int i=0;i<sc.length;i++)
+//         {
+//             if(scc[i]==' ')
+//             {
+//                 if(scc[i+1]==' ')
+//                 {
+//                   scc[i]='0';
+//                 }
+                
+//             }
+
+//         }
+//         for(int i=0;i<sc.length;i++)
+//         {
+//             System.out.print(sc[i]);
+//         }
+//         System.out.println(sc);
+       
+        
+//     }
+// }
