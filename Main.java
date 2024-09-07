@@ -4667,6 +4667,7 @@
         
 //        String s="fg      how are you";
 //         int a=0;
+//         System.out.println("this is reale value : "+s);
 //         int last=s.length()-1;
 //         String sum="";
 //        for(int i=s.length()-1;i>=0;i--)
@@ -4685,8 +4686,7 @@
 //             continue;
 //          }
 //        }
-      
-      
+
 //        for(int k=0;k<=last;k++)
 //          {
 //             sum=sum+s.charAt(k);
@@ -4695,7 +4695,7 @@
         
 //         char scc[]=sum.toCharArray();
         
-//         for(int i=0;i<sc.length;i++)
+//         for(int i=0;i<scc.length;i++)
 //         {
 //             if(scc[i]==' ')
 //             {
@@ -4707,12 +4707,78 @@
 //             }
 
 //         }
-//         for(int i=0;i<sc.length;i++)
+//         for(int i=0;i<scc.length;i++)
 //         {
-//             System.out.print(sc[i]);
+//             System.out.print(scc[i]);
 //         }
-//         System.out.println(sc);
-       
-        
+//         // System.out.println(scc);
 //     }
 // }
+
+// maixmum in binary tree :
+
+import java.util.*;
+class Node {
+    int data;
+    Node left;
+    Node right;
+    Node (int data)
+    {
+        this.data=data;
+    }
+}
+public class Main{
+    static Scanner sc;
+    static Node createTree() {
+                Node root = null;
+                System.out.println("Enter node data (-1 for no node):");
+                int data = sc.nextInt();
+        
+                if (data == -1) {
+                    return null; // Return null if no node should be created
+                }
+                root = new Node(data);
+        
+                System.out.println("Enter left child of " + data + ":");
+                root.left = createTree(); // Recursively create left subtree
+        
+                System.out.println("Enter right child of " + data + ":");
+                root.right = createTree(); // Recursively create right subtree
+        
+                return root;
+            }
+        
+            // Method to calculate the height of the binary tree
+            static int maximum(Node root)
+            {
+                if(root==null)
+                {
+                return Integer.MIN_VALUE;
+                }
+                return Math.max(root.data, Math.max(maximum(root.left), maximum(root.right)));
+            }
+        static Node printlevelval(Node root ,int level)
+        {
+            if(root==null)
+            {
+                return ;
+            }
+            if(level == 1)
+            {
+                System.out.println(root.data+" ");
+            }
+            else if(level>1)
+            {
+                printlevelval(root.left , level -1);
+                printlevelval(root.right, level -1);
+            }
+        }
+            public static void main(String[] args) {
+                sc = new Scanner(System.in);
+                Node root = createTree(); // Create the tree based on user input
+                int result = maximum(root); // Calculate the maximum of the tree
+                System.out.println("maximum of the tree: " + result); // Print the maximum
+            }
+        }
+
+        
