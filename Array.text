@@ -198,6 +198,7 @@ Ans.
     }
 }    
 
+Q6 remove the same element in array
 
 public class Main{
     public static void main(String [] args)
