@@ -4717,68 +4717,550 @@
 
 // maixmum in binary tree :
 
-import java.util.*;
-class Node {
-    int data;
-    Node left;
-    Node right;
-    Node (int data)
-    {
-        this.data=data;
-    }
-}
-public class Main{
-    static Scanner sc;
-    static Node createTree() {
-                Node root = null;
-                System.out.println("Enter node data (-1 for no node):");
-                int data = sc.nextInt();
+// import java.util.*;
+// class Node {
+//     int data;
+//     Node left;
+//     Node right;
+//     Node (int data)
+//     {
+//         this.data=data;
+//     }
+// }
+// public class Main{
+//     static Scanner sc;
+//     static Node createTree() {
+//                 Node root = null;
+//                 System.out.println("Enter node data (-1 for no node):");
+//                 int data = sc.nextInt();
         
-                if (data == -1) {
-                    return null; // Return null if no node should be created
-                }
-                root = new Node(data);
+//                 if (data == -1) {
+//                     return null; // Return null if no node should be created
+//                 }
+//                 root = new Node(data);
         
-                System.out.println("Enter left child of " + data + ":");
-                root.left = createTree(); // Recursively create left subtree
+//                 System.out.println("Enter left child of " + data + ":");
+//                 root.left = createTree(); // Recursively create left subtree
         
-                System.out.println("Enter right child of " + data + ":");
-                root.right = createTree(); // Recursively create right subtree
+//                 System.out.println("Enter right child of " + data + ":");
+//                 root.right = createTree(); // Recursively create right subtree
         
-                return root;
-            }
+//                 return root;
+//             }
         
-            // Method to calculate the height of the binary tree
-            static int maximum(Node root)
-            {
-                if(root==null)
-                {
-                return Integer.MIN_VALUE;
-                }
-                return Math.max(root.data, Math.max(maximum(root.left), maximum(root.right)));
-            }
-        static Node printlevelval(Node root ,int level)
-        {
-            if(root==null)
-            {
-                return ;
-            }
-            if(level == 1)
-            {
-                System.out.println(root.data+" ");
-            }
-            else if(level>1)
-            {
-                printlevelval(root.left , level -1);
-                printlevelval(root.right, level -1);
-            }
-        }
-            public static void main(String[] args) {
-                sc = new Scanner(System.in);
-                Node root = createTree(); // Create the tree based on user input
-                int result = maximum(root); // Calculate the maximum of the tree
-                System.out.println("maximum of the tree: " + result); // Print the maximum
-            }
-        }
+//             // Method to calculate the height of the binary tree
+//             static int maximum(Node root)
+//             {
+//                 if(root==null)
+//                 {
+//                 return Integer.MIN_VALUE;
+//                 }
+//                 return Math.max(root.data, Math.max(maximum(root.left), maximum(root.right)));
+//             }
+//         static Node printlevelval(Node root ,int level)
+//         {
+//             if(root==null)
+//             {
+//                 return ;
+//             }
+//             if(level == 1)
+//             {
+//                 System.out.println(root.data+" ");
+//             }
+//             else if(level>1)
+//             {
+//                 printlevelval(root.left , level -1);
+//                 printlevelval(root.right, level -1);
+//             }
+//         }
+//             public static void main(String[] args) {
+//                 sc = new Scanner(System.in);
+//                 Node root = createTree(); // Create the tree based on user input
+//                 int result = maximum(root); // Calculate the maximum of the tree
+//                 System.out.println("maximum of the tree: " + result); // Print the maximum
+//             }
+//         }
+
+// print the recrution in java         
+
+// public class Main {
+//     void show(int n)
+//     {
+//         if(n==0)
+//         {
+//             return;
+//         }
+//         show(n-1);
+//         System.out.println(n);
+//     }
+//     public static void main(String[] args) {
+//         Main sc=new Main();
+//         sc.show(10);
+//     }
+// }
+
+// print the odd number throw the recrution
+
+// public class Main{
+//     void show(int n)
+//     {
+//         if(n==0)
+//         {
+//             return;
+//         }
+//         show(n-1);
+//         if(n%2==0)
+//         {
+//         System.out.println(n);
+//         }
+        
+//     }
+//     public static void main(String [] args)
+//     {
+//         Main sc=new Main();
+//         sc.show(10);
+//     }
+// }
+
+// print the even number throw the recrution
+
+// public class Main{
+// void show(int n)
+// {
+//     if(n==0)
+//     {
+//         return;
+//     }
+//     show(n-1);
+//     if(n%2!=0)
+//     {
+//     System.out.println(n);
+//     }
+    
+// }
+// public static void main(String [] args)
+// {
+//     Main sc=new Main();
+//     sc.show(10);
+// }
+// }
+
+// make a node and print the method with while loop 
+
+// public class Main{
+//     static class Node{
+//         int data;
+//         Node next;
+         
+//         Node (int data)
+//         {
+//             this.data=data;
+//         }
+//     }
+//     static void dispaly(Node head)
+//     {
+//         Node temp=head;
+//         while (temp!=null) {
+//             System.out.println(temp.data);
+//             temp=temp.next;
+//         }
+//     }
+//     public static void main(String [] args)
+//     {
+//         Node a=new Node(1);
+//         Node b=new Node(2);
+//         Node c=new Node(3);
+//         Node d=new Node(4);
+//         a.next=b;
+//         b.next=c;
+//         c.next=d;
+//         d.next=null;
+//        dispaly(a);
+//     }
+// }
+
+// public class Main{
+//     static class Node{
+//         int data;
+//         Node next;
+//         Node(int data)
+//         {
+//             this.data=data;
+//         }
+//     }
+//     static class Array{
+      
+//         Node head=null;
+//         Node tail=null;
+//         static void insert(int data)
+//         {
+//             Node temp=new Node(data);
+//             if(head==null)
+//             {
+//                 head=temp;
+//                 tail=head;
+//             }
+//             else {
+//                 tail.next=temp;
+//                 tail=temp;
+//             }
+
+//         }
+//         static void printNode()
+//         {
+//             Node temp=head;
+//             while (temp!=null) {
+//                 System.out.println(temp.data);
+//                 temp=temp.next;
+//             }
+//         }
+
+//     }
+//     public static void main(String [] args)
+//     {
+//         for(int i=1;i<=5;i++)
+//         {
+//             Array.insert(i);
+//         }
+//         Array.printNode();
+//     }
+// }
+
+
+
+// this is encapulation
+
+
+
+
+// public class Main{
+//     private int a;
+//     private int b;
+//     void set(int a ,int b)
+//     {
+//         this.a=a;
+//         this.b=b;
+//     }
+//     int get(){
+//         return a+b;
+//     }
+//     public static void main(String [] args)
+//     {
+//         Main sc=new Main();
+//         sc.set(5, 5);
+//         System.out.println(sc.get());
+//     }
+// }
+
+
+// public class Main{
+//     private int a;
+//     private int b;
+//     Main(int a,int b)
+//     {
+//         this.a=a;
+//         this.b=b;
 
         
+//     }
+//     int get(){
+//         return a+b;
+//     }
+//     public static void main(String [] args)
+//     {
+//       Main sc=new Main(5, 10);
+//       System.out.println(sc.get());
+//     }
+// }
+
+
+// inherantence
+
+
+// class A{
+//     void show(){
+//         System.out.println();
+//     }
+// }
+// public class Main{
+//     static void swap(int a[],int j ,int i)
+//     {
+//         int temp= a[i];
+//         a[i]=a[j];
+//         a[j]=temp;
+//     }
+//     public static void main(String [] args)
+//     {
+//         int a[]={1,2 ,4,45,43,90,3,4,5,6};
+//         for(int i=0;i<a.length;i++)
+//         {
+//            for(int j=i+1;j<a.length;j++)
+//            {
+//             if(a[i]>a[j])
+//             {
+//                swap(a, j, i); 
+//             }
+//            } 
+//         }
+//         int n=3;
+//         for(int i=0;i<a.length;i++)
+//         {
+//             System.out.print(a[i]+" ");
+//         }
+//         System.out.println();
+//         System.out.println("this is rotate");
+//         for(int i=0;i<n;i++)
+//         {
+//             for(int j=0;j<a.length;j++)
+//             {
+//                 int temp=a[a.length-1];
+//                 a[a.length-1]=a[j];
+//                 a[j]=temp;
+
+//                 System.out.print(a[j]+" ");
+//             }
+//             System.out.println();
+//         }
+//     }
+// }
+
+// public class Main{
+//     public static void main(String [] args)
+//     {
+//         int a[]={1,2,3,4,5,6,7};
+//         int sum=6;
+//         int index=a.length-1;
+//         for(int i=0;i<a.length;i++)
+//         {
+//             index=a[index];
+//             for(int j=i+1;j<a.length;j++)
+//             {
+//                 if(a[i]+a[j]+index==sum)
+//                 {
+//                     System.out.println(" i : "+i+" j :"+j +"index"+index);
+//                 }
+//             }
+//             index--;
+//         }
+//     }
+// }
+
+
+// public class Main{
+//     public static void main(String [] args)
+//     {
+//         int a[][]={{1,2,3},{4,5,6},{7,8,9}};
+
+//         System.out.println("This is my orignal vlaue");
+//         for(int i=0;i<a.length;i++)
+//         {
+//             for(int j=0;j<a.length;j++)
+//             {
+//                 System.out.print(a[i][j]+" ");
+//             }
+//             System.out.println();
+//         }
+//         System.out.println();
+
+//        for(int k=0;k<=3;k++)
+//        {
+//             for(int i=0;i<a.length;i++)
+//                {
+//                     for(int j=0;j<a.length;j++)
+//                     {
+//                         int temp=a[a.length-1][a.length-1];
+//                         a[a.length-1][a.length-1]=a[i][j];
+//                         a[i][j]=temp;
+
+//                         System.out.print(a[i][j]+" ");
+//                     }
+//                     System.out.println();
+//                 }
+//                 System.out.println("This is swap : "+k);
+//         }
+//     }
+// }
+
+// public class Main{
+//     public static void main(String [] args)
+//     {
+//         int a[]={1,2,43,4,5,33,2};
+//         int target=2;
+//         for(int i=0;i<a.length;i++)
+//         {
+//             if(i==target)
+//             {
+//                 a[i]=a[i=target+1];
+//             }
+//             System.out.print(a[i]+" ");
+//         }      
+//     }
+// }
+
+// public class Main{
+//     public static void main(String [] args)
+//     {
+//         int a[]={1,2,3,4,5,6};
+//         for(int i=0;i,a.length;i++)
+//         {
+            
+//         }
+//     }
+// }
+
+// class SharedResource {
+//     private int counter = 0;
+
+//     // Method to increment the counter
+//     public synchronized void increment() {
+//         counter++;
+//         System.out.println("Counter incremented to: " + counter);
+//     }
+
+//     // Method to decrement the counter
+//     public synchronized void decrement() {
+//         counter--;
+//         System.out.println("Counter decremented to: " + counter);
+//     }
+// }
+
+// class MyThread extends Thread {
+//     private SharedResource sharedResource;
+
+//     public MyThread(SharedResource sharedResource) {
+//         this.sharedResource = sharedResource;
+//     }
+//     public void run() {
+//         sharedResource.increment();
+//         sharedResource.decrement();
+//     }
+// }
+
+// public class Main {
+//     public static void main(String[] args) {
+//         SharedResource sharedResource = new SharedResource();
+
+//         // Create two threads and start them
+//         new MyThread(sharedResource).start();
+//         new MyThread(sharedResource).start();
+//     }
+// }
+
+
+// public class Main{
+//     int a=34;
+//     public static void main(String [] args)
+//     {
+//         Main sc=new Main();
+
+//         System.out.println(sc.a);
+//         // output = 34;
+//         sc.a=90;
+//         System.out.println(sc.a);
+//         // output = 90
+//     }
+// }
+
+// class A extends Thread
+// {
+//     public void run(){
+//         System.out.println("Tihs is ");
+//     }
+// }
+// public class Main extends A{
+//     public static void main(String [] args)
+//     {
+//            A sc=new A();
+//           sc.start();
+//     }
+// }
+
+
+// public class Main{
+//     public static void main(String [] args)
+//     {
+       
+//         int a[][]={{1,2,3},{4,5,6},{7,8,9}};
+//         for(int i=0;i<a.length;i++)
+//         {
+//             int sum=0;
+//             for(int j=i;j<a[i].length;j++)
+//             {
+//                 sum=sum+a[i][j];
+//             }
+//             System.out.println(" This "+sum);
+//         }
+       
+//     }
+// }
+
+// public class Main{
+//     public static void main(String [] args)
+//     {
+//         int a[]={1,1,3,2,1,3,4};
+//         for(int i=0;i<a.length;i++)
+//         {
+//             int count=1;
+           
+//             for(int j=i+1;j<a.length;j++)
+//             {
+//                 if(a[i]==a[j])
+//                 {
+                    
+//                     count++;
+//                      a[j]=0;
+                   
+//                 }
+//             }
+           
+            
+//         }
+//         for(int j=0;j<a.length;j++)
+//         {
+//            if(a[j]==0)
+//            {
+               
+//            }
+//            else 
+//            {
+//              System.out.print(a[j]+" ");
+//            }
+//         }
+//     }
+// }
+
+// public class Main{
+//     public static void main(String [] args)
+//     {
+//         for(int i=0;i<=10;i++)
+//         {
+//             for(int j=i;ija>=i;j++)
+//             {
+//                 if(i==j)
+//                 {
+//                     System.out.print("*");
+//                 }
+//             }
+//         }
+//     }
+// }
+
+abstract class A{
+    A(){
+        System.out.println("A");
+    }
+    void show(){
+        new A(){
+            void show(){
+            
+            }
+        };
+    }
+}
+public class Main extends A{
+    public static void main(String [] args){
+        Main m=new Main();
+    
+        m.show();
+    }
+}
