@@ -5245,22 +5245,137 @@
 //     }
 // }
 
-abstract class A{
-    A(){
-        System.out.println("A");
-    }
-    void show(){
-        new A(){
-            void show(){
+// abstract class A{
+//     A(){
+//         System.out.println("A");
+//     }
+//     void show(){
+//         new A(){
+//             void show(){
             
-            }
-        };
-    }
-}
-public class Main extends A{
-    public static void main(String [] args){
-        Main m=new Main();
+//             }
+//         };
+//     }
+// }
+// public class Main extends A{
+//     public static void main(String [] args){
+//         Main m=new Main();
     
-        m.show();
+//         m.show();
+//     }
+// }
+// import java.util.Scanner;
+// public class Main{
+//     public static void main(String [] args)
+//     {
+//         // int a[]={1,2,3,4,5};
+//         // int a[]=new int[3];
+//         // a[0]=1;
+//         // a[1]=2;
+//         // a[2]=3;
+
+//         // for(int i=0;i<=a.length-1;i++)
+//         // {
+//         //     if(a[i]%2!=0)
+//         //     {
+//         //     System.out.print(a[i]+" ");
+//         //     }
+//         // }
+//         // Scanner input=new Scanner(System.in);
+//         // System.out.println("Enter the size");
+//         // int size=input.nextInt();
+//         // int a[]=new int[size];
+
+//         // for(int i=0;i<a.length;i++)
+//         // {
+//         //     System.out.print("Enter the value : ");
+//         //     a[i]=input.nextInt();
+//         // }
+//         // for(int i=0;i<a.length;i++)
+//         // {
+
+//         //     System.out.print(a[i]+" ");
+//         // }
+//         int a[]={1,2,8,3,4,5};
+//         int max=0;
+//         for(int i=0;i<a.length-1;i++)
+//         {
+//            if(max<a[i])
+//            {
+//             max=a[i];
+//            }
+//         }
+//         System.out.println(max);
+
+//     }
+// }
+
+// public class Main 
+// {
+//     static void sort(int a[])
+//     {
+//         for(int i=0;i<a.length;i++)
+//         {
+//             for(int j=i+1;j<a.length;j++)
+//             {
+//                 if(a[i]>a[j])
+//                 {
+//                     int temp=a[i];
+//                     a[i]=a[j];
+//                     a[j]=temp;
+//                 }
+//             }
+//         }
+//     }
+//     static void max(int a[])
+//     {
+//         int max=0;
+//         for(int i=0;i<a.length-1;i++)
+//         {
+//            if(max<a[i])
+//            {
+//             max=a[i];
+//            }
+//         }
+//         System.out.println(max);
+//     }
+//     static void display(int a[])
+//     {
+//         for(int i=0;i<a.length;i++)
+//         {
+//             System.out.print(a[i]+" ");
+//         }
+//     }
+//     public static void main(String[] args) {
+//         int a[]={1,2,3,8,4,5,2}; 
+//         display(a); 
+//         sort(a);
+//         System.out.println();
+//         max(a);
+//         System.out.println();
+//         display(a);
+//     }
+// }
+
+import java.util.Scanner;
+
+public class Main{
+    public static void main(String [] args)
+    {
+      int num=78;
+      int i=2;
+      while (num>=i) {
+        if(num%i==0)
+        {
+            break;
+        }
+        if(i==num-1)
+        {
+            System.out.println(num+" is a prime number");
+        }
+        i++;
+      }
+        }
+
     }
-}
+    
