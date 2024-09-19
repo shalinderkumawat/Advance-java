@@ -5428,44 +5428,147 @@
 
 //   }
 // }
-class Solution {
+// class Solution {
 
-    // this is option 
-    // static void swap(int a[],int i,int j)
-    // {
-    //     int temp=a[i];
-    //     a[i]=a[j];
-    //     a[j]=temp;
-    // }
-    public int firstMissingPositive(int[] nums) {
-       int[] a = Arrays.stream(nums).filter(n -> n > 0).toArray();
-    //    this is user difine method
-        // for(int i=0;i<a.length;i++)
-        // {
-        //     for(int j=i+1;j<a.length;j++)
-        //     {
-        //         if(a[i]>=a[j])
-        //         {
-        //             swap(a, i , j);
-        //         }
-        //     }
-        // }
+//     // this is option 
+//     // static void swap(int a[],int i,int j)
+//     // {
+//     //     int temp=a[i];
+//     //     a[i]=a[j];
+//     //     a[j]=temp;
+//     // }
+//     public int firstMissingPositive(int[] nums) {
+//        int[] a = Arrays.stream(nums).filter(n -> n > 0).toArray();
+//     //    this is user difine method
+//         // for(int i=0;i<a.length;i++)
+//         // {
+//         //     for(int j=i+1;j<a.length;j++)
+//         //     {
+//         //         if(a[i]>=a[j])
+//         //         {
+//         //             swap(a, i , j);
+//         //         }
+//         //     }
+//         // }
 
-       Arrays.sort(a);
+//        Arrays.sort(a);
 
-        int target=1;
-        for(int i:a)
-        {
-            if(i==target)
-            {
-                target++;
+//         int target=1;
+//         for(int i:a)
+//         {
+//             if(i==target)
+//             {
+//                 target++;
+//             }
+//             else if(i>target) 
+//             {
+//                 return target;
+//             }
+//         }
+//         return target;
+
+//     }
+// }
+
+// public class Main{
+//     public static void swap(int a[] ,int i , int j)
+//     {
+//         int temp=a[i];
+//         a[i]=a[j];
+//         a[j]=temp;
+//     }
+//  public static void main(String [] args)
+//  {
+//     int a[]={0,1,2,1,2,0,1,2,0 ,3,0,4,78};
+//     for(int i=0;i<a.length;i++)
+//     {
+//         for(int j=i+1;j<a.length;j++)
+//         {
+//             if(a[i]>a[j])
+//             {
+//                 swap(a, i, j);
+//             }
+//         }
+//     }
+//     for(int i=0;i<a.length;i++)
+//     {
+//         System.out.print(a[i]+" ");
+//     }
+//     int last=a.length-1;
+//     swap(a, 0, last);
+//     System.out.println("After");
+//     for(int i=0;i<a.length;i++)
+//     {
+//         System.out.print(a[i]+" ");
+//     }
+//  }
+// }
+
+// public class Main{
+//         static void swap(int a[],int j ,int i)
+//         {
+//             int temp= a[i];
+//             a[i]=a[j];
+//             a[j]=temp;
+//         }
+//         public static void main(String [] args)
+//         {
+//             int a[]={1,2 ,4,45,43,90,3,4,5,6};
+//             int n=3;
+//             for(int i=0;i<a.length;i++)
+//             {
+//                 System.out.print(a[i]+" ");
+//             }
+//             System.out.println();
+//             System.out.println("this is rotate");
+//             for(int i=0;i<n;i++)
+//             {
+//                 for(int j=0;j<a.length;j++)
+//                 {
+//                     int temp=a[a.length-1];
+//                     a[a.length-1]=a[j];
+//                     a[j]=temp;
+    
+//                     System.out.print(a[j]+" ");
+//                 }
+//                 System.out.println();
+//             }
+//         }
+//     }
+    
+public class Main{
+    public static void display(int a[]){
+        for(int i=0;i<a.length;i++){
+            System.out.print(a[i]+" ");
+        }
+        System.out.println();
+    }
+    public static void swap(int a[],int left,int right){
+        int temp=a[left];
+        a[left]=a[right];
+        a[right]=temp;
+    }
+    public static void sort(int a[]){
+        int left=0;
+        int right=a.length-1;
+        while(left<=right){
+            if(a[left]==1 && a[right]==0){
+                swap(a, left, right);
+                left++;
+                right--;
             }
-            else if(i>target) 
-            {
-                return target;
+            if(a[left]==0){
+                left++;
+            }
+            if(a[right]==1){
+                right--;
             }
         }
-        return target;
-
+    }
+    public static void main(String [] args)
+    {
+        int a[]={0,1,1,0,1,1,0,1};
+        sort(a);
+        display(a);
     }
 }
