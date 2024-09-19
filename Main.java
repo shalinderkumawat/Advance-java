@@ -5406,25 +5406,66 @@
 // }
 
 
-public class Main{
-  public static void swap(int a[],int i,int j)
-  {
-    int temp=a[i];
-    a[i]=a[j];
-    a[j]=temp;
-  }
-  public static void main(String [] args)
-  {
-    int []a={1,2,3,4,5,6};
+// public class Main{
+//   public static void swap(int a[],int i,int j)
+//   {
+//     int temp=a[i];
+//     a[i]=a[j];
+//     a[j]=temp;
+//   }
+//   public static void main(String [] args)
+//   {
+//     int []a={1,2,3,4,5,6};
 
-    for(int i=0;i<a.length-1;i++)
-    {
-      swap(a, i, i+1);
-    }
-    for(int i=0;i<a.length;i++)
-    {
-      System.out.print(a[i]+" ");
-    }
+//     for(int i=0;i<a.length-1;i++)
+//     {
+//       swap(a, i, i+1);
+//     }
+//     for(int i=0;i<a.length;i++)
+//     {
+//       System.out.print(a[i]+" ");
+//     }
 
-  }
+//   }
+// }
+class Solution {
+
+    // this is option 
+    // static void swap(int a[],int i,int j)
+    // {
+    //     int temp=a[i];
+    //     a[i]=a[j];
+    //     a[j]=temp;
+    // }
+    public int firstMissingPositive(int[] nums) {
+       int[] a = Arrays.stream(nums).filter(n -> n > 0).toArray();
+    //    this is user difine method
+        // for(int i=0;i<a.length;i++)
+        // {
+        //     for(int j=i+1;j<a.length;j++)
+        //     {
+        //         if(a[i]>=a[j])
+        //         {
+        //             swap(a, i , j);
+        //         }
+        //     }
+        // }
+
+       Arrays.sort(a);
+
+        int target=1;
+        for(int i:a)
+        {
+            if(i==target)
+            {
+                target++;
+            }
+            else if(i>target) 
+            {
+                return target;
+            }
+        }
+        return target;
+
+    }
 }
