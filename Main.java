@@ -4991,7 +4991,7 @@
 //     }
 //     public static void main(String [] args)
 //     {
-//         int a[]={1,2 ,4,45,43,90,3,4,5,6};
+//         int a[]={1,2,3,4,5,6};
 //         for(int i=0;i<a.length;i++)
 //         {
 //            for(int j=i+1;j<a.length;j++)
@@ -5536,39 +5536,134 @@
 //         }
 //     }
     
+// public class Main{
+//     public static void display(int a[]){
+//         for(int i=0;i<a.length;i++){
+//             System.out.print(a[i]+" ");
+//         }
+//         System.out.println();
+//     }
+//     public static void swap(int a[],int left,int right){
+//         int temp=a[left];
+//         a[left]=a[right];
+//         a[right]=temp;
+//     }
+//     public static void sort(int a[]){
+//         int left=0;
+//         int right=a.length-1;
+//         while(left<=right){
+//             if(a[left]==1 && a[right]==0){
+//                 swap(a, left, right);
+//                 left++;
+//                 right--;
+//             }
+//             if(a[left]==0){
+//                 left++;
+//             }
+//             if(a[right]==1){
+//                 right--;
+//             }
+//         }
+//     }
+//     public static void main(String [] args)
+//     {
+//         int a[]={0,1,1,0,1,1,0,1};
+//         sort(a);
+//         display(a);
+//     }
+// }
+
+// public class Main{
+//     public static void swap(int a[],int i,int j)
+//     {
+//         int temp=a[i];
+//         a[i]=a[j];
+//         a[j]=temp;
+//     }
+//     public static void main(String[] args) {
+//          int a[]={8,2,3,4,5,6};
+//          int first=0;
+//          for(int i=0;i<a.length;i++)
+//          {
+//             if(a[i]%2==0)
+//             {
+//                 first=i;
+//                 break;
+//             }
+//          }
+//          int last=0;
+//          int b=a.length-1;
+//          for(int i=b;i>0;i--)
+//          {
+//             if(a[i]%2==0)
+//             {
+//                 last=i;
+//                 break;
+//             }
+//          }
+//          swap(a, first, last);
+//          for(int i=0;i<a.length;i++)
+//          {
+//             System.out.print(a[i]+" ");
+//          }
+//     }
+// }
+
+// public class Main{
+//     public static void main(String[] args) {
+//     int a[]={1,2,3,4};
+//     for(int i=a.length-1;i>=0;i--)
+//     {
+//         System.out.print(a[i]+" ");
+//     }
+//     }
+// }
+
+// public class Main{
+//     public static void main(String [] args){
+//         for(int i=1;i<=5;i++)
+//         {
+//             for(int s=5;s>=i;s--)
+//             {
+//                 System.out.print(" ");
+//             }
+//             for(int j=1;j<=i;j++)
+//             {
+//                 System.out.print(j+" ");
+//             }
+//             System.out.println();
+//         }
+//     }
+// }
+
+import java.util.*;
+
 public class Main{
-    public static void display(int a[]){
-        for(int i=0;i<a.length;i++){
-            System.out.print(a[i]+" ");
-        }
-        System.out.println();
-    }
-    public static void swap(int a[],int left,int right){
-        int temp=a[left];
-        a[left]=a[right];
-        a[right]=temp;
-    }
-    public static void sort(int a[]){
-        int left=0;
-        int right=a.length-1;
-        while(left<=right){
-            if(a[left]==1 && a[right]==0){
-                swap(a, left, right);
-                left++;
-                right--;
-            }
-            if(a[left]==0){
-                left++;
-            }
-            if(a[right]==1){
-                right--;
-            }
-        }
-    }
     public static void main(String [] args)
     {
-        int a[]={0,1,1,0,1,1,0,1};
-        sort(a);
-        display(a);
+       ArrayList <Integer> sc=new ArrayList<>(); 
+       for(int i=1;i<=5;i++)
+       {
+        sc.add(i);
+       }
+       for(int i=1;i<=5;i++)
+       {
+        sc.add(i);
+       }
+       int size=sc.size()-1;
+       System.out.println("This is size"+size);
+       for(int i=0;i<size-1;i++)
+       {
+        for(int j=i+1;j<size-1;j++)
+        {
+            if(sc.get(i)==sc.get(j))
+            {
+                // sc.remove(i);
+               System.out.print(sc.get(i)+" ");
+            }
+        }
+       }
+       System.out.println();
+       System.out.println(sc);
     }
 }
