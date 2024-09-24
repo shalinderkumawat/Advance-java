@@ -5636,34 +5636,135 @@
 //     }
 // }
 
-import java.util.*;
+// import java.util.*;
 
-public class Main{
-    public static void main(String [] args)
-    {
-       ArrayList <Integer> sc=new ArrayList<>(); 
-       for(int i=1;i<=5;i++)
-       {
-        sc.add(i);
-       }
-       for(int i=1;i<=5;i++)
-       {
-        sc.add(i);
-       }
-       int size=sc.size()-1;
-       System.out.println("This is size"+size);
-       for(int i=0;i<size-1;i++)
-       {
-        for(int j=i+1;j<size-1;j++)
-        {
-            if(sc.get(i)==sc.get(j))
-            {
-                // sc.remove(i);
-               System.out.print(sc.get(i)+" ");
-            }
-        }
-       }
-       System.out.println();
-       System.out.println(sc);
-    }
-}
+// public class Main{
+//     public static void main(String [] args)
+//     {
+//        ArrayList <Integer> sc=new ArrayList<>(); 
+//        for(int i=1;i<=5;i++)
+//        {
+//         sc.add(i);
+//        }
+//        for(int i=1;i<=5;i++)
+//        {
+//         sc.add(i);
+//        }
+//        int size=sc.size()-1;
+//        System.out.println("This is size"+size);
+//        for(int i=0;i<size-1;i++)
+//        {
+//         for(int j=i+1;j<size-1;j++)
+//         {
+//             if(sc.get(i)==sc.get(j))
+//             {
+//                 // sc.remove(i);
+//                System.out.print(sc.get(i)+" ");
+//             }
+//         }
+//        }
+//        System.out.println();
+//        System.out.println(sc);
+//     }
+// }
+
+// public class Main{
+//     public static void main(String [] args)
+//     {
+//         for(int i=1;i<=5;i+=2)
+//         {
+//             for(int j=1;j<=i;j++)
+//             {
+//                 // if(i%2==0)
+//                 // {
+//                 //     System.out.print("");
+//                 // }
+//                 // else 
+//                 // {
+//                     System.out.print("*");
+//                 // }
+//             }
+//             System.out.println();
+//         }
+//     }
+// }
+
+// import java.util.*;
+// public class Main{
+//     public static void main(String [] args)
+//     {
+//         ArrayList <Integer> sc=new ArrayList<>();
+//         for(int i=1;i<=5;i++)
+//         {
+//             sc.add(i);
+//         }
+      
+//         sc.add(2);
+//         sc.add(2);
+//         sc.add(3);
+//         System.out.println(sc);
+//         int size=sc.size();
+//         System.out.println(size);
+        
+//         for(int i=0;i<size;i++)
+//         {
+//             int coutn=1;
+//             for(int j=i+1;j<size;j++)
+//             {
+                  
+//                 if(sc.get(i)==sc.get(j))
+//                 {
+                    
+                    
+//                     ++coutn;
+                    
+//                 }
+//             }
+//             System.out.print(sc.get(i)+":"+coutn+" , ");
+//         }
+//     }
+// }
+
+// public class Main{
+//     public static void main(String[] args) {
+//         int a=5;
+//         for(int i=1;i<=a;i++)
+//         {
+//             for(int j=1;j<=a;j++)
+//             {
+//                 if(i%2!=0)
+//                 {
+//                     if(i+j>a)
+//                     {
+//                         System.out.print("* ");
+//                     }
+                
+//                     else{
+//                         System.out.print(" ");
+//                     }
+//                 }
+//                 else{
+//                     System.out.print("");
+//                 }
+//             }
+//             System.out.println();
+//         }
+//     }
+// }
+
+// public class Main{
+//     public static void main(String [] args)
+//     {
+//         int a[]={1,2,3,4,5};
+//         int left=0;
+//         int right= a.length;
+//         while(left<right){
+//             if(a[left]==a[left]){
+//                 System.out.print(a[left] + " ");
+//                 left++;
+//                 right--;
+//             }
+//         }
+        
+//     }
+// }
