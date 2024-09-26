@@ -5768,3 +5768,116 @@
         
 //     }
 // }
+
+// public class Main{
+//     public static void swap(int a[],int i,int j)
+//     {
+//         int temp=a[i];
+//         a[i]=a[j];
+//         a[j]=temp;
+//     }
+//     public static void main(String [] args)
+//     {
+//         int packets[]={4,5,0,1,9,0,5,0};
+//         for(int i=0;i<packets.length;i++)
+//         {
+//             for(int j=i+1;j<packets.length;j++)
+//             {
+//                 if(packets[i]==0)
+//                 {
+//                     swap(packets, i, j);
+//                 }
+//             }
+//         }
+//         for(int i=0;i<packets.length;i++)
+//         {
+//             System.out.print(packets[i]+" ");
+//         }
+//     }
+// }
+
+
+// public class Main{
+//     public static int num(int nums[])
+//     {
+//         int size=1;
+       
+//          for(int i=0;i<nums.length;i++)
+//         {
+//             for(int j=i+1;j<nums.length;j++)
+//             {
+//                 if(nums[i]==nums[j])
+//                 {
+//                     // size=nums[i];
+//                     return nums[i];
+//                 }
+//             }
+//         }
+
+//         // return size;
+//         return 90;
+//     }
+    
+//     public static void main(String [] args){
+//         int a[]={0,0,1,1,2,2,3,3,4,4,5,5};
+//         // for(int i=0;i<a.length;i++)
+//         // {
+//         //     for(int j=i+1;j<a.length;j++)
+//         //     {
+//         //         if(a[i]==a[j])
+//         //         {
+//         //             System.out.print(a[i]+" ");
+//         //         }
+//         //     }
+//         // }
+
+//        System.out.println(num(a)+"This is");
+//     }
+// }
+
+// class inctriment{
+//     public static void main(String args[])
+//     {
+//         int a=3;
+//         System.out.println(++a*8);
+//         System.out.println("This is my other class");
+//     }
+// }
+
+// public class Main{
+//     public static void main(String [] args)
+//     {
+//         inctriment sc=new inctriment();
+//         inctriment.main(args);
+//         System.out.println("This is my name");
+//     }
+// }
+
+// rotate a array
+
+// public class Main{
+//     public static void show(int a[] , int c , int b)
+//     {
+//         for(int i=c;i<=b;i++)
+//         {
+//             for(int j=i+1;j<=b;j++)
+//             {
+//                 int temp=a[b];
+//                 a[b]=a[i];
+//                 a[i]=temp;
+//             }
+//         }
+//     }
+//     public static void main(String [] args)
+//     {
+//         int a[]={1,2,3,4,5,6,7,8,9,20};
+//         int last=a.length-1;
+//         show(a, 3, last );
+//         for(int i=0;i<a.length;i++)
+//         {
+//             System.out.print(a[i]+" ");
+//         }
+//     }
+// }
+
+
