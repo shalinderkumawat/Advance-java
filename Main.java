@@ -5998,20 +5998,76 @@
 // }
 
 
+// public class Main{
+//     public static void main(String [] args)
+//     {
+//         int b=5;
+//         for(int i=1;i<6;i++)
+//         {
+//             int a=b;
+//             for(int j=5;j>=i;j--)
+//             {
+//                 System.out.print(a);
+//                 a++;
+//             }
+//             System.out.println();
+//             b++;
+//         }
+//     }
+// }
+
 public class Main{
+    public static void swap(int a[][],int i ,int j)
+    {
+        int temp=a[i][j];
+        a[i][j]=a[j][i];
+        a[j][i]=temp;
+    }
     public static void main(String [] args)
     {
-        int b=5;
-        for(int i=1;i<6;i++)
+        int a[][]={{1,2,3},{4,5,6},{7,8,9}};
+        System.out.println("this is real value of array");
+       for(int i=0;i<a.length;i++)
+       {
+        for(int j=0;j<a.length;j++)
         {
-            int a=b;
-            for(int j=5;j>=i;j--)
+            if(a[i].length==3)
             {
-                System.out.print(a);
-                a++;
+            swap(a, i, j);
             }
-            System.out.println();
-            b++;
         }
+       }
+       System.out.println("This is rotate ");
+
+       for(int i=a.length-1;i>=0;i--)
+       {
+        for(int j=a.length-1;j>=0;j--)
+        {
+            System.out.print(a[j][i]+" ");
+            swap(a, i, j);
+        }
+        System.out.println();
+       }
+       for(int i=a.length-1;i>=0;i--)
+       {
+        for(int j=a.length-1;j>=0;j--)
+        {
+            System.out.print(a[j][i]+" ");
+           
+        }
+        System.out.println();
+       }
+        // System.out.println();
+        // System.out.println("This is rotate value in array");
+        // for(int i=a.length-1;i>=0;i--)
+        // {
+        //     for(int j=0;j<=a.length; j++)
+        //     {
+        //         System.out.print(a[j][i]+" ");
+        //     }
+        //     System.out.println();
+        // }
+       System.out.println(a.length);
+      
     }
 }
