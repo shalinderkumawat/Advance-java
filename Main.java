@@ -6016,58 +6016,103 @@
 //     }
 // }
 
+// public class Main{
+//     public static void swap(int a[][],int i ,int j)
+//     {
+//         int temp=a[i][j];
+//         a[i][j]=a[j][i];
+//         a[j][i]=temp;
+//     }
+//     public static void main(String [] args)
+//     {
+//         int a[][]={{1,2,3},{4,5,6},{7,8,9}};
+//         System.out.println("this is real value of array");
+//        for(int i=0;i<a.length;i++)
+//        {
+//         for(int j=0;j<a.length;j++)
+//         {
+//             if(a[i].length==3)
+//             {
+//             swap(a, i, j);
+//             }
+//         }
+//        }
+//        System.out.println("This is rotate ");
+
+//        for(int i=a.length-1;i>=0;i--)
+//        {
+//         for(int j=a.length-1;j>=0;j--)
+//         {
+//             System.out.print(a[j][i]+" ");
+//             swap(a, i, j);
+//         }
+//         System.out.println();
+//        }
+//        for(int i=a.length-1;i>=0;i--)
+//        {
+//         for(int j=a.length-1;j>=0;j--)
+//         {
+//             System.out.print(a[j][i]+" ");
+           
+//         }
+//         System.out.println();
+//        }
+//         // System.out.println();
+//         // System.out.println("This is rotate value in array");
+//         // for(int i=a.length-1;i>=0;i--)
+//         // {
+//         //     for(int j=0;j<=a.length; j++)
+//         //     {
+//         //         System.out.print(a[j][i]+" ");
+//         //     }
+//         //     System.out.println();
+//         // }
+//        System.out.println(a.length);
+      
+//     }
+// }
+
+// public class Main{
+//     public static void main(String[] args) {
+//         int a[]={1,22,2,1,2,3,4,5};
+//         int min=0;
+//         for(int i=0; i<a.length;i++)
+//         {
+//             int s=min;
+//             for(int j=min;j<a.length;j++)
+//             {
+//                 if(a[j]<a[s])
+//                 {
+//                     s=j;
+                    
+//                 }
+//             }
+//         }
+//     }
+// }
+
 public class Main{
-    public static void swap(int a[][],int i ,int j)
-    {
-        int temp=a[i][j];
-        a[i][j]=a[j][i];
-        a[j][i]=temp;
-    }
-    public static void main(String [] args)
-    {
-        int a[][]={{1,2,3},{4,5,6},{7,8,9}};
-        System.out.println("this is real value of array");
-       for(int i=0;i<a.length;i++)
-       {
-        for(int j=0;j<a.length;j++)
+    public static void main(String[] args) {
         {
-            if(a[i].length==3)
+            for(int i=1;i<=5;i++)
             {
-            swap(a, i, j);
+                for(int s=5;s>=i;s--)
+                {
+                    System.out.print(" ");
+                }
+                for(int j=1;j<=i;j++)
+                {
+                    if(i*j==i|| i==5 || j==i)
+                    {
+                        System.out.print("* ");
+                    }
+                   else 
+                   {
+                    System.out.print(" ");
+                   }
+                }
+                System.out.println("");
             }
         }
-       }
-       System.out.println("This is rotate ");
-
-       for(int i=a.length-1;i>=0;i--)
-       {
-        for(int j=a.length-1;j>=0;j--)
-        {
-            System.out.print(a[j][i]+" ");
-            swap(a, i, j);
-        }
-        System.out.println();
-       }
-       for(int i=a.length-1;i>=0;i--)
-       {
-        for(int j=a.length-1;j>=0;j--)
-        {
-            System.out.print(a[j][i]+" ");
-           
-        }
-        System.out.println();
-       }
-        // System.out.println();
-        // System.out.println("This is rotate value in array");
-        // for(int i=a.length-1;i>=0;i--)
-        // {
-        //     for(int j=0;j<=a.length; j++)
-        //     {
-        //         System.out.print(a[j][i]+" ");
-        //     }
-        //     System.out.println();
-        // }
-       System.out.println(a.length);
-      
     }
 }
