@@ -6091,28 +6091,36 @@
 //     }
 // }
 
+// public class Main{
+//     public static void main(String[] args) {
+//         {
+//             for(int i=1;i<=5;i++)
+//             {
+//                 for(int s=5;s>=i;s--)
+//                 {
+//                     System.out.print(" ");
+//                 }
+//                 for(int j=1;j<=i;j++)
+//                 {
+//                     if(i*j==i|| i==5 || j==i)
+//                     {
+//                         System.out.print("* ");
+//                     }
+//                    else 
+//                    {
+//                     System.out.print(" ");
+//                    }
+//                 }
+//                 System.out.println("");
+//             }
+//         }
+//     }
+// }
+
 public class Main{
     public static void main(String[] args) {
-        {
-            for(int i=1;i<=5;i++)
-            {
-                for(int s=5;s>=i;s--)
-                {
-                    System.out.print(" ");
-                }
-                for(int j=1;j<=i;j++)
-                {
-                    if(i*j==i|| i==5 || j==i)
-                    {
-                        System.out.print("* ");
-                    }
-                   else 
-                   {
-                    System.out.print(" ");
-                   }
-                }
-                System.out.println("");
-            }
-        }
+        int a[]={1,2,3,4,5,6,7,8,};
+        int b[]=a;
+        int c[]=b.clone();
     }
 }
