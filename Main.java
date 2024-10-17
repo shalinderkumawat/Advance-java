@@ -6117,10 +6117,79 @@
 //     }
 // }
 
+
+
+// public class Main {
+//     public static void main(String [] args)
+//     {
+//         // int a[]={2,4,5,2,6,10};
+//         // for(int i=0;i<a.length;i++)
+//         // {
+//         //     int value=a[i];
+//         //     int star=a[i];
+//         //     while(value!=0)
+//         //     {
+//         //         for(int j=0;j<=star;j++)
+//         //         {
+//         //             System.out.print("*");
+//         //         }
+//         //         System.out.println();
+//         //         value--;
+//         //     }
+//         // }
+//         // String value="This is Revers Stirng ";
+//         // char a[]=value.toCharArray();
+//         // for(int i=a.length-1;i>=0;i--)
+//         // {
+//         //     System.out.print(a[i]);
+//         // }
+//         int a=3;
+//        if(a%2!=0)
+//        {
+//         if(a%a==0)
+//         {
+//             System.out.println("yes");
+//         }
+//        }
+//        else 
+//        {
+//         System.out.println("no");
+//        }
+//     }
+// }
+
+// public class Main{
+//     public static void main(String [] args)
+//     {
+//         int a[][]={{1,2,3},{4,5,6},{6,7,8}};
+//         for(int i=0;i<a.length;i++)
+//         {
+//             for(int j=i+1;j<a.length;j++)
+//             {
+//                 if(a[i]==a[j])
+//                 {
+//                     a[i][j]=0;
+//                 }
+//             }
+//         }
+//         for(int i=0;i<a.length;i++)
+//         {
+//             for(int j=0;j<a.length;j++)
+//             {
+//                 System.out.print(a[i]+" ");
+//             }
+//             System.out.println();
+//         }
+//     }
+// }
+
 public class Main{
-    public static void main(String[] args) {
-        int a[]={1,2,3,4,5,6,7,8,};
-        int b[]=a;
-        int c[]=b.clone();
+    public static void main(String [] args)
+    {
+        int a[][]={{1,2,3},{4,5,6},{7,8,9}};
+        for(int i=0;i<a.length;i++)
+        {
+            for(int j=0;j<a.length)
+        }
     }
 }
