@@ -6183,13 +6183,37 @@
 //     }
 // }
 
+// public class Main{
+//     public static void main(String [] args)
+//     {
+//         int a[][]={{1,2,3},{4,5,6},{7,8,9}};
+//         for(int i=0;i<a.length;i++)
+//         {
+//             for(int j=0;j<a.length)
+//         }
+//     }
+// }
+
 public class Main{
+    static int prime;
+    static int odd;
     public static void main(String [] args)
     {
-        int a[][]={{1,2,3},{4,5,6},{7,8,9}};
-        for(int i=0;i<a.length;i++)
+       int a[]={1,2,3,4,5,6,7,8};
+       for(int i=0;i<a.length;i++)
+       {
+        if(a[i]%2==0)
         {
-            for(int j=0;j<a.length)
+            prime=a[i];
+            
         }
+        else 
+        {
+            odd=a[i];
+        }
+       
+       }
+       System.out.println(prime);
+       System.out.println(odd);
     }
 }
