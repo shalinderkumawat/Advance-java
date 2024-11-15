@@ -6194,26 +6194,127 @@
 //     }
 // }
 
+// class A{
+//     class B{
+//         class C{
+//             void shwo(){
+//                 System.out.println("This is c class and this is i will exicess ");
+//             }
+//         }
+//     }
+// }
+// public class Main{
+//     public static void main(String [] args)
+//     {
+//         A.B.C j=new A(). new B(). new C();
+//         j.shwo();
+//         A sc=new A();
+//         A.B cs=sc.new B();
+//         A.B.C scc=cs.new C();
+//         scc.shwo();
+
+       
+//     }
+// }
+
+// class A {
+//     interface B {
+//         class C {
+//             interface E {
+//                 void shwo();
+//             }
+//             void print(){
+//                 E sc=new C();
+//                 sc.shwo();
+//             }
+//         }
+//     }
+// }
+// public class Main extends A.B.C{
+//     public static void main(String [] args)
+//     {
+      
+//     }
+// }
+// import java.util.*;
+
+// public class Main extends Thread{
+//     public static void main(String [] args)
+//     {
+//         String word="abc";
+//         String word1="defg";
+
+//         StringBuilder marge=new StringBuilder();
+
+//         int mexlength=Math.max(word.length(), word1.length());
+//         System.out.println(mexlength);
+
+//         for(int i=0;i<mexlength;i++)
+//         {
+//             if(i<word.length())
+//             {
+//                 marge.append(word.charAt(i));
+//             }
+//             if(i<word1.length())
+//             {
+//                 marge.append(word1.charAt(i));
+//             }
+//         }
+//         System.out.println(marge.toString());
+
+//         // char a[]=word.toCharArray();
+//         // char b[]=word1.toCharArray();
+
+//         //     for(int i=0;i<mexlength;i++)
+//         //     {
+//         //         System.out.print(a[i]+""+b[i]);
+//         //     }
+//         }
+        
+// }
+// public class Main {
+//     public boolean canPlaceFlowers(int[] flowerbed, int n) {
+//         int count = 0;
+//         for (int i = 0; i < flowerbed.length; i++) {
+//             // Check if the current plot is empty.
+//             if (flowerbed[i] == 0) {
+//                 // Check if the left and right plots are empty.
+//                 boolean emptyLeftPlot = (i == 0) || (flowerbed[i - 1] == 0);
+//                 boolean emptyRightPlot = (i == flowerbed.length - 1) || (flowerbed[i + 1] == 0);
+                
+//                 // If both plots are empty, we can plant a flower here.
+//                 if (emptyLeftPlot && emptyRightPlot) {
+//                     flowerbed[i] = 1;
+//                     count++;
+//                     if (count >= n) {
+//                         return true;
+//                     }
+//                 }
+//             }
+//         }
+//         return count >= n;
+//     }
+//     public static void main(String [] args)
+//     {
+//         int a[]={1,0,0,0,1};
+//         int n=1;
+//         Main m=new Main();
+//         m.canPlaceFlowers(a, n);
+//         System.out.println(m.canPlaceFlowers(a, n));
+//     }
+// }
+
 public class Main{
-    static int prime;
-    static int odd;
     public static void main(String [] args)
     {
-       int a[]={1,2,3,4,5,6,7,8};
-       for(int i=0;i<a.length;i++)
-       {
-        if(a[i]%2==0)
+        String a="hello     word";
+        String word[]=a.split(" ");
+        String k="";
+        for(int i=word.length-1;i>=0;i--)
         {
-            prime=a[i];
-            
+          k=k+word[i];
         }
-        else 
-        {
-            odd=a[i];
-        }
-       
-       }
-       System.out.println(prime);
-       System.out.println(odd);
+        System.out.println(k.toString());
+        StringBuilder
     }
 }
